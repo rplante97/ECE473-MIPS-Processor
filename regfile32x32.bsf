@@ -20,7 +20,7 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 296 224)
+	(rect 16 16 312 224)
 	(text "regfile32x32" (rect 5 0 52 12)(font "Arial" ))
 	(text "inst" (rect 8 192 20 204)(font "Arial" ))
 	(port
@@ -75,9 +75,9 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 144)
 		(input)
-		(text "read_address_debug" (rect 0 0 84 12)(font "Arial" ))
-		(text "read_address_debug" (rect 21 139 105 151)(font "Arial" ))
-		(line (pt 0 144)(pt 16 144)(line_width 1))
+		(text "read_address_debug[4..0]" (rect 0 0 106 12)(font "Arial" ))
+		(text "read_address_debug[4..0]" (rect 21 139 127 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
 	)
 	(port
 		(pt 0 160)
@@ -87,27 +87,27 @@ refer to the applicable agreement for further details.
 		(line (pt 0 160)(pt 16 160)(line_width 1))
 	)
 	(port
-		(pt 280 32)
+		(pt 296 32)
 		(output)
 		(text "data_out_1[31..0]" (rect 0 0 67 12)(font "Arial" ))
-		(text "data_out_1[31..0]" (rect 192 27 259 39)(font "Arial" ))
-		(line (pt 280 32)(pt 264 32)(line_width 3))
+		(text "data_out_1[31..0]" (rect 208 27 275 39)(font "Arial" ))
+		(line (pt 296 32)(pt 280 32)(line_width 3))
 	)
 	(port
-		(pt 280 48)
+		(pt 296 48)
 		(output)
 		(text "data_out_2[31..0]" (rect 0 0 68 12)(font "Arial" ))
-		(text "data_out_2[31..0]" (rect 191 43 259 55)(font "Arial" ))
-		(line (pt 280 48)(pt 264 48)(line_width 3))
+		(text "data_out_2[31..0]" (rect 207 43 275 55)(font "Arial" ))
+		(line (pt 296 48)(pt 280 48)(line_width 3))
 	)
 	(port
-		(pt 280 64)
+		(pt 296 64)
 		(output)
 		(text "data_out_debug[31..0]" (rect 0 0 87 12)(font "Arial" ))
-		(text "data_out_debug[31..0]" (rect 172 59 259 71)(font "Arial" ))
-		(line (pt 280 64)(pt 264 64)(line_width 3))
+		(text "data_out_debug[31..0]" (rect 188 59 275 71)(font "Arial" ))
+		(line (pt 296 64)(pt 280 64)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 264 192)(line_width 1))
+		(rectangle (rect 16 16 280 192)(line_width 1))
 	)
 )

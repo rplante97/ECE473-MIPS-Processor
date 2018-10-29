@@ -6,7 +6,7 @@ module regfile32x32
 	input write_enable,
    input reset,
 	input clock,
-	input [4:0] read_address_debug,
+	input read_address_debug,
 	input clock_debug,
    output reg [31:0] data_out_1,
    output reg [31:0] data_out_2,
@@ -28,7 +28,6 @@ module regfile32x32
 		
 		data_out_1 <= regfile[read_address_1];
 		data_out_2 <= regfile[read_address_2];
-		data_out_debug <= regfile[read_address_debug];
 		
 		if (reset) begin
 			for (i = 0; i < 32; i = i + 1) begin
