@@ -38,9 +38,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 208 -48 376 -32)
+	(rect 200 -144 368 -128)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "KEY[0]" (rect 5 0 41 12)(font "Arial" ))
+	(text "KEY[0]" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -51,7 +51,7 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 152 -32 208 -8))
+	(annotation_block (location)(rect 144 -128 200 -104))
 )
 (pin
 	(output)
@@ -662,7 +662,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 376 -56 424 -24)
+	(rect 384 -152 432 -120)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst6" (rect 3 21 25 38)(font "Intel Clear" ))
 	(port
@@ -757,21 +757,21 @@ refer to the applicable agreement for further details.
 		(pt 296 32)
 		(output)
 		(text "data_out_1[31..0]" (rect 0 0 86 12)(font "Arial" ))
-		(text "data_out_1[31..0]" (rect 203 27 275 39)(font "Arial" ))
+		(text "data_out_1[31..0]" (rect 203 27 289 39)(font "Arial" ))
 		(line (pt 296 32)(pt 280 32)(line_width 3))
 	)
 	(port
 		(pt 296 48)
 		(output)
 		(text "data_out_2[31..0]" (rect 0 0 86 12)(font "Arial" ))
-		(text "data_out_2[31..0]" (rect 203 43 275 55)(font "Arial" ))
+		(text "data_out_2[31..0]" (rect 203 43 289 55)(font "Arial" ))
 		(line (pt 296 48)(pt 280 48)(line_width 3))
 	)
 	(port
 		(pt 296 64)
 		(output)
 		(text "data_out_debug[31..0]" (rect 0 0 109 12)(font "Arial" ))
-		(text "data_out_debug[31..0]" (rect 183 59 275 71)(font "Arial" ))
+		(text "data_out_debug[31..0]" (rect 183 59 292 71)(font "Arial" ))
 		(line (pt 296 64)(pt 280 64)(line_width 3))
 	)
 	(drawing
@@ -865,11 +865,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "btn_clk" (rect 434 -56 469 -39)(font "Intel Clear" ))
-	(pt 424 -40)
-	(pt 456 -40)
-)
-(connector
 	(text "ins_mem_vga[31..0]" (rect 1560 240 1656 257)(font "Intel Clear" ))
 	(pt 1560 256)
 	(pt 1616 256)
@@ -885,11 +880,6 @@ refer to the applicable agreement for further details.
 	(pt 1248 272)
 	(pt 1304 272)
 	(bus)
-)
-(connector
-	(text "mhz_50" (rect 1266 480 1303 497)(font "Intel Clear" ))
-	(pt 1256 496)
-	(pt 1304 496)
 )
 (connector
 	(text "reg_mem_address[4..0]" (rect 1248 496 1360 513)(font "Intel Clear" ))
@@ -912,5 +902,14 @@ refer to the applicable agreement for further details.
 	(pt 1600 432)
 	(pt 1648 432)
 	(bus)
+)
+(connector
+	(text "btn_clk" (rect 442 -152 477 -135)(font "Intel Clear" ))
+	(pt 432 -136)
+	(pt 464 -136)
+)
+(connector
+	(pt 368 -136)
+	(pt 384 -136)
 )
 (junction (pt 1600 432))
