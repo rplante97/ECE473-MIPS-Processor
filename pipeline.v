@@ -8,7 +8,7 @@ module pipeline(
 );
 
 always @(posedge clk) begin
-	in <= out;
+	out <= in;
 end
 
 endmodule 

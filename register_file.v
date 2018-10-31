@@ -18,8 +18,10 @@ module regfile32x32
 	initial begin
 	
 		for (i = 0; i < 32; i = i + 1) begin
-	    regfile[i] <= i;
+	    regfile[i] <= 0;
 		end
+		regfile[1] <= -30;
+		regfile[2] <= 56;
 		
 	end
 
@@ -28,7 +30,6 @@ module regfile32x32
 		
 		data_out_1 <= regfile[read_address_1];
 		data_out_2 <= regfile[read_address_2];
-		data_out_debug <= regfile[read_address_debug];
 		
 		if (reset) begin
 			for (i = 0; i < 32; i = i + 1) begin
@@ -43,4 +44,8 @@ module regfile32x32
 		end
 		
    end
+	
+	always @(posedge clock_debug) begin
+		data_out_debug <= regfile[read_address_debug];
+	end
 endmodule
