@@ -6,23 +6,34 @@ module controller(
 
 
 	//inputs (from instruction memory)
-	input [5:0] opcode,
-	input [15:6] control_data,
-	input [5:0] funct,
+	input [31:0] instruction,
 	
 	//outputs (WIP)
-	output reg jump
+	output reg [1:0] write_back,
+	output reg [2:0] memory,
+	output reg [3:0] execution
+	
 );
+	
 
-always @(*) begin
-	if (funct == 8) begin //jump instruction
-		jump <= 1;
-	end
-	else begin
-		jump <= 0;
-	end
-end
+	wire [5:0] opcode;
+	assign opcode = instruction[31:26];
+	
 
+	wire [5:0] funct_code;
+	wire [4:0] shamt;
+	assign funct_code = instruction [5:0];
+	assign shamt = instruction[10:6];
+	
+	always@(instruction) begin
+	
+		if ((opcode == 0) && ~(funct_code == 0)) begin
+			write_back <= 2'b11;
+			memory <= 3'b000;
+			execution <= 4'b0001;
+		end
+	end
+	
 
 
 

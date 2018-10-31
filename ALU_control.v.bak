@@ -1,0 +1,9 @@
+module ALU_control(
+
+	input [5:0] instruction_code,
+	
+	output [5:0] alu_op
+
+);
+
+endmodule 

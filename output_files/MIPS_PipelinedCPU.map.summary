@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Oct 31 03:55:57 2018
+Analysis & Synthesis Status : Successful - Wed Oct 31 16:02:13 2018
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : MIPS_PipelinedCPU
 Top-level Entity Name : MIPS_PipelinedCPU
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 1752
+Total registers : 1902
 Total pins : 16
 Total virtual pins : 0
 Total block memory bits : 311,296

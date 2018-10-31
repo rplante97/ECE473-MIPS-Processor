@@ -1,0 +1,17 @@
+module data_pipeline(
+
+	input clk,
+	input [31:0] data,
+	input [31:0] ALU_result,
+	
+	output reg [31:0] data_out,
+	output reg [31:0] result_out
+	
+);
+
+always @(posedge clk) begin
+	data_out <= data;
+	result_out <= ALU_result;
+end
+
+endmodule 

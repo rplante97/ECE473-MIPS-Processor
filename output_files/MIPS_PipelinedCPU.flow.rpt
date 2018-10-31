@@ -1,5 +1,5 @@
 Flow report for MIPS_PipelinedCPU
-Wed Oct 31 03:57:34 2018
+Wed Oct 31 16:03:42 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Oct 31 03:57:34 2018       ;
+; Flow Status                     ; Successful - Wed Oct 31 16:03:42 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; MIPS_PipelinedCPU                           ;
 ; Top-level Entity Name           ; MIPS_PipelinedCPU                           ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 2,280 / 18,480 ( 12 % )                     ;
-; Total registers                 ; 2229                                        ;
+; Logic utilization (in ALMs)     ; 2,302 / 18,480 ( 12 % )                     ;
+; Total registers                 ; 2355                                        ;
 ; Total pins                      ; 16 / 224 ( 7 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 311,296 / 3,153,920 ( 10 % )                ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/31/2018 03:55:39 ;
+; Start date & time ; 10/31/2018 16:01:54 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIPS_PipelinedCPU   ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 53447160273555.154097253922592         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 53447160273555.154101611426608         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)                     ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -86,6 +86,10 @@ refer to the applicable agreement for further details.
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
 ; MISC_FILE                           ; jump_mux.bsf                           ; --            ; --          ; --             ;
 ; MISC_FILE                           ; jump_mux_bb.v                          ; --            ; --          ; --             ;
+; MISC_FILE                           ; RegDst_mux.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; RegDst_mux_bb.v                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux_32.bsf                             ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux_32_bb.v                            ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DE0_CV      ; Top            ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; DE0_CV      ; Top            ;
@@ -103,12 +107,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4908 MB             ; 00:00:28                           ;
-; Fitter               ; 00:01:16     ; 1.2                     ; 6522 MB             ; 00:02:45                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4881 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:10     ; 2.3                     ; 5208 MB             ; 00:00:20                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4873 MB             ; 00:00:02                           ;
-; Total                ; 00:01:50     ; --                      ; --                  ; 00:03:39                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4910 MB             ; 00:00:28                           ;
+; Fitter               ; 00:01:08     ; 1.2                     ; 6514 MB             ; 00:02:38                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4876 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:10     ; 2.3                     ; 5210 MB             ; 00:00:20                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4875 MB             ; 00:00:02                           ;
+; Total                ; 00:01:42     ; --                      ; --                  ; 00:03:32                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

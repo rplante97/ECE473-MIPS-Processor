@@ -1,6 +1,6 @@
 /* TODO DOCUMENTATION
 */
-module ALU_32bit(ALU_operation, data1, data2, shamt, ALU_result, zero);
+module ALU_32bit(data1, data2, shamt, zero,  ALU_result, ALU_operation);
 
 //Control signal, currently ALU must support 12 instructions
 //however opcode/funct is 6 bits
@@ -10,9 +10,8 @@ input [31:0] data1;
 input [31:0] data2;
 input [4:0] shamt;
 
-output reg [31:0] ALU_result;
 output reg zero; //We set zero to high if ALU_result equals zero
-
+output reg [31:0] ALU_result;
 
 //clock on new signals from data1 and data2 or control
 always @(data1, data2, ALU_operation) begin
