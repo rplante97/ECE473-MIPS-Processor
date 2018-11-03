@@ -26,24 +26,24 @@ module regfile32x32
 	end
 
 
-   always @(posedge clock) begin
+   always @(negedge clock) begin
 		
 		data_out_1 <= regfile[read_address_1];
 		data_out_2 <= regfile[read_address_2];
 		
 		if (reset) begin
 			for (i = 0; i < 32; i = i + 1) begin
-				regfile[i] <= 0;
+				//regfile[i] <= 0;
 			end	
 		end 
 		
-
-	 
-		else begin
-			if (write_enable) regfile[write_address] <= write_data_in;
-		end
-		
    end
+	
+	always @(posedge clock) begin
+		if (write_enable) begin
+			regfile[write_address] <= write_data_in;
+		end
+	end
 	
 	always @(posedge clock_debug) begin
 		data_out_debug <= regfile[read_address_debug];

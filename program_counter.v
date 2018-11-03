@@ -21,7 +21,7 @@ input reset, clk, write;
 output reg [31:0] result;
 
 initial begin //our instruction segement begins at 0x00400000
-	result <= 32'h00400000;
+	result <= 32'h00400000 -4;
 end
 
 
@@ -29,7 +29,7 @@ always @(posedge clk)
 begin
 
 	if (reset == 1) begin
-		result <= 32'h00400000;
+		result <= 32'h00400000 -4;
 	end
 	
 	else begin

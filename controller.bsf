@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 240 128)
+	(rect 16 16 240 160)
 	(text "controller" (rect 5 0 40 12)(font "Arial" ))
-	(text "inst" (rect 8 96 20 108)(font "Arial" ))
+	(text "inst" (rect 8 128 20 140)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -51,7 +51,21 @@ refer to the applicable agreement for further details.
 		(text "execution[3..0]" (rect 147 59 203 71)(font "Arial" ))
 		(line (pt 224 64)(pt 208 64)(line_width 3))
 	)
+	(port
+		(pt 224 80)
+		(output)
+		(text "ALUop[5..0]" (rect 0 0 50 12)(font "Arial" ))
+		(text "ALUop[5..0]" (rect 153 75 203 87)(font "Arial" ))
+		(line (pt 224 80)(pt 208 80)(line_width 3))
+	)
+	(port
+		(pt 224 96)
+		(output)
+		(text "jump_register" (rect 0 0 54 12)(font "Arial" ))
+		(text "jump_register" (rect 149 91 203 103)(font "Arial" ))
+		(line (pt 224 96)(pt 208 96)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 208 96)(line_width 1))
+		(rectangle (rect 16 16 208 128)(line_width 1))
 	)
 )
