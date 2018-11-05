@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_PipelinedCPU
-Sun Nov 04 16:52:50 2018
+Mon Nov 05 14:40:02 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Nov 04 16:52:50 2018       ;
+; Analysis & Synthesis Status     ; Successful - Mon Nov 05 14:40:02 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; MIPS_PipelinedCPU                           ;
 ; Top-level Entity Name           ; MIPS_PipelinedCPU                           ;
@@ -199,64 +199,64 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
-+----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                      ; Library ;
-+----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------+---------+
-; ins2.mif                         ; yes             ; User Memory Initialization File        ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ins2.mif                       ;         ;
-; ALU_32bit.v                      ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v                    ;         ;
-; VGA_Components/vram.v            ; yes             ; User Wizard-Generated File             ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vram.v          ;         ;
-; VGA_Components/vgaclk_0002.v     ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vgaclk_0002.v   ;         ;
-; VGA_Components/vgaclk.v          ; yes             ; User Wizard-Generated File             ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vgaclk.v        ;         ;
-; VGA_Components/vga_control.v     ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vga_control.v   ;         ;
-; VGA_Components/VGA_BLOCK.bdf     ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/VGA_BLOCK.bdf   ;         ;
-; VGA_Components/color_encoder.v   ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/color_encoder.v ;         ;
-; VGA_Components/char_engine.v     ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v   ;         ;
-; register_file.v                  ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/register_file.v                ;         ;
-; ins_mem.v                        ; yes             ; User Wizard-Generated File             ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ins_mem.v                      ;         ;
-; data_mem.v                       ; yes             ; User Wizard-Generated File             ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/data_mem.v                     ;         ;
-; MIPS_PipelinedCPU.bdf            ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/MIPS_PipelinedCPU.bdf          ;         ;
-; program_counter.v                ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/program_counter.v              ;         ;
-; pc_adder.v                       ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pc_adder.v                     ;         ;
-; controller.v                     ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v                   ;         ;
-; instruction_pipeline.v           ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/instruction_pipeline.v         ;         ;
-; regfile_pipeline.v               ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/regfile_pipeline.v             ;         ;
-; ALU_pipeline.v                   ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_pipeline.v                 ;         ;
-; jump_mux.v                       ; yes             ; User Wizard-Generated File             ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/jump_mux.v                     ;         ;
-; RegDst_mux.v                     ; yes             ; User Wizard-Generated File             ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/RegDst_mux.v                   ;         ;
-; sign_extend.v                    ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/sign_extend.v                  ;         ;
-; mux_32.v                         ; yes             ; User Wizard-Generated File             ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/mux_32.v                       ;         ;
-; data_pipeline.v                  ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/data_pipeline.v                ;         ;
-; pc_plus4.v                       ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pc_plus4.v                     ;         ;
-; pipeline_6bit.v                  ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v                ;         ;
-; pipeline_1bit.v                  ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_1bit.v                ;         ;
-; altera_pll.v                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altera_pll.v               ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf             ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/stratix_ram_block.inc      ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.inc                ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_decode.inc             ;         ;
-; aglobal180.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal180.inc             ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/a_rdenreg.inc              ;         ;
-; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altrom.inc                 ;         ;
-; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altram.inc                 ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altdpram.inc               ;         ;
-; db/altsyncram_1tn2.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_1tn2.tdf         ;         ;
-; db/decode_3na.tdf                ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/decode_3na.tdf              ;         ;
-; db/decode_s2a.tdf                ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/decode_s2a.tdf              ;         ;
-; db/mux_chb.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/mux_chb.tdf                 ;         ;
-; db/mux_jhb.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/mux_jhb.tdf                 ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.tdf                ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/muxlut.inc                 ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/bypassff.inc               ;         ;
-; altshift.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altshift.inc               ;         ;
-; db/mux_dlc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/mux_dlc.tdf                 ;         ;
-; db/altsyncram_hbl2.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_hbl2.tdf         ;         ;
-; db/altsyncram_u2j1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_u2j1.tdf         ;         ;
-; db/mux_tjc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/mux_tjc.tdf                 ;         ;
-; db/altsyncram_fcl2.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_fcl2.tdf         ;         ;
-; data.mif                         ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/data.mif                       ;         ;
-+----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                               ;
++----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
+; ins2.mif                         ; yes             ; User Memory Initialization File        ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/ins2.mif                         ;         ;
+; ALU_32bit.v                      ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/ALU_32bit.v                      ;         ;
+; VGA_Components/vram.v            ; yes             ; User Wizard-Generated File             ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/vram.v            ;         ;
+; VGA_Components/vgaclk_0002.v     ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/vgaclk_0002.v     ;         ;
+; VGA_Components/vgaclk.v          ; yes             ; User Wizard-Generated File             ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/vgaclk.v          ;         ;
+; VGA_Components/vga_control.v     ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/vga_control.v     ;         ;
+; VGA_Components/VGA_BLOCK.bdf     ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/VGA_BLOCK.bdf     ;         ;
+; VGA_Components/color_encoder.v   ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/color_encoder.v   ;         ;
+; VGA_Components/char_engine.v     ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v     ;         ;
+; register_file.v                  ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/register_file.v                  ;         ;
+; ins_mem.v                        ; yes             ; User Wizard-Generated File             ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/ins_mem.v                        ;         ;
+; data_mem.v                       ; yes             ; User Wizard-Generated File             ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/data_mem.v                       ;         ;
+; MIPS_PipelinedCPU.bdf            ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/MIPS_PipelinedCPU.bdf            ;         ;
+; program_counter.v                ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/program_counter.v                ;         ;
+; pc_adder.v                       ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/pc_adder.v                       ;         ;
+; controller.v                     ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v                     ;         ;
+; instruction_pipeline.v           ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/instruction_pipeline.v           ;         ;
+; regfile_pipeline.v               ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/regfile_pipeline.v               ;         ;
+; ALU_pipeline.v                   ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/ALU_pipeline.v                   ;         ;
+; jump_mux.v                       ; yes             ; User Wizard-Generated File             ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/jump_mux.v                       ;         ;
+; RegDst_mux.v                     ; yes             ; User Wizard-Generated File             ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/RegDst_mux.v                     ;         ;
+; sign_extend.v                    ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/sign_extend.v                    ;         ;
+; mux_32.v                         ; yes             ; User Wizard-Generated File             ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/mux_32.v                         ;         ;
+; data_pipeline.v                  ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/data_pipeline.v                  ;         ;
+; pc_plus4.v                       ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/pc_plus4.v                       ;         ;
+; pipeline_6bit.v                  ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/pipeline_6bit.v                  ;         ;
+; pipeline_1bit.v                  ; yes             ; User Verilog HDL File                  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/pipeline_1bit.v                  ;         ;
+; altera_pll.v                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altera_pll.v          ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal180.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal180.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_1tn2.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/altsyncram_1tn2.tdf           ;         ;
+; db/decode_3na.tdf                ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/decode_3na.tdf                ;         ;
+; db/decode_s2a.tdf                ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/decode_s2a.tdf                ;         ;
+; db/mux_chb.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/mux_chb.tdf                   ;         ;
+; db/mux_jhb.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/mux_jhb.tdf                   ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/muxlut.inc            ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/bypassff.inc          ;         ;
+; altshift.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altshift.inc          ;         ;
+; db/mux_dlc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/mux_dlc.tdf                   ;         ;
+; db/altsyncram_hbl2.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/altsyncram_hbl2.tdf           ;         ;
+; db/altsyncram_u2j1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/altsyncram_u2j1.tdf           ;         ;
+; db/mux_tjc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/mux_tjc.tdf                   ;         ;
+; db/altsyncram_fcl2.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/altsyncram_fcl2.tdf           ;         ;
+; data.mif                         ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/data.mif                         ;         ;
++----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------+
@@ -264,14 +264,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 2428         ;
+; Estimate of Logic utilization (ALMs needed) ; 2365         ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 3052         ;
-;     -- 7 input functions                    ; 16           ;
-;     -- 6 input functions                    ; 1664         ;
-;     -- 5 input functions                    ; 315          ;
-;     -- 4 input functions                    ; 255          ;
-;     -- <=3 input functions                  ; 802          ;
+; Combinational ALUT usage for logic          ; 3013         ;
+;     -- 7 input functions                    ; 19           ;
+;     -- 6 input functions                    ; 1574         ;
+;     -- 5 input functions                    ; 344          ;
+;     -- 4 input functions                    ; 243          ;
+;     -- <=3 input functions                  ; 833          ;
 ;                                             ;              ;
 ; Dedicated logic registers                   ; 1830         ;
 ;                                             ;              ;
@@ -286,8 +286,8 @@ refer to the applicable agreement for further details.
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[0]~input ;
 ; Maximum fan-out                             ; 1347         ;
-; Total fan-out                               ; 22208        ;
-; Average fan-out                             ; 4.42         ;
+; Total fan-out                               ; 21948        ;
+; Average fan-out                             ; 4.40         ;
 +---------------------------------------------+--------------+
 
 
@@ -296,12 +296,12 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                  ; Entity Name          ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
-; |MIPS_PipelinedCPU                           ; 3052 (1)            ; 1830 (0)                  ; 311488            ; 1          ; 16   ; 0            ; |MIPS_PipelinedCPU                                                                                                                   ; MIPS_PipelinedCPU    ; work         ;
-;    |ALU_32bit:inst7|                         ; 373 (373)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|ALU_32bit:inst7                                                                                                   ; ALU_32bit            ; work         ;
+; |MIPS_PipelinedCPU                           ; 3013 (1)            ; 1830 (0)                  ; 311488            ; 1          ; 16   ; 0            ; |MIPS_PipelinedCPU                                                                                                                   ; MIPS_PipelinedCPU    ; work         ;
+;    |ALU_32bit:inst7|                         ; 324 (324)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|ALU_32bit:inst7                                                                                                   ; ALU_32bit            ; work         ;
 ;    |ALU_pipeline:inst23|                     ; 0 (0)               ; 71 (71)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|ALU_pipeline:inst23                                                                                               ; ALU_pipeline         ; work         ;
-;    |VGA_BLOCK:inst|                          ; 1524 (0)            ; 523 (0)                   ; 307200            ; 1          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst                                                                                                    ; VGA_BLOCK            ; work         ;
-;       |char_engine:inst|                     ; 1262 (1262)         ; 432 (432)                 ; 0                 ; 1          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst                                                                                   ; char_engine          ; work         ;
-;       |vga_control:inst2|                    ; 174 (174)           ; 85 (85)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|vga_control:inst2                                                                                  ; vga_control          ; work         ;
+;    |VGA_BLOCK:inst|                          ; 1534 (0)            ; 523 (0)                   ; 307200            ; 1          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst                                                                                                    ; VGA_BLOCK            ; work         ;
+;       |char_engine:inst|                     ; 1273 (1273)         ; 432 (432)                 ; 0                 ; 1          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst                                                                                   ; char_engine          ; work         ;
+;       |vga_control:inst2|                    ; 173 (173)           ; 85 (85)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|vga_control:inst2                                                                                  ; vga_control          ; work         ;
 ;       |vgaclk:inst4|                         ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|vgaclk:inst4                                                                                       ; vgaclk               ; work         ;
 ;          |vgaclk_0002:vgaclk_inst|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst                                                               ; vgaclk_0002          ; work         ;
 ;             |altera_pll:altera_pll_i|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i                                       ; altera_pll           ; work         ;
@@ -381,54 +381,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+---------------------------------------+-----------------+
 
 
-+----------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                      ;
-+-----------------------------------------------------+---------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal       ; Free of Timing Hazards ;
-+-----------------------------------------------------+---------------------------+------------------------+
-; controller:inst17|ALUop[0]                          ; controller:inst17|always0 ; yes                    ;
-; ALU_32bit:inst7|ALU_result[0]                       ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; controller:inst17|ALUop[4]                          ; controller:inst17|always0 ; yes                    ;
-; ALU_32bit:inst7|ALU_result[4]                       ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[16]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[20]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[8]                       ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[12]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[24]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[28]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; controller:inst17|ALUop[1]                          ; controller:inst17|always0 ; yes                    ;
-; ALU_32bit:inst7|ALU_result[1]                       ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[9]                       ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; controller:inst17|ALUop[5]                          ; controller:inst17|always0 ; yes                    ;
-; ALU_32bit:inst7|ALU_result[5]                       ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[13]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[17]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[25]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[21]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[29]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; controller:inst17|ALUop[2]                          ; controller:inst17|always0 ; yes                    ;
-; ALU_32bit:inst7|ALU_result[2]                       ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[10]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[6]                       ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[14]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[18]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[26]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[22]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[30]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; controller:inst17|ALUop[3]                          ; controller:inst17|always0 ; yes                    ;
-; ALU_32bit:inst7|ALU_result[3]                       ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[11]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[7]                       ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[15]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[19]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[27]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[23]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; ALU_32bit:inst7|ALU_result[31]                      ; ALU_32bit:inst7|WideOr0   ; yes                    ;
-; controller:inst17|jump_register                     ; GND                       ; yes                    ;
-; controller:inst17|write_back[0]                     ; GND                       ; yes                    ;
-; controller:inst17|write_back[1]                     ; GND                       ; yes                    ;
-; Number of user-specified and inferred latches = 41  ;                           ;                        ;
-+-----------------------------------------------------+---------------------------+------------------------+
++---------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                     ;
++----------------------------------------------------+---------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal       ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------------+------------------------+
+; controller:inst17|ALUop[0]                         ; controller:inst17|always0 ; yes                    ;
+; controller:inst17|ALUop[4]                         ; controller:inst17|always0 ; yes                    ;
+; controller:inst17|ALUop[1]                         ; controller:inst17|always0 ; yes                    ;
+; controller:inst17|ALUop[5]                         ; controller:inst17|always0 ; yes                    ;
+; controller:inst17|ALUop[2]                         ; controller:inst17|always0 ; yes                    ;
+; controller:inst17|ALUop[3]                         ; controller:inst17|always0 ; yes                    ;
+; controller:inst17|jump_register                    ; GND                       ; yes                    ;
+; controller:inst17|write_back[0]                    ; GND                       ; yes                    ;
+; controller:inst17|write_back[1]                    ; GND                       ; yes                    ;
+; Number of user-specified and inferred latches = 9  ;                           ;                        ;
++----------------------------------------------------+---------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -1227,8 +1195,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 1830  ;
-; Number of registers using Synchronous Clear  ; 108   ;
-; Number of registers using Synchronous Load   ; 51    ;
+; Number of registers using Synchronous Clear  ; 139   ;
+; Number of registers using Synchronous Load   ; 82    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 1379  ;
@@ -1249,35 +1217,35 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; VGA_BLOCK:inst|char_engine:inst|data_index[4]  ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[5]  ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[31] ; 3       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[26] ; 3       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[23] ; 3       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[22] ; 3       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[13] ; 3       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[12] ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[21] ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[11] ; 3       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[9]  ; 3       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[25] ; 3       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[24] ; 3       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[15] ; 3       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[14] ; 3       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[6]  ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[30] ; 4       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[20] ; 4       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[8]  ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[7]  ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[10] ; 3       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[6]  ; 3       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[9]  ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[29] ; 4       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[28] ; 4       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[19] ; 4       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[18] ; 4       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[23] ; 4       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[22] ; 4       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[13] ; 3       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[12] ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[27] ; 4       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[26] ; 4       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[25] ; 4       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[24] ; 4       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[15] ; 3       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[14] ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[17] ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[16] ; 3       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[1]  ; 5       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[2]  ; 4       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[3]  ; 9       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[2]  ; 3       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[1]  ; 7       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[0]  ; 4       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[3]  ; 10      ;
 ; VGA_BLOCK:inst|char_engine:inst|y[9]           ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|y[7]           ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|y[10]          ; 2       ;
@@ -1351,36 +1319,35 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|x[7]             ;
-; 16:1               ; 4 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|mem_out[2]       ;
-; 32:1               ; 30 bits   ; 630 LEs       ; 630 LEs              ; 0 LEs                  ; Yes        ; |MIPS_PipelinedCPU|regfile32x32:inst4|data_out_2[4]                 ;
-; 32:1               ; 30 bits   ; 630 LEs       ; 630 LEs              ; 0 LEs                  ; Yes        ; |MIPS_PipelinedCPU|regfile32x32:inst4|data_out_1[11]                ;
-; 32:1               ; 30 bits   ; 630 LEs       ; 630 LEs              ; 0 LEs                  ; Yes        ; |MIPS_PipelinedCPU|regfile32x32:inst4|data_out_debug[13]            ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|mem_out[3]       ;
-; 14:1               ; 12 bits   ; 108 LEs       ; 0 LEs                ; 108 LEs                ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|row[12]          ;
-; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_digit[2]     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|x[31]            ;
+; 16:1               ; 4 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|mem_out[5]       ;
+; 32:1               ; 30 bits   ; 630 LEs       ; 630 LEs              ; 0 LEs                  ; Yes        ; |MIPS_PipelinedCPU|regfile32x32:inst4|data_out_2[19]                ;
+; 32:1               ; 30 bits   ; 630 LEs       ; 630 LEs              ; 0 LEs                  ; Yes        ; |MIPS_PipelinedCPU|regfile32x32:inst4|data_out_1[15]                ;
+; 32:1               ; 30 bits   ; 630 LEs       ; 630 LEs              ; 0 LEs                  ; Yes        ; |MIPS_PipelinedCPU|regfile32x32:inst4|data_out_debug[20]            ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|mem_out[4]       ;
+; 14:1               ; 12 bits   ; 108 LEs       ; 0 LEs                ; 108 LEs                ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|row[15]          ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_digit[1]     ;
 ; 22:1               ; 3 bits    ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_buffer[2][6] ;
 ; 23:1               ; 2 bits    ; 30 LEs        ; 28 LEs               ; 2 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_buffer[8][2] ;
 ; 24:1               ; 2 bits    ; 32 LEs        ; 30 LEs               ; 2 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_buffer[6][1] ;
-; 24:1               ; 2 bits    ; 32 LEs        ; 30 LEs               ; 2 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_buffer[7][1] ;
-; 24:1               ; 2 bits    ; 32 LEs        ; 30 LEs               ; 2 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_buffer[2][5] ;
-; 26:1               ; 16 bits   ; 272 LEs       ; 256 LEs              ; 16 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|data[19]         ;
+; 24:1               ; 2 bits    ; 32 LEs        ; 30 LEs               ; 2 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_buffer[7][3] ;
+; 24:1               ; 2 bits    ; 32 LEs        ; 30 LEs               ; 2 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_buffer[4][5] ;
+; 26:1               ; 16 bits   ; 272 LEs       ; 256 LEs              ; 16 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|data[18]         ;
 ; 33:1               ; 3 bits    ; 66 LEs        ; 54 LEs               ; 12 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|data[4]          ;
 ; 36:1               ; 10 bits   ; 240 LEs       ; 200 LEs              ; 40 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|data[8]          ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|y[26]            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|y[12]            ;
 ; 3:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|vga_control:inst2|hcount          ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|vga_control:inst2|hcount          ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|ShiftLeft0                       ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|ShiftRight0                      ;
-; 4:1                ; 50 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|ShiftLeft0                       ;
+; 4:1                ; 50 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|ShiftRight0                      ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|ShiftRight0                      ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|ShiftLeft0                       ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|ShiftRight0                      ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 128 LEs              ; 544 LEs                ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Add0                             ;
-; 15:1               ; 12 bits   ; 120 LEs       ; 96 LEs               ; 24 LEs                 ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector17                       ;
-; 15:1               ; 12 bits   ; 120 LEs       ; 96 LEs               ; 24 LEs                 ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector13                       ;
-; 18:1               ; 4 bits    ; 48 LEs        ; 40 LEs               ; 8 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector28                       ;
-; 18:1               ; 3 bits    ; 36 LEs        ; 30 LEs               ; 6 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector1                        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|ShiftLeft0                       ;
+; 68:1               ; 12 bits   ; 540 LEs       ; 144 LEs              ; 396 LEs                ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector15                       ;
+; 68:1               ; 12 bits   ; 540 LEs       ; 144 LEs              ; 396 LEs                ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector20                       ;
+; 71:1               ; 4 bits    ; 188 LEs       ; 56 LEs               ; 132 LEs                ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector2                        ;
+; 71:1               ; 3 bits    ; 141 LEs       ; 42 LEs               ; 99 LEs                 ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector29                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
 
 
@@ -2292,36 +2259,37 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 1230                        ;
 ;     ENA SCLR          ; 108                         ;
 ;     ENA SLD           ; 41                          ;
+;     SCLR SLD          ; 31                          ;
 ;     SLD               ; 10                          ;
-;     plain             ; 441                         ;
-; arriav_lcell_comb     ; 3052                        ;
-;     arith             ; 382                         ;
-;         1 data inputs ; 280                         ;
-;         2 data inputs ; 17                          ;
+;     plain             ; 410                         ;
+; arriav_lcell_comb     ; 3013                        ;
+;     arith             ; 381                         ;
+;         1 data inputs ; 279                         ;
+;         2 data inputs ; 49                          ;
 ;         3 data inputs ; 30                          ;
 ;         4 data inputs ; 14                          ;
-;         5 data inputs ; 41                          ;
-;     extend            ; 16                          ;
-;         7 data inputs ; 16                          ;
-;     normal            ; 2625                        ;
+;         5 data inputs ; 9                           ;
+;     extend            ; 19                          ;
+;         7 data inputs ; 19                          ;
+;     normal            ; 2552                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 37                          ;
-;         2 data inputs ; 114                         ;
-;         3 data inputs ; 294                         ;
-;         4 data inputs ; 241                         ;
-;         5 data inputs ; 274                         ;
-;         6 data inputs ; 1664                        ;
-;     shared            ; 29                          ;
+;         2 data inputs ; 106                         ;
+;         3 data inputs ; 270                         ;
+;         4 data inputs ; 229                         ;
+;         5 data inputs ; 335                         ;
+;         6 data inputs ; 1574                        ;
+;     shared            ; 61                          ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 12                          ;
+;         2 data inputs ; 44                          ;
 ;         3 data inputs ; 16                          ;
 ; arriav_mac            ; 1                           ;
 ; boundary_port         ; 16                          ;
 ; generic_pll           ; 1                           ;
 ; stratixv_ram_block    ; 108                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 10.60                       ;
-; Average LUT depth     ; 4.58                        ;
+; Max LUT depth         ; 10.70                       ;
+; Average LUT depth     ; 4.68                        ;
 +-----------------------+-----------------------------+
 
 
@@ -2330,7 +2298,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:09     ;
+; Top            ; 00:00:13     ;
 +----------------+--------------+
 
 
@@ -2340,79 +2308,83 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sun Nov 04 16:52:30 2018
+    Info: Processing started: Mon Nov 05 14:39:34 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_PipelinedCPU -c MIPS_PipelinedCPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file alu_32bit.v
-    Info (12023): Found entity 1: ALU_32bit File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 3
+    Info (12023): Found entity 1: ALU_32bit File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/ALU_32bit.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file vga_components/vram.v
-    Info (12023): Found entity 1: vram File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vram.v Line: 40
+    Info (12023): Found entity 1: vram File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/vram.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file vga_components/vgaclk_0002.v
-    Info (12023): Found entity 1: vgaclk_0002 File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vgaclk_0002.v Line: 2
+    Info (12023): Found entity 1: vgaclk_0002 File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/vgaclk_0002.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file vga_components/vgaclk.v
-    Info (12023): Found entity 1: vgaclk File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vgaclk.v Line: 8
+    Info (12023): Found entity 1: vgaclk File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/vgaclk.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file vga_components/vga_control.v
-    Info (12023): Found entity 1: vga_control File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vga_control.v Line: 11
+    Info (12023): Found entity 1: vga_control File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/vga_control.v Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file vga_components/vga_block.bdf
     Info (12023): Found entity 1: VGA_BLOCK
 Info (12021): Found 1 design units, including 1 entities, in source file vga_components/color_encoder.v
-    Info (12023): Found entity 1: color_encoder File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/color_encoder.v Line: 5
+    Info (12023): Found entity 1: color_encoder File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/color_encoder.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file vga_components/char_engine.v
-    Info (12023): Found entity 1: char_engine File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 10
+    Info (12023): Found entity 1: char_engine File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file register_file.v
-    Info (12023): Found entity 1: regfile32x32 File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/register_file.v Line: 1
+    Info (12023): Found entity 1: regfile32x32 File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/register_file.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ins_mem.v
-    Info (12023): Found entity 1: ins_mem File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ins_mem.v Line: 39
+    Info (12023): Found entity 1: ins_mem File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/ins_mem.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file data_mem.v
-    Info (12023): Found entity 1: data_mem File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/data_mem.v Line: 39
+    Info (12023): Found entity 1: data_mem File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/data_mem.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file mips_pipelinedcpu.bdf
     Info (12023): Found entity 1: MIPS_PipelinedCPU
 Info (12021): Found 1 design units, including 1 entities, in source file program_counter.v
-    Info (12023): Found entity 1: program_counter File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/program_counter.v Line: 17
+    Info (12023): Found entity 1: program_counter File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/program_counter.v Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file pc_adder.v
-    Info (12023): Found entity 1: pc_adder File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pc_adder.v Line: 1
+    Info (12023): Found entity 1: pc_adder File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/pc_adder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file controller.v
-    Info (12023): Found entity 1: controller File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 5
+    Info (12023): Found entity 1: controller File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file pipeline.v
-    Info (12023): Found entity 1: pipeline File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline.v Line: 1
+    Info (12023): Found entity 1: pipeline File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/pipeline.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file button_clock.bdf
     Info (12023): Found entity 1: button_clock
 Info (12021): Found 1 design units, including 1 entities, in source file instruction_pipeline.v
-    Info (12023): Found entity 1: instruction_pipeline File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/instruction_pipeline.v Line: 1
+    Info (12023): Found entity 1: instruction_pipeline File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/instruction_pipeline.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file regfile_pipeline.v
-    Info (12023): Found entity 1: regfile_pipeline File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/regfile_pipeline.v Line: 1
+    Info (12023): Found entity 1: regfile_pipeline File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/regfile_pipeline.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu_pipeline.v
-    Info (12023): Found entity 1: ALU_pipeline File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_pipeline.v Line: 1
+    Info (12023): Found entity 1: ALU_pipeline File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/ALU_pipeline.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file jump_mux.v
-    Info (12023): Found entity 1: jump_mux File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/jump_mux.v Line: 39
+    Info (12023): Found entity 1: jump_mux File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/jump_mux.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file regdst_mux.v
-    Info (12023): Found entity 1: RegDst_mux File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/RegDst_mux.v Line: 39
+    Info (12023): Found entity 1: RegDst_mux File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/RegDst_mux.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file sign_extend.v
-    Info (12023): Found entity 1: sign_extend File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/sign_extend.v Line: 1
+    Info (12023): Found entity 1: sign_extend File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/sign_extend.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_32.v
-    Info (12023): Found entity 1: mux_32 File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/mux_32.v Line: 39
+    Info (12023): Found entity 1: mux_32 File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/mux_32.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file data_pipeline.v
-    Info (12023): Found entity 1: data_pipeline File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/data_pipeline.v Line: 1
+    Info (12023): Found entity 1: data_pipeline File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/data_pipeline.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pc_plus4.v
-    Info (12023): Found entity 1: pc_plus4 File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pc_plus4.v Line: 1
+    Info (12023): Found entity 1: pc_plus4 File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/pc_plus4.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu_control.v
-    Info (12023): Found entity 1: ALU_control File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_control.v Line: 1
+    Info (12023): Found entity 1: ALU_control File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/ALU_control.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pipeline_6bit.v
-    Info (12023): Found entity 1: pipeline_6bit File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 1
+    Info (12023): Found entity 1: pipeline_6bit File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/pipeline_6bit.v Line: 1
 Warning (12019): Can't analyze file -- file output_files/pipeline_1bit.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file pipeline_1bit.v
-    Info (12023): Found entity 1: pipeline_1bit File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_1bit.v Line: 1
+    Info (12023): Found entity 1: pipeline_1bit File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/pipeline_1bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file hazard_detection.v
+    Info (12023): Found entity 1: hazard_detection File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/hazard_detection.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file data_forwarding.v
+    Info (12023): Found entity 1: data_forwarding File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/data_forwarding.v Line: 1
 Info (12127): Elaborating entity "MIPS_PipelinedCPU" for the top level hierarchy
 Info (12128): Elaborating entity "VGA_BLOCK" for hierarchy "VGA_BLOCK:inst"
 Info (12128): Elaborating entity "vga_control" for hierarchy "VGA_BLOCK:inst|vga_control:inst2"
-Warning (10230): Verilog HDL assignment warning at vga_control.v(63): truncated value with size 32 to match size of target (19) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vga_control.v Line: 63
+Warning (10230): Verilog HDL assignment warning at vga_control.v(63): truncated value with size 32 to match size of target (19) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/vga_control.v Line: 63
 Info (12128): Elaborating entity "vgaclk" for hierarchy "VGA_BLOCK:inst|vgaclk:inst4"
-Info (12128): Elaborating entity "vgaclk_0002" for hierarchy "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vgaclk.v Line: 19
-Info (12128): Elaborating entity "altera_pll" for hierarchy "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vgaclk_0002.v Line: 85
+Info (12128): Elaborating entity "vgaclk_0002" for hierarchy "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst" File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/vgaclk.v Line: 19
+Info (12128): Elaborating entity "altera_pll" for hierarchy "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/vgaclk_0002.v Line: 85
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
-Info (12130): Elaborated megafunction instantiation "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vgaclk_0002.v Line: 85
-Info (12133): Instantiated megafunction "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vgaclk_0002.v Line: 85
+Info (12130): Elaborated megafunction instantiation "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/vgaclk_0002.v Line: 85
+Info (12133): Instantiated megafunction "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/vgaclk_0002.v Line: 85
     Info (12134): Parameter "fractional_vco_multiplier" = "false"
     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
     Info (12134): Parameter "operation_mode" = "direct"
@@ -2474,50 +2446,50 @@ Info (12133): Instantiated megafunction "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
 Info (12128): Elaborating entity "char_engine" for hierarchy "VGA_BLOCK:inst|char_engine:inst"
-Warning (10230): Verilog HDL assignment warning at char_engine.v(273): truncated value with size 32 to match size of target (6) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 273
-Warning (10230): Verilog HDL assignment warning at char_engine.v(274): truncated value with size 32 to match size of target (6) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 274
-Warning (10230): Verilog HDL assignment warning at char_engine.v(275): truncated value with size 32 to match size of target (6) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 275
-Warning (10230): Verilog HDL assignment warning at char_engine.v(276): truncated value with size 32 to match size of target (6) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 276
-Warning (10230): Verilog HDL assignment warning at char_engine.v(278): truncated value with size 32 to match size of target (5) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 278
-Warning (10230): Verilog HDL assignment warning at char_engine.v(288): truncated value with size 88 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 288
-Warning (10230): Verilog HDL assignment warning at char_engine.v(300): truncated value with size 88 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 300
-Warning (10230): Verilog HDL assignment warning at char_engine.v(312): truncated value with size 72 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 312
-Warning (10230): Verilog HDL assignment warning at char_engine.v(325): truncated value with size 80 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 325
-Warning (10230): Verilog HDL assignment warning at char_engine.v(338): truncated value with size 56 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 338
-Warning (10230): Verilog HDL assignment warning at char_engine.v(361): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 361
-Warning (10230): Verilog HDL assignment warning at char_engine.v(372): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 372
-Warning (10230): Verilog HDL assignment warning at char_engine.v(383): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 383
-Warning (10230): Verilog HDL assignment warning at char_engine.v(394): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 394
-Warning (10230): Verilog HDL assignment warning at char_engine.v(405): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 405
-Warning (10230): Verilog HDL assignment warning at char_engine.v(416): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 416
-Warning (10230): Verilog HDL assignment warning at char_engine.v(427): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 427
-Warning (10230): Verilog HDL assignment warning at char_engine.v(438): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 438
-Warning (10230): Verilog HDL assignment warning at char_engine.v(449): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 449
-Warning (10230): Verilog HDL assignment warning at char_engine.v(460): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 460
-Warning (10230): Verilog HDL assignment warning at char_engine.v(471): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 471
-Warning (10230): Verilog HDL assignment warning at char_engine.v(482): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 482
-Warning (10230): Verilog HDL assignment warning at char_engine.v(493): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 493
-Warning (10230): Verilog HDL assignment warning at char_engine.v(504): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 504
-Warning (10230): Verilog HDL assignment warning at char_engine.v(515): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 515
-Warning (10230): Verilog HDL assignment warning at char_engine.v(526): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 526
-Warning (10230): Verilog HDL assignment warning at char_engine.v(583): truncated value with size 72 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 583
-Warning (10230): Verilog HDL assignment warning at char_engine.v(595): truncated value with size 97 to match size of target (8) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 595
-Warning (10230): Verilog HDL assignment warning at char_engine.v(713): truncated value with size 32 to match size of target (5) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 713
-Warning (10230): Verilog HDL assignment warning at char_engine.v(720): truncated value with size 32 to match size of target (5) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 720
-Warning (10762): Verilog HDL Case Statement warning at char_engine.v(281): can't check case statement for completeness because the case expression has too many possible states File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 281
-Warning (10230): Verilog HDL assignment warning at char_engine.v(198): truncated value with size 32 to match size of target (16) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 198
-Warning (10230): Verilog HDL assignment warning at char_engine.v(230): truncated value with size 8 to match size of target (6) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 230
-Warning (10230): Verilog HDL assignment warning at char_engine.v(235): truncated value with size 8 to match size of target (6) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 235
-Warning (10230): Verilog HDL assignment warning at char_engine.v(240): truncated value with size 8 to match size of target (6) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 240
-Warning (10230): Verilog HDL assignment warning at char_engine.v(245): truncated value with size 8 to match size of target (6) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 245
-Warning (10230): Verilog HDL assignment warning at char_engine.v(254): truncated value with size 8 to match size of target (6) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 254
-Warning (10230): Verilog HDL assignment warning at char_engine.v(259): truncated value with size 8 to match size of target (6) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 259
-Warning (10230): Verilog HDL assignment warning at char_engine.v(264): truncated value with size 8 to match size of target (6) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 264
+Warning (10230): Verilog HDL assignment warning at char_engine.v(273): truncated value with size 32 to match size of target (6) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 273
+Warning (10230): Verilog HDL assignment warning at char_engine.v(274): truncated value with size 32 to match size of target (6) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 274
+Warning (10230): Verilog HDL assignment warning at char_engine.v(275): truncated value with size 32 to match size of target (6) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 275
+Warning (10230): Verilog HDL assignment warning at char_engine.v(276): truncated value with size 32 to match size of target (6) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 276
+Warning (10230): Verilog HDL assignment warning at char_engine.v(278): truncated value with size 32 to match size of target (5) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 278
+Warning (10230): Verilog HDL assignment warning at char_engine.v(288): truncated value with size 88 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 288
+Warning (10230): Verilog HDL assignment warning at char_engine.v(300): truncated value with size 88 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 300
+Warning (10230): Verilog HDL assignment warning at char_engine.v(312): truncated value with size 72 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 312
+Warning (10230): Verilog HDL assignment warning at char_engine.v(325): truncated value with size 80 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 325
+Warning (10230): Verilog HDL assignment warning at char_engine.v(338): truncated value with size 56 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 338
+Warning (10230): Verilog HDL assignment warning at char_engine.v(361): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 361
+Warning (10230): Verilog HDL assignment warning at char_engine.v(372): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 372
+Warning (10230): Verilog HDL assignment warning at char_engine.v(383): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 383
+Warning (10230): Verilog HDL assignment warning at char_engine.v(394): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 394
+Warning (10230): Verilog HDL assignment warning at char_engine.v(405): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 405
+Warning (10230): Verilog HDL assignment warning at char_engine.v(416): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 416
+Warning (10230): Verilog HDL assignment warning at char_engine.v(427): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 427
+Warning (10230): Verilog HDL assignment warning at char_engine.v(438): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 438
+Warning (10230): Verilog HDL assignment warning at char_engine.v(449): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 449
+Warning (10230): Verilog HDL assignment warning at char_engine.v(460): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 460
+Warning (10230): Verilog HDL assignment warning at char_engine.v(471): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 471
+Warning (10230): Verilog HDL assignment warning at char_engine.v(482): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 482
+Warning (10230): Verilog HDL assignment warning at char_engine.v(493): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 493
+Warning (10230): Verilog HDL assignment warning at char_engine.v(504): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 504
+Warning (10230): Verilog HDL assignment warning at char_engine.v(515): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 515
+Warning (10230): Verilog HDL assignment warning at char_engine.v(526): truncated value with size 113 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 526
+Warning (10230): Verilog HDL assignment warning at char_engine.v(583): truncated value with size 72 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 583
+Warning (10230): Verilog HDL assignment warning at char_engine.v(595): truncated value with size 97 to match size of target (8) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 595
+Warning (10230): Verilog HDL assignment warning at char_engine.v(713): truncated value with size 32 to match size of target (5) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 713
+Warning (10230): Verilog HDL assignment warning at char_engine.v(720): truncated value with size 32 to match size of target (5) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 720
+Warning (10762): Verilog HDL Case Statement warning at char_engine.v(281): can't check case statement for completeness because the case expression has too many possible states File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 281
+Warning (10230): Verilog HDL assignment warning at char_engine.v(198): truncated value with size 32 to match size of target (16) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 198
+Warning (10230): Verilog HDL assignment warning at char_engine.v(230): truncated value with size 8 to match size of target (6) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 230
+Warning (10230): Verilog HDL assignment warning at char_engine.v(235): truncated value with size 8 to match size of target (6) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 235
+Warning (10230): Verilog HDL assignment warning at char_engine.v(240): truncated value with size 8 to match size of target (6) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 240
+Warning (10230): Verilog HDL assignment warning at char_engine.v(245): truncated value with size 8 to match size of target (6) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 245
+Warning (10230): Verilog HDL assignment warning at char_engine.v(254): truncated value with size 8 to match size of target (6) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 254
+Warning (10230): Verilog HDL assignment warning at char_engine.v(259): truncated value with size 8 to match size of target (6) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 259
+Warning (10230): Verilog HDL assignment warning at char_engine.v(264): truncated value with size 8 to match size of target (6) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/char_engine.v Line: 264
 Info (12128): Elaborating entity "color_encoder" for hierarchy "VGA_BLOCK:inst|color_encoder:inst1"
 Info (12128): Elaborating entity "vram" for hierarchy "VGA_BLOCK:inst|vram:inst3"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vram.v Line: 98
-Info (12130): Elaborated megafunction instantiation "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vram.v Line: 98
-Info (12133): Instantiated megafunction "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vram.v Line: 98
+Info (12128): Elaborating entity "altsyncram" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component" File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/vram.v Line: 98
+Info (12130): Elaborated megafunction instantiation "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component" File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/vram.v Line: 98
+Info (12133): Instantiated megafunction "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/VGA_Components/vram.v Line: 98
     Info (12134): Parameter "address_reg_b" = "CLOCK0"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
@@ -2545,102 +2517,64 @@ Info (12133): Instantiated megafunction "VGA_BLOCK:inst|vram:inst3|altsyncram:al
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1tn2.tdf
-    Info (12023): Found entity 1: altsyncram_1tn2 File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_1tn2.tdf Line: 35
+    Info (12023): Found entity 1: altsyncram_1tn2 File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/altsyncram_1tn2.tdf Line: 35
 Info (12128): Elaborating entity "altsyncram_1tn2" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_3na.tdf
-    Info (12023): Found entity 1: decode_3na File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/decode_3na.tdf Line: 22
-Info (12128): Elaborating entity "decode_3na" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|decode_3na:decode2" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_1tn2.tdf Line: 50
+    Info (12023): Found entity 1: decode_3na File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/decode_3na.tdf Line: 22
+Info (12128): Elaborating entity "decode_3na" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|decode_3na:decode2" File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/altsyncram_1tn2.tdf Line: 50
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_s2a.tdf
-    Info (12023): Found entity 1: decode_s2a File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/decode_s2a.tdf Line: 22
-Info (12128): Elaborating entity "decode_s2a" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|decode_s2a:rden_decode_a" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_1tn2.tdf Line: 52
+    Info (12023): Found entity 1: decode_s2a File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/decode_s2a.tdf Line: 22
+Info (12128): Elaborating entity "decode_s2a" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|decode_s2a:rden_decode_a" File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/altsyncram_1tn2.tdf Line: 52
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_chb.tdf
-    Info (12023): Found entity 1: mux_chb File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/mux_chb.tdf Line: 22
-Info (12128): Elaborating entity "mux_chb" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|mux_chb:mux4" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_1tn2.tdf Line: 54
+    Info (12023): Found entity 1: mux_chb File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/mux_chb.tdf Line: 22
+Info (12128): Elaborating entity "mux_chb" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|mux_chb:mux4" File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/altsyncram_1tn2.tdf Line: 54
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_jhb.tdf
-    Info (12023): Found entity 1: mux_jhb File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/mux_jhb.tdf Line: 22
-Info (12128): Elaborating entity "mux_jhb" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|mux_jhb:mux5" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_1tn2.tdf Line: 55
+    Info (12023): Found entity 1: mux_jhb File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/mux_jhb.tdf Line: 22
+Info (12128): Elaborating entity "mux_jhb" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|mux_jhb:mux5" File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/altsyncram_1tn2.tdf Line: 55
 Info (12128): Elaborating entity "program_counter" for hierarchy "program_counter:inst1"
 Info (12128): Elaborating entity "mux_32" for hierarchy "mux_32:inst12"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "mux_32:inst12|lpm_mux:LPM_MUX_component" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/mux_32.v Line: 68
-Info (12130): Elaborated megafunction instantiation "mux_32:inst12|lpm_mux:LPM_MUX_component" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/mux_32.v Line: 68
-Info (12133): Instantiated megafunction "mux_32:inst12|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/mux_32.v Line: 68
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "mux_32:inst12|lpm_mux:LPM_MUX_component" File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/mux_32.v Line: 68
+Info (12130): Elaborated megafunction instantiation "mux_32:inst12|lpm_mux:LPM_MUX_component" File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/mux_32.v Line: 68
+Info (12133): Instantiated megafunction "mux_32:inst12|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/mux_32.v Line: 68
     Info (12134): Parameter "lpm_size" = "2"
     Info (12134): Parameter "lpm_type" = "LPM_MUX"
     Info (12134): Parameter "lpm_width" = "32"
     Info (12134): Parameter "lpm_widths" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_dlc.tdf
-    Info (12023): Found entity 1: mux_dlc File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/mux_dlc.tdf Line: 22
+    Info (12023): Found entity 1: mux_dlc File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/mux_dlc.tdf Line: 22
 Info (12128): Elaborating entity "mux_dlc" for hierarchy "mux_32:inst12|lpm_mux:LPM_MUX_component|mux_dlc:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "ALU_pipeline" for hierarchy "ALU_pipeline:inst23"
 Info (12128): Elaborating entity "ALU_32bit" for hierarchy "ALU_32bit:inst7"
-Warning (10235): Verilog HDL Always Construct warning at ALU_32bit.v(39): variable "shamt" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 39
-Warning (10235): Verilog HDL Always Construct warning at ALU_32bit.v(41): variable "shamt" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 41
-Warning (10235): Verilog HDL Always Construct warning at ALU_32bit.v(43): variable "shamt" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 43
-Warning (10235): Verilog HDL Always Construct warning at ALU_32bit.v(45): variable "ALU_result" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 45
-Warning (10270): Verilog HDL Case Statement warning at ALU_32bit.v(19): incomplete case statement has no default case item File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 19
-Warning (10240): Verilog HDL Always Construct warning at ALU_32bit.v(17): inferring latch(es) for variable "ALU_result", which holds its previous value in one or more paths through the always construct File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Warning (10034): Output port "zero" at ALU_32bit.v(13) has no driver File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 13
-Info (10041): Inferred latch for "ALU_result[0]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[1]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[2]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[3]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[4]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[5]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[6]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[7]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[8]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[9]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[10]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[11]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[12]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[13]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[14]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[15]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[16]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[17]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[18]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[19]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[20]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[21]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[22]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[23]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[24]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[25]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[26]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[27]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[28]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[29]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[30]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-Info (10041): Inferred latch for "ALU_result[31]" at ALU_32bit.v(17) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
+Warning (10034): Output port "zero" at ALU_32bit.v(13) has no driver File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/ALU_32bit.v Line: 13
 Info (12128): Elaborating entity "pipeline_6bit" for hierarchy "pipeline_6bit:inst11"
 Info (12128): Elaborating entity "controller" for hierarchy "controller:inst17"
-Warning (10036): Verilog HDL or VHDL warning at controller.v(29): object "shamt" assigned a value but never read File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 29
-Warning (10240): Verilog HDL Always Construct warning at controller.v(35): inferring latch(es) for variable "write_back", which holds its previous value in one or more paths through the always construct File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Warning (10240): Verilog HDL Always Construct warning at controller.v(35): inferring latch(es) for variable "memory", which holds its previous value in one or more paths through the always construct File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Warning (10240): Verilog HDL Always Construct warning at controller.v(35): inferring latch(es) for variable "execution", which holds its previous value in one or more paths through the always construct File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Warning (10240): Verilog HDL Always Construct warning at controller.v(35): inferring latch(es) for variable "ALUop", which holds its previous value in one or more paths through the always construct File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Warning (10240): Verilog HDL Always Construct warning at controller.v(35): inferring latch(es) for variable "jump_register", which holds its previous value in one or more paths through the always construct File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Info (10041): Inferred latch for "jump_register" at controller.v(35) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Info (10041): Inferred latch for "ALUop[0]" at controller.v(35) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Info (10041): Inferred latch for "ALUop[1]" at controller.v(35) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Info (10041): Inferred latch for "ALUop[2]" at controller.v(35) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Info (10041): Inferred latch for "ALUop[3]" at controller.v(35) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Info (10041): Inferred latch for "ALUop[4]" at controller.v(35) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Info (10041): Inferred latch for "ALUop[5]" at controller.v(35) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Info (10041): Inferred latch for "execution[0]" at controller.v(35) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Info (10041): Inferred latch for "execution[1]" at controller.v(35) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Info (10041): Inferred latch for "execution[2]" at controller.v(35) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Info (10041): Inferred latch for "execution[3]" at controller.v(35) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Info (10041): Inferred latch for "memory[0]" at controller.v(35) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Info (10041): Inferred latch for "memory[1]" at controller.v(35) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Info (10041): Inferred latch for "memory[2]" at controller.v(35) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Info (10041): Inferred latch for "write_back[0]" at controller.v(35) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-Info (10041): Inferred latch for "write_back[1]" at controller.v(35) File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
+Warning (10036): Verilog HDL or VHDL warning at controller.v(29): object "shamt" assigned a value but never read File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 29
+Warning (10240): Verilog HDL Always Construct warning at controller.v(35): inferring latch(es) for variable "write_back", which holds its previous value in one or more paths through the always construct File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Warning (10240): Verilog HDL Always Construct warning at controller.v(35): inferring latch(es) for variable "memory", which holds its previous value in one or more paths through the always construct File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Warning (10240): Verilog HDL Always Construct warning at controller.v(35): inferring latch(es) for variable "execution", which holds its previous value in one or more paths through the always construct File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Warning (10240): Verilog HDL Always Construct warning at controller.v(35): inferring latch(es) for variable "ALUop", which holds its previous value in one or more paths through the always construct File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Warning (10240): Verilog HDL Always Construct warning at controller.v(35): inferring latch(es) for variable "jump_register", which holds its previous value in one or more paths through the always construct File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Info (10041): Inferred latch for "jump_register" at controller.v(35) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Info (10041): Inferred latch for "ALUop[0]" at controller.v(35) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Info (10041): Inferred latch for "ALUop[1]" at controller.v(35) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Info (10041): Inferred latch for "ALUop[2]" at controller.v(35) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Info (10041): Inferred latch for "ALUop[3]" at controller.v(35) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Info (10041): Inferred latch for "ALUop[4]" at controller.v(35) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Info (10041): Inferred latch for "ALUop[5]" at controller.v(35) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Info (10041): Inferred latch for "execution[0]" at controller.v(35) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Info (10041): Inferred latch for "execution[1]" at controller.v(35) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Info (10041): Inferred latch for "execution[2]" at controller.v(35) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Info (10041): Inferred latch for "execution[3]" at controller.v(35) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Info (10041): Inferred latch for "memory[0]" at controller.v(35) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Info (10041): Inferred latch for "memory[1]" at controller.v(35) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Info (10041): Inferred latch for "memory[2]" at controller.v(35) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Info (10041): Inferred latch for "write_back[0]" at controller.v(35) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+Info (10041): Inferred latch for "write_back[1]" at controller.v(35) File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
 Info (12128): Elaborating entity "instruction_pipeline" for hierarchy "instruction_pipeline:inst13"
 Info (12128): Elaborating entity "ins_mem" for hierarchy "ins_mem:inst3"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "ins_mem:inst3|altsyncram:altsyncram_component" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ins_mem.v Line: 99
-Info (12130): Elaborated megafunction instantiation "ins_mem:inst3|altsyncram:altsyncram_component" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ins_mem.v Line: 99
-Info (12133): Instantiated megafunction "ins_mem:inst3|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ins_mem.v Line: 99
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ins_mem:inst3|altsyncram:altsyncram_component" File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/ins_mem.v Line: 99
+Info (12130): Elaborated megafunction instantiation "ins_mem:inst3|altsyncram:altsyncram_component" File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/ins_mem.v Line: 99
+Info (12133): Instantiated megafunction "ins_mem:inst3|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/ins_mem.v Line: 99
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
@@ -2668,7 +2602,7 @@ Info (12133): Instantiated megafunction "ins_mem:inst3|altsyncram:altsyncram_com
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_hbl2.tdf
-    Info (12023): Found entity 1: altsyncram_hbl2 File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_hbl2.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_hbl2 File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/altsyncram_hbl2.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_hbl2" for hierarchy "ins_mem:inst3|altsyncram:altsyncram_component|altsyncram_hbl2:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "pc_plus4" for hierarchy "pc_plus4:inst5"
 Info (12128): Elaborating entity "regfile_pipeline" for hierarchy "regfile_pipeline:inst22"
@@ -2691,29 +2625,29 @@ Info (12133): Instantiated megafunction "regfile32x32:inst4|altsyncram:regfile[0
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_u2j1.tdf
-    Info (12023): Found entity 1: altsyncram_u2j1 File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_u2j1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_u2j1 File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/altsyncram_u2j1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_u2j1" for hierarchy "regfile32x32:inst4|altsyncram:regfile[0][2]__1|altsyncram_u2j1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "data_pipeline" for hierarchy "data_pipeline:inst24"
-Warning (10034): Output port "data_out" at data_pipeline.v(11) has no driver File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/data_pipeline.v Line: 11
+Warning (10034): Output port "data_out" at data_pipeline.v(11) has no driver File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/data_pipeline.v Line: 11
 Info (12128): Elaborating entity "sign_extend" for hierarchy "sign_extend:inst6"
 Info (12128): Elaborating entity "pc_adder" for hierarchy "pc_adder:inst10"
 Info (12128): Elaborating entity "RegDst_mux" for hierarchy "RegDst_mux:inst200"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "RegDst_mux:inst200|lpm_mux:LPM_MUX_component" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/RegDst_mux.v Line: 68
-Info (12130): Elaborated megafunction instantiation "RegDst_mux:inst200|lpm_mux:LPM_MUX_component" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/RegDst_mux.v Line: 68
-Info (12133): Instantiated megafunction "RegDst_mux:inst200|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/RegDst_mux.v Line: 68
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "RegDst_mux:inst200|lpm_mux:LPM_MUX_component" File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/RegDst_mux.v Line: 68
+Info (12130): Elaborated megafunction instantiation "RegDst_mux:inst200|lpm_mux:LPM_MUX_component" File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/RegDst_mux.v Line: 68
+Info (12133): Instantiated megafunction "RegDst_mux:inst200|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/RegDst_mux.v Line: 68
     Info (12134): Parameter "lpm_size" = "2"
     Info (12134): Parameter "lpm_type" = "LPM_MUX"
     Info (12134): Parameter "lpm_width" = "5"
     Info (12134): Parameter "lpm_widths" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tjc.tdf
-    Info (12023): Found entity 1: mux_tjc File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/mux_tjc.tdf Line: 22
+    Info (12023): Found entity 1: mux_tjc File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/mux_tjc.tdf Line: 22
 Info (12128): Elaborating entity "mux_tjc" for hierarchy "RegDst_mux:inst200|lpm_mux:LPM_MUX_component|mux_tjc:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "jump_mux" for hierarchy "jump_mux:inst19"
 Info (12128): Elaborating entity "pipeline_1bit" for hierarchy "pipeline_1bit:inst16"
 Info (12128): Elaborating entity "data_mem" for hierarchy "data_mem:inst2"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "data_mem:inst2|altsyncram:altsyncram_component" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/data_mem.v Line: 99
-Info (12130): Elaborated megafunction instantiation "data_mem:inst2|altsyncram:altsyncram_component" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/data_mem.v Line: 99
-Info (12133): Instantiated megafunction "data_mem:inst2|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/data_mem.v Line: 99
+Info (12128): Elaborating entity "altsyncram" for hierarchy "data_mem:inst2|altsyncram:altsyncram_component" File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/data_mem.v Line: 99
+Info (12130): Elaborated megafunction instantiation "data_mem:inst2|altsyncram:altsyncram_component" File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/data_mem.v Line: 99
+Info (12133): Instantiated megafunction "data_mem:inst2|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/data_mem.v Line: 99
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
@@ -2741,90 +2675,26 @@ Info (12133): Instantiated megafunction "data_mem:inst2|altsyncram:altsyncram_co
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_fcl2.tdf
-    Info (12023): Found entity 1: altsyncram_fcl2 File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_fcl2.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_fcl2 File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/db/altsyncram_fcl2.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_fcl2" for hierarchy "data_mem:inst2|altsyncram:altsyncram_component|altsyncram_fcl2:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Warning (13012): Latch controller:inst17|ALUop[0] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[0] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[26] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[0] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[4] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch controller:inst17|ALUop[4] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[4] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[26] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[4] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[16] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[20] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[8] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[12] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[24] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[28] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch controller:inst17|ALUop[1] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[1] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[26] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[1] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[9] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch controller:inst17|ALUop[5] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[5] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[26] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[5] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[13] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[17] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[25] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[21] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[29] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch controller:inst17|ALUop[2] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[2] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[26] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[2] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[10] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[6] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[14] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[18] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[26] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[22] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[30] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch controller:inst17|ALUop[3] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[26] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[3] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[11] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[7] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[15] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[19] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[27] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[23] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
-Warning (13012): Latch ALU_32bit:inst7|ALU_result[31] has unsafe behavior File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pipeline_6bit:inst11|out[3] File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/pipeline_6bit.v Line: 10
+Warning (13012): Latch controller:inst17|ALUop[0] has unsafe behavior File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[0] File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[26] File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
+Warning (13012): Latch controller:inst17|ALUop[4] has unsafe behavior File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[4] File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[26] File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
+Warning (13012): Latch controller:inst17|ALUop[1] has unsafe behavior File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[1] File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[26] File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
+Warning (13012): Latch controller:inst17|ALUop[5] has unsafe behavior File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[5] File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[26] File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
+Warning (13012): Latch controller:inst17|ALUop[2] has unsafe behavior File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[2] File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[26] File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
+Warning (13012): Latch controller:inst17|ALUop[3] has unsafe behavior File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/controller.v Line: 35
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[3] File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal instruction_pipeline:inst13|ins_out[26] File: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/instruction_pipeline.v Line: 12
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "VGA_B[3]" is stuck at GND
     Warning (13410): Pin "VGA_B[2]" is stuck at GND
@@ -3068,28 +2938,28 @@ Warning (20013): Ignored 231 assignments for entity "DE0_CV" -- entity does not 
     Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity DE0_CV -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity DE0_CV -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE0_CV -section_id Top was ignored
-Info (144001): Generated suppressed messages file C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/output_files/MIPS_PipelinedCPU.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/output_files/MIPS_PipelinedCPU.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 3 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altera_pll.v Line: 748
     Info: Must be connected
-Info (21057): Implemented 4479 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4441 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 4353 logic cells
+    Info (21061): Implemented 4315 logic cells
     Info (21064): Implemented 108 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 380 warnings
-    Info: Peak virtual memory: 4910 megabytes
-    Info: Processing ended: Sun Nov 04 16:52:50 2018
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:31
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 310 warnings
+    Info: Peak virtual memory: 4914 megabytes
+    Info: Processing ended: Mon Nov 05 14:40:02 2018
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:41
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/output_files/MIPS_PipelinedCPU.map.smsg.
+The suppressed messages can be found in C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/output_files/MIPS_PipelinedCPU.map.smsg.
 
 
