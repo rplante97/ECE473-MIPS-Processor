@@ -6,6 +6,6 @@ module pc_plus4(
 
 );
 
-	assign pc_next = pc_current + 4;
+	assign pc_next = pc_current + 1;
 
 endmodule 
