@@ -12,6 +12,7 @@ module regfile_pipeline(
 	input [31:0] sign_ext,
 	input [4:0] ins1,
 	input [4:0] ins2,
+	input [31:0] full_ins,
 	
 	output reg [1:0] wb_out,
 	output reg [2:0] mem_out,
@@ -22,7 +23,8 @@ module regfile_pipeline(
 	output reg [31:0] data_out2,
 	output reg [31:0] sign_ext_out,
 	output reg [4:0] ins1_out,
-	output reg [4:0] ins2_out
+	output reg [4:0] ins2_out,
+	output reg [31:0] full_ins_out
 	
 );
 
@@ -36,6 +38,7 @@ always @(posedge clk) begin
 	wb_out <= wb;
 	mem_out <= mem;
 	exec_out <= exec;
+	full_ins_out <= full_ins;
 end
 
 endmodule 

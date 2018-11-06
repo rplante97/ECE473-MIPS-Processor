@@ -40,6 +40,8 @@ always begin
 			ALU_result = (data2 >> shamt);
 		3: //SRA
 			ALU_result = (data2 >> shamt); //Need to account for sign shifting later!!!
+		8: //JR (do nothing)
+			ALU_result = ALU_result;
 		default:
 			ALU_result = 0;
 		
