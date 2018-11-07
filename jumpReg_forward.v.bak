@@ -1,0 +1,14 @@
+module jumpReg_forward(
+
+	input [31:0] currentRegVal,
+	input [4:0] currentRegAddr,
+	input [31:0] exRegVal,
+	input [4:0] exRegAddr,
+	input [31:0] memRegVal,
+	input [4:0] memRegAddr,
+	
+	output reg [31:0] data
+
+);
+
+endmodule 
