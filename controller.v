@@ -45,6 +45,7 @@ module controller(
 		end
 		if (funct_code == 8) begin//JR
 			jump_register <= 1;
+			execution <= 4'b0001;
 			write_back <= 0;
 		end
 	end

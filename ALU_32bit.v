@@ -40,10 +40,10 @@ always begin
 			ALU_result = (data2 >> shamt);
 		3: //SRA
 			ALU_result = (data2 >> shamt); //Need to account for sign shifting later!!!
-		8: //JR (do nothing)
-			ALU_result = ALU_result;
+		8: //JR (forward the value in the selected register)
+			ALU_result = data1;
 		default:
-			ALU_result = 0;
+			ALU_result = data1;
 		
 	endcase 
 		
