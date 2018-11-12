@@ -39,7 +39,7 @@ always begin
 		2: //SRL
 			ALU_result = (data2 >> shamt);
 		3: //SRA
-			ALU_result = (data2 >> shamt); //Need to account for sign shifting later!!!
+			ALU_result = ($signed(data2) >>> shamt); //Need to account for sign shifting later!!!
 		8: //JR (forward the value in the selected register)
 			ALU_result = data1;
 		default:

@@ -1,5 +1,5 @@
 Flow report for MIPS_PipelinedCPU
-Tue Nov 06 20:14:37 2018
+Wed Nov 07 14:26:53 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Nov 06 20:14:37 2018       ;
+; Flow Status                     ; Successful - Wed Nov 07 14:26:53 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; MIPS_PipelinedCPU                           ;
 ; Top-level Entity Name           ; MIPS_PipelinedCPU                           ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 2,406 / 18,480 ( 13 % )                     ;
-; Total registers                 ; 2365                                        ;
+; Logic utilization (in ALMs)     ; 2,409 / 18,480 ( 13 % )                     ;
+; Total registers                 ; 2312                                        ;
 ; Total pins                      ; 16 / 224 ( 7 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 311,488 / 3,153,920 ( 10 % )                ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/06/2018 20:12:46 ;
+; Start date & time ; 11/07/2018 14:23:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIPS_PipelinedCPU   ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 53447160273555.154155316615400         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 264390077456926.154161863108696        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)                     ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -107,12 +107,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 4915 MB             ; 00:00:30                           ;
-; Fitter               ; 00:01:11     ; 1.2                     ; 6533 MB             ; 00:02:49                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4879 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:09     ; 2.3                     ; 5211 MB             ; 00:00:20                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4876 MB             ; 00:00:02                           ;
-; Total                ; 00:01:46     ; --                      ; --                  ; 00:03:45                           ;
+; Analysis & Synthesis ; 00:00:30     ; 1.0                     ; 4912 MB             ; 00:00:44                           ;
+; Fitter               ; 00:01:56     ; 1.2                     ; 6507 MB             ; 00:05:02                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 4876 MB             ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:17     ; 2.3                     ; 5211 MB             ; 00:00:35                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4874 MB             ; 00:00:04                           ;
+; Total                ; 00:02:54     ; --                      ; --                  ; 00:06:32                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -121,11 +121,11 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-I3HP5OM  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-I3HP5OM  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-I3HP5OM  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-I3HP5OM  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-I3HP5OM  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; Ryan-PC          ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; Ryan-PC          ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; Ryan-PC          ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; Ryan-PC          ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; Ryan-PC          ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
