@@ -1,5 +1,5 @@
 Assembler report for MIPS_PipelinedCPU
-Wed Nov 07 14:26:29 2018
+Mon Nov 12 17:32:35 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/output_files/MIPS_PipelinedCPU.sof
+  5. Assembler Device Options: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/output_files/MIPS_PipelinedCPU.sof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Nov 07 14:26:29 2018 ;
+; Assembler Status      ; Successful - Mon Nov 12 17:32:35 2018 ;
 ; Revision Name         ; MIPS_PipelinedCPU                     ;
 ; Top-level Entity Name ; MIPS_PipelinedCPU                     ;
 ; Family                ; Cyclone V                             ;
@@ -52,23 +52,23 @@ refer to the applicable agreement for further details.
 +--------+---------+---------------+
 
 
-+--------------------------------------------------------------------------------+
-; Assembler Generated Files                                                      ;
-+--------------------------------------------------------------------------------+
-; File Name                                                                      ;
-+--------------------------------------------------------------------------------+
-; C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/output_files/MIPS_PipelinedCPU.sof ;
-+--------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                             ;
++---------------------------------------------------------------------------------------+
+; File Name                                                                             ;
++---------------------------------------------------------------------------------------+
+; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/output_files/MIPS_PipelinedCPU.sof ;
++---------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Ryan/Desktop/ECE473-MIPS-Processor/output_files/MIPS_PipelinedCPU.sof ;
-+----------------+-----------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                 ;
-+----------------+-----------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x018B7238                                                                              ;
-; Checksum       ; 0x018B7238                                                                              ;
-+----------------+-----------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/output_files/MIPS_PipelinedCPU.sof ;
++----------------+------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                        ;
++----------------+------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x016739FD                                                                                     ;
+; Checksum       ; 0x016739FD                                                                                     ;
++----------------+------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -77,14 +77,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Nov 07 14:26:22 2018
+    Info: Processing started: Mon Nov 12 17:32:31 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off MIPS_PipelinedCPU -c MIPS_PipelinedCPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4876 megabytes
-    Info: Processing ended: Wed Nov 07 14:26:29 2018
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Peak virtual memory: 4865 megabytes
+    Info: Processing ended: Mon Nov 12 17:32:35 2018
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 
