@@ -13576,6 +13576,75 @@ wren_a => ram_block1a1.PORTAWE
 wren_a => ram_block1a1.ENA0
 
 
+|MIPS_PipelinedCPU|RegDst_mux:inst200
+data0x[0] => sub_wire1[0].IN1
+data0x[1] => sub_wire1[1].IN1
+data0x[2] => sub_wire1[2].IN1
+data0x[3] => sub_wire1[3].IN1
+data0x[4] => sub_wire1[4].IN1
+data1x[0] => sub_wire1[5].IN1
+data1x[1] => sub_wire1[6].IN1
+data1x[2] => sub_wire1[7].IN1
+data1x[3] => sub_wire1[8].IN1
+data1x[4] => sub_wire1[9].IN1
+sel => sub_wire4.IN1
+result[0] <= lpm_mux:LPM_MUX_component.result
+result[1] <= lpm_mux:LPM_MUX_component.result
+result[2] <= lpm_mux:LPM_MUX_component.result
+result[3] <= lpm_mux:LPM_MUX_component.result
+result[4] <= lpm_mux:LPM_MUX_component.result
+
+
+|MIPS_PipelinedCPU|RegDst_mux:inst200|lpm_mux:LPM_MUX_component
+data[0][0] => mux_tjc:auto_generated.data[0]
+data[0][1] => mux_tjc:auto_generated.data[1]
+data[0][2] => mux_tjc:auto_generated.data[2]
+data[0][3] => mux_tjc:auto_generated.data[3]
+data[0][4] => mux_tjc:auto_generated.data[4]
+data[1][0] => mux_tjc:auto_generated.data[5]
+data[1][1] => mux_tjc:auto_generated.data[6]
+data[1][2] => mux_tjc:auto_generated.data[7]
+data[1][3] => mux_tjc:auto_generated.data[8]
+data[1][4] => mux_tjc:auto_generated.data[9]
+sel[0] => mux_tjc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_tjc:auto_generated.result[0]
+result[1] <= mux_tjc:auto_generated.result[1]
+result[2] <= mux_tjc:auto_generated.result[2]
+result[3] <= mux_tjc:auto_generated.result[3]
+result[4] <= mux_tjc:auto_generated.result[4]
+
+
+|MIPS_PipelinedCPU|RegDst_mux:inst200|lpm_mux:LPM_MUX_component|mux_tjc:auto_generated
+data[0] => l1_w0_n0_mux_dataout.IN1
+data[1] => l1_w1_n0_mux_dataout.IN1
+data[2] => l1_w2_n0_mux_dataout.IN1
+data[3] => l1_w3_n0_mux_dataout.IN1
+data[4] => l1_w4_n0_mux_dataout.IN1
+data[5] => l1_w0_n0_mux_dataout.IN1
+data[6] => l1_w1_n0_mux_dataout.IN1
+data[7] => l1_w2_n0_mux_dataout.IN1
+data[8] => l1_w3_n0_mux_dataout.IN1
+data[9] => l1_w4_n0_mux_dataout.IN1
+result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= l1_w1_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= l1_w2_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= l1_w3_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= l1_w4_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => l1_w0_n0_mux_dataout.IN0
+sel[0] => _.IN0
+sel[0] => l1_w1_n0_mux_dataout.IN0
+sel[0] => _.IN0
+sel[0] => l1_w2_n0_mux_dataout.IN0
+sel[0] => _.IN0
+sel[0] => l1_w3_n0_mux_dataout.IN0
+sel[0] => _.IN0
+sel[0] => l1_w4_n0_mux_dataout.IN0
+sel[0] => _.IN0
+
+
 |MIPS_PipelinedCPU|ALU_32bit:inst7
 data1[0] => Add0.IN32
 data1[0] => Add1.IN64
@@ -14781,75 +14850,6 @@ out[28] <= in[15].DB_MAX_OUTPUT_PORT_TYPE
 out[29] <= in[15].DB_MAX_OUTPUT_PORT_TYPE
 out[30] <= in[15].DB_MAX_OUTPUT_PORT_TYPE
 out[31] <= in[15].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|MIPS_PipelinedCPU|RegDst_mux:inst200
-data0x[0] => sub_wire1[0].IN1
-data0x[1] => sub_wire1[1].IN1
-data0x[2] => sub_wire1[2].IN1
-data0x[3] => sub_wire1[3].IN1
-data0x[4] => sub_wire1[4].IN1
-data1x[0] => sub_wire1[5].IN1
-data1x[1] => sub_wire1[6].IN1
-data1x[2] => sub_wire1[7].IN1
-data1x[3] => sub_wire1[8].IN1
-data1x[4] => sub_wire1[9].IN1
-sel => sub_wire4.IN1
-result[0] <= lpm_mux:LPM_MUX_component.result
-result[1] <= lpm_mux:LPM_MUX_component.result
-result[2] <= lpm_mux:LPM_MUX_component.result
-result[3] <= lpm_mux:LPM_MUX_component.result
-result[4] <= lpm_mux:LPM_MUX_component.result
-
-
-|MIPS_PipelinedCPU|RegDst_mux:inst200|lpm_mux:LPM_MUX_component
-data[0][0] => mux_tjc:auto_generated.data[0]
-data[0][1] => mux_tjc:auto_generated.data[1]
-data[0][2] => mux_tjc:auto_generated.data[2]
-data[0][3] => mux_tjc:auto_generated.data[3]
-data[0][4] => mux_tjc:auto_generated.data[4]
-data[1][0] => mux_tjc:auto_generated.data[5]
-data[1][1] => mux_tjc:auto_generated.data[6]
-data[1][2] => mux_tjc:auto_generated.data[7]
-data[1][3] => mux_tjc:auto_generated.data[8]
-data[1][4] => mux_tjc:auto_generated.data[9]
-sel[0] => mux_tjc:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_tjc:auto_generated.result[0]
-result[1] <= mux_tjc:auto_generated.result[1]
-result[2] <= mux_tjc:auto_generated.result[2]
-result[3] <= mux_tjc:auto_generated.result[3]
-result[4] <= mux_tjc:auto_generated.result[4]
-
-
-|MIPS_PipelinedCPU|RegDst_mux:inst200|lpm_mux:LPM_MUX_component|mux_tjc:auto_generated
-data[0] => l1_w0_n0_mux_dataout.IN1
-data[1] => l1_w1_n0_mux_dataout.IN1
-data[2] => l1_w2_n0_mux_dataout.IN1
-data[3] => l1_w3_n0_mux_dataout.IN1
-data[4] => l1_w4_n0_mux_dataout.IN1
-data[5] => l1_w0_n0_mux_dataout.IN1
-data[6] => l1_w1_n0_mux_dataout.IN1
-data[7] => l1_w2_n0_mux_dataout.IN1
-data[8] => l1_w3_n0_mux_dataout.IN1
-data[9] => l1_w4_n0_mux_dataout.IN1
-result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= l1_w1_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= l1_w2_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= l1_w3_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-result[4] <= l1_w4_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => l1_w0_n0_mux_dataout.IN0
-sel[0] => _.IN0
-sel[0] => l1_w1_n0_mux_dataout.IN0
-sel[0] => _.IN0
-sel[0] => l1_w2_n0_mux_dataout.IN0
-sel[0] => _.IN0
-sel[0] => l1_w3_n0_mux_dataout.IN0
-sel[0] => _.IN0
-sel[0] => l1_w4_n0_mux_dataout.IN0
-sel[0] => _.IN0
 
 
 |MIPS_PipelinedCPU|pc_plus4:inst5

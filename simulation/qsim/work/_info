@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/simulation/qsim
+vMIPS_PipelinedCPU
+Z1 !s110 1542077134
+!i10b 1
+!s100 eHz9JGiYfCQTjQhni@=bd3
+I4G_JJIW:<:T@`Z4N`h<Vf3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1542077133
+8MIPS_PipelinedCPU.vo
+FMIPS_PipelinedCPU.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1542077133.000000
+!s107 MIPS_PipelinedCPU.vo|
+!s90 -work|work|MIPS_PipelinedCPU.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@m@i@p@s_@pipelined@c@p@u
+vMIPS_PipelinedCPU_vlg_vec_tst
+R1
+!i10b 1
+!s100 TiZN=cOH;68`n?6XTF=1Z1
+IPdi?2`TJELU>0<;blkc1>1
+R2
+R0
+w1542077130
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1542077134.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5
+n@m@i@p@s_@pipelined@c@p@u_vlg_vec_tst

@@ -51,7 +51,7 @@ module controller(
 		if (funct_code == 8) begin//JR
 			jump_register = 1;
 			ALUop = funct_code;
-			reg_write = 1;
+			reg_write = 0;
 		end
 		
 		if (opcode != 0) begin //I-type
