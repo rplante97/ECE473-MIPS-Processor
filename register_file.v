@@ -21,8 +21,8 @@ module regfile32x32
 	    regfile[i] <= 0;
 		end
 		//Change based on initial register values needed, for Milestone 2 we only need 0's
-		//regfile[1] <= -30;
-		//regfile[2] <= 56;
+		regfile[1] <= -30;
+		regfile[2] <= 56;
 		
 	end
 

@@ -2,8 +2,8 @@ module ALU_pipeline(
 
 	input clk,
 	
-	input [1:0] write_back,
-	input [2:0] mem,
+	input reg_write,
+	input jump_reg,
 	
 	input [31:0] pc_new,
 	input zero,
@@ -11,8 +11,8 @@ module ALU_pipeline(
 	input [31:0] data2,
 	input [4:0] write_addr,
 	
-	output reg [1:0] write_back_out,
-	output reg [2:0] mem_out,
+	output reg reg_write_out,
+	output reg jump_reg_out,
 	
 	output reg [31:0] pc_out,
 	output reg zero_out,
@@ -27,8 +27,8 @@ always @(posedge clk) begin
 	result_out <= ALU_result;
 	data2_out <= data2;
 	write_addr_out <= write_addr;
-	mem_out <= mem;
-	write_back_out <= write_back;
+	reg_write_out <= reg_write;
+	jump_reg_out <= jump_reg;
 end
 
 endmodule 
