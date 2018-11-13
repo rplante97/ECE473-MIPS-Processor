@@ -17,6 +17,10 @@ module data_forwarding(
 	input [31:0] aluResult,
 	input [4:0] dest_register,
 	
+	//ALU result and dest register from instruction ahead + 1
+	input [31:0] aluResult_wb,
+	input [4:0] dest_register_wb,
+	
 	
 	
 	//Outputs:
@@ -31,7 +35,8 @@ module data_forwarding(
 
 
 always begin
-	if (rs == dest_register) begin //if we are about to write a new value to one of the next operations calculation registers
+//R-TYPE
+/*	if (rs == dest_register) begin //if we are about to write a new value to one of the next operations calculation registers
 		//Foward the alu result to rs (data_out1)
 		data_out1 = aluResult;
 		data_out2 =  data_in2;
@@ -44,11 +49,23 @@ always begin
 		
 	end
 	else begin //Here we don't need to make any changes, just forward the outputs
+		*/
+		//data_out1 = data_in1;
+		//data_out2 =  data_in2;
+		
+	//end
+	
+//I-TYPE
+	//if (rt == dest_register_wb) begin
+	//	data_out1 = aluResult_wb;
+	//	data_out2 = data_in2;
+	//end
+	//else begin //Here we don't need to make any changes, just forward the outputs
 		
 		data_out1 = data_in1;
 		data_out2 =  data_in2;
 		
-	end
+	//end
 end
 	
 endmodule 

@@ -6,6 +6,8 @@ module jumpReg_forward(
 	input [4:0] exRegAddr,
 	input [31:0] memRegVal,
 	input [4:0] memRegAddr,
+	input [31:0] wbRegVal,
+	input [4:0] wbRegAddr,
 	
 	output reg [31:0] data
 
@@ -20,6 +22,10 @@ always begin
 	else if (memRegAddr == currentRegAddr) begin //if instruction previous to above modified register, use that value
 	
 		data = memRegVal;
+	end
+	//This resolves a timing issue for I-Type instructions - may not be neccassary, but I am unable to get any other solution working
+	else if (wbRegAddr == currentRegAddr) begin //if instruction previous to above modified register, use that value
+		data = wbRegVal;
 	end
 	else begin //if none of the pipelined instructions modified the value use the current one
 	

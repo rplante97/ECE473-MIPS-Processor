@@ -33,15 +33,15 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "in[5..0]" (rect 0 0 25 12)(font "Arial" ))
-		(text "in[5..0]" (rect 21 43 46 55)(font "Arial" ))
+		(text "in[6..0]" (rect 0 0 25 12)(font "Arial" ))
+		(text "in[6..0]" (rect 21 43 46 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
 		(pt 160 32)
 		(output)
-		(text "out[5..0]" (rect 0 0 31 12)(font "Arial" ))
-		(text "out[5..0]" (rect 108 27 139 39)(font "Arial" ))
+		(text "out[6..0]" (rect 0 0 31 12)(font "Arial" ))
+		(text "out[6..0]" (rect 108 27 139 39)(font "Arial" ))
 		(line (pt 160 32)(pt 144 32)(line_width 3))
 	)
 	(drawing

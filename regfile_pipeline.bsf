@@ -54,9 +54,9 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 96)
 		(input)
-		(text "pc[31..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "pc[31..0]" (rect 21 91 54 103)(font "Arial" ))
-		(line (pt 0 96)(pt 16 96)(line_width 3))
+		(text "mem_load" (rect 0 0 42 12)(font "Arial" ))
+		(text "mem_load" (rect 21 91 63 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
 	)
 	(port
 		(pt 0 112)
@@ -101,6 +101,13 @@ refer to the applicable agreement for further details.
 		(line (pt 0 192)(pt 16 192)(line_width 3))
 	)
 	(port
+		(pt 0 208)
+		(input)
+		(text "mem_store" (rect 0 0 47 12)(font "Arial" ))
+		(text "mem_store" (rect 21 203 68 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 1))
+	)
+	(port
 		(pt 232 32)
 		(output)
 		(text "reg_write_out" (rect 0 0 54 12)(font "Arial" ))
@@ -124,9 +131,9 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 232 80)
 		(output)
-		(text "pc_out[31..0]" (rect 0 0 50 12)(font "Arial" ))
-		(text "pc_out[31..0]" (rect 161 75 211 87)(font "Arial" ))
-		(line (pt 232 80)(pt 216 80)(line_width 3))
+		(text "mem_load_out" (rect 0 0 60 12)(font "Arial" ))
+		(text "mem_load_out" (rect 151 75 211 87)(font "Arial" ))
+		(line (pt 232 80)(pt 216 80)(line_width 1))
 	)
 	(port
 		(pt 232 96)
@@ -169,6 +176,13 @@ refer to the applicable agreement for further details.
 		(text "full_ins_out[31..0]" (rect 0 0 68 12)(font "Arial" ))
 		(text "full_ins_out[31..0]" (rect 143 171 211 183)(font "Arial" ))
 		(line (pt 232 176)(pt 216 176)(line_width 3))
+	)
+	(port
+		(pt 232 192)
+		(output)
+		(text "mem_store_out" (rect 0 0 64 12)(font "Arial" ))
+		(text "mem_store_out" (rect 147 187 211 199)(font "Arial" ))
+		(line (pt 232 192)(pt 216 192)(line_width 1))
 	)
 	(drawing
 		(rectangle (rect 16 16 216 224)(line_width 1))

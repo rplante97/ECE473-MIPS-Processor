@@ -1,9 +1,9 @@
 module pipeline_6bit(
 
 	input clk,
-	input [5:0] in,
+	input [6:0] in,
 	
-	output reg [5:0] out
+	output reg [6:0] out
 	
 );
 

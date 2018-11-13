@@ -10,10 +10,11 @@ module controller(
 	
 	//outputs (WIP)
 	output reg reg_write, //Enables/disables register write
-	output reg [5:0] ALUop,
+	output reg [6:0] ALUop,
 	output reg jump_register,
-	output reg use_imm //Selects muxes to use I-type/R-type instruction format
-	
+	output reg use_imm, //Selects muxes to use I-type/R-type instruction format
+	output reg mem_load, //Selects write back stage mux to use ALU result or data loaded from data mem
+	output reg mem_store //Selects if we are writing to mem or not
 );
 	
 	initial begin
@@ -21,6 +22,8 @@ module controller(
 		reg_write = 0;
 		use_imm = 0;
 		ALUop = 0;
+		mem_load = 0;
+		mem_store = 0;
 	end
 	
 	wire [5:0] opcode;
@@ -47,6 +50,8 @@ module controller(
 			jump_register = 0;
 			reg_write = 0;
 			use_imm = 0;
+			mem_load = 0;
+			mem_store = 0;
 		end
 		if (funct_code == 8) begin//JR
 			jump_register = 1;
@@ -54,8 +59,22 @@ module controller(
 			reg_write = 0;
 		end
 		
-		if (opcode != 0) begin //I-type
-		
+		if (opcode != 0) begin //I-type (for now we will just add a 1 to the msb to determine i type)
+			jump_register = 0;
+			reg_write = 1;
+			use_imm = 1;
+			ALUop = opcode;
+			ALUop[6] = 1;
+			mem_load = 0;
+			mem_store = 0;
+			if (opcode == 35) begin //LW code (if we loaded a word we want that in mem)
+				mem_load = 1;
+			end
+			if (opcode == 43) begin //SW code (want to store give reg data in mem)
+				mem_store = 1;
+				mem_load = 0;
+				reg_write = 0;
+			end
 		end
 	end
 	

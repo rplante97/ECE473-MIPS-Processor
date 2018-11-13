@@ -1,15 +1,15 @@
-Fitter Status : Successful - Mon Nov 12 21:22:12 2018
+Fitter Status : Successful - Tue Nov 13 02:26:13 2018
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : MIPS_PipelinedCPU
 Top-level Entity Name : MIPS_PipelinedCPU
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 2,318 / 18,480 ( 13 % )
-Total registers : 2536
+Logic utilization (in ALMs) : 1,461 / 18,480 ( 8 % )
+Total registers : 986
 Total pins : 16 / 224 ( 7 % )
 Total virtual pins : 0
-Total block memory bits : 311,488 / 3,153,920 ( 10 % )
+Total block memory bits : 314,368 / 3,153,920 ( 10 % )
 Total RAM Blocks : 45 / 308 ( 15 % )
 Total DSP Blocks : 1 / 66 ( 2 % )
 Total HSSI RX PCSs : 0
