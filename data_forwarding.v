@@ -21,6 +21,9 @@ module data_forwarding(
 	input [31:0] aluResult_wb,
 	input [4:0] dest_register_wb,
 	
+	//The full instruction, to determine instruction type
+	input [31:0] full_ins,
+	
 	
 	
 	//Outputs:
@@ -33,10 +36,12 @@ module data_forwarding(
 
 );
 
+wire [5:0] opcode;
+assign opcode = full_ins[31:26];
 
 always begin
-//R-TYPE
-/*	if (rs == dest_register) begin //if we are about to write a new value to one of the next operations calculation registers
+if (opcode == 0) begin
+	if (rs == dest_register) begin //if we are about to write a new value to one of the next operations calculation registers
 		//Foward the alu result to rs (data_out1)
 		data_out1 = aluResult;
 		data_out2 =  data_in2;
@@ -49,16 +54,18 @@ always begin
 		
 	end
 	else begin //Here we don't need to make any changes, just forward the outputs
-		*/
-		//data_out1 = data_in1;
-		//data_out2 =  data_in2;
 		
-	//end
+		data_out1 = data_in1;
+		data_out2 =  data_in2;
+		
+	end
 	
-//I-TYPE
+end
+	
+if (opcode != 0) begin
 	//if (rt == dest_register_wb) begin
-	//	data_out1 = aluResult_wb;
-	//	data_out2 = data_in2;
+		//data_out1 = aluResult_wb;
+		//data_out2 = data_in2;
 	//end
 	//else begin //Here we don't need to make any changes, just forward the outputs
 		
@@ -66,6 +73,8 @@ always begin
 		data_out2 =  data_in2;
 		
 	//end
+end
+
 end
 	
 endmodule 
