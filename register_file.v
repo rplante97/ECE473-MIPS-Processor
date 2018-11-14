@@ -1,3 +1,5 @@
+`timescale 10ns/1ns
+
 module regfile32x32
   (input [4:0] read_address_1,
    input [4:0] read_address_2,
@@ -41,6 +43,7 @@ module regfile32x32
    end
 	
 	always @(posedge clock) begin
+	#10
 		if (write_enable) begin
 			regfile[write_address] <= write_data_in;
 		end

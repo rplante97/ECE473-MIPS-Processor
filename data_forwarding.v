@@ -54,12 +54,18 @@ if (opcode == 0) begin
 		data_out2 =  data_in2;
 		
 	end
+	else if (rt == dest_register) begin
+		//Foward the alu result to rt (data_out2)
+		data_out1 = data_in1;
+		data_out2 = aluResult;
+		
+	end
 	else begin //Here we don't need to make any changes, just forward the outputs
-	
+		
 		data_out1 = data_in1;
 		data_out2 =  data_in2;
 		
-	end
+	end;
 	dout2 = din2;
 end
 	
