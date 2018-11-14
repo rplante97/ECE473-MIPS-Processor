@@ -1,5 +1,5 @@
 Flow report for MIPS_PipelinedCPU
-Wed Nov 14 03:58:33 2018
+Wed Nov 14 04:22:41 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Nov 14 03:58:33 2018       ;
+; Flow Status                     ; Successful - Wed Nov 14 04:22:40 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; MIPS_PipelinedCPU                           ;
 ; Top-level Entity Name           ; MIPS_PipelinedCPU                           ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/14/2018 03:56:48 ;
+; Start date & time ; 11/14/2018 04:20:56 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIPS_PipelinedCPU   ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 53447160273555.154218580812596         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 53447160273555.154218725507480         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)                     ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -107,12 +107,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:23     ; 1.0                     ; 4909 MB             ; 00:00:33                           ;
-; Fitter               ; 00:01:03     ; 1.2                     ; 6505 MB             ; 00:02:35                           ;
+; Analysis & Synthesis ; 00:00:23     ; 1.0                     ; 4911 MB             ; 00:00:34                           ;
+; Fitter               ; 00:01:02     ; 1.2                     ; 6507 MB             ; 00:02:33                           ;
 ; Assembler            ; 00:00:04     ; 1.0                     ; 4862 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:09     ; 2.1                     ; 5190 MB             ; 00:00:16                           ;
+; Timing Analyzer      ; 00:00:08     ; 2.1                     ; 5189 MB             ; 00:00:16                           ;
 ; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4858 MB             ; 00:00:02                           ;
-; Total                ; 00:01:41     ; --                      ; --                  ; 00:03:30                           ;
+; Total                ; 00:01:39     ; --                      ; --                  ; 00:03:29                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

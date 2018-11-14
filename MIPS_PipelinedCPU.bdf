@@ -1942,14 +1942,14 @@ refer to the applicable agreement for further details.
 		(pt 200 32)
 		(output)
 		(text "ins_out[31..0]" (rect 0 0 67 12)(font "Arial" ))
-		(text "ins_out[31..0]" (rect 123 27 179 39)(font "Arial" ))
+		(text "ins_out[31..0]" (rect 123 27 190 39)(font "Arial" ))
 		(line (pt 200 32)(pt 184 32)(line_width 3))
 	)
 	(port
 		(pt 200 48)
 		(output)
 		(text "pc_out[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "pc_out[31..0]" (rect 125 43 179 55)(font "Arial" ))
+		(text "pc_out[31..0]" (rect 125 43 189 55)(font "Arial" ))
 		(line (pt 200 48)(pt 184 48)(line_width 3))
 	)
 	(drawing

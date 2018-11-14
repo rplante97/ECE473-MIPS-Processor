@@ -1,5 +1,5 @@
 Timing Analyzer report for MIPS_PipelinedCPU
-Wed Nov 14 03:58:30 2018
+Wed Nov 14 04:22:38 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -97,14 +97,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 2.13        ;
+; Average used               ; 2.15        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  38.1%      ;
-;     Processor 3            ;  37.6%      ;
-;     Processor 4            ;  37.2%      ;
+;     Processor 2            ;  38.7%      ;
+;     Processor 3            ;  38.2%      ;
+;     Processor 4            ;  37.8%      ;
 +----------------------------+-------------+
 
 
@@ -606,7 +606,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Nov 14 03:58:21 2018
+    Info: Processing started: Wed Nov 14 04:22:29 2018
 Info: Command: quartus_sta MIPS_PipelinedCPU -c MIPS_PipelinedCPU
 Info: qsta_default_script.tcl version: #2
 Warning (20013): Ignored 231 assignments for entity "DE0_CV" -- entity does not exist in design
@@ -993,8 +993,8 @@ Info (332114): Report Metastability: Found 13 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 239 warnings
-    Info: Peak virtual memory: 5190 megabytes
-    Info: Processing ended: Wed Nov 14 03:58:30 2018
+    Info: Peak virtual memory: 5189 megabytes
+    Info: Processing ended: Wed Nov 14 04:22:38 2018
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:16
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_PipelinedCPU
-Wed Nov 14 03:57:11 2018
+Wed Nov 14 04:21:19 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Nov 14 03:57:11 2018       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 14 04:21:19 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; MIPS_PipelinedCPU                           ;
 ; Top-level Entity Name           ; MIPS_PipelinedCPU                           ;
@@ -1802,7 +1802,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Nov 14 03:56:47 2018
+    Info: Processing started: Wed Nov 14 04:20:55 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_PipelinedCPU -c MIPS_PipelinedCPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -2084,17 +2084,6 @@ Info (12133): Instantiated megafunction "ins_mem:inst3|altsyncram:altsyncram_com
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mtm2.tdf
     Info (12023): Found entity 1: altsyncram_mtm2 File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_mtm2.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_mtm2" for hierarchy "ins_mem:inst3|altsyncram:altsyncram_component|altsyncram_mtm2:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Warning (113031): 64 out of 64 addresses are reinitialized. The latest initialized data will replace the existing data. There are 64 warnings found, and 10 warnings are reported. File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/m2_test4_bne_NT_Code.mif Line: 1
-    Warning (113030): Memory Initialization File address 0 is reinitialized File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ Line: 13
-    Warning (113030): Memory Initialization File address 1 is reinitialized File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ Line: 14
-    Warning (113030): Memory Initialization File address 2 is reinitialized File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ Line: 15
-    Warning (113030): Memory Initialization File address 3 is reinitialized File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ Line: 16
-    Warning (113030): Memory Initialization File address 4 is reinitialized File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ Line: 17
-    Warning (113030): Memory Initialization File address 5 is reinitialized File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ Line: 18
-    Warning (113030): Memory Initialization File address 6 is reinitialized File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ Line: 19
-    Warning (113030): Memory Initialization File address 7 is reinitialized File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ Line: 20
-    Warning (113030): Memory Initialization File address 8 is reinitialized File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ Line: 21
-    Warning (113030): Memory Initialization File address 9 is reinitialized File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ Line: 22
 Info (12128): Elaborating entity "program_counter" for hierarchy "program_counter:inst1"
 Info (12128): Elaborating entity "mux_32" for hierarchy "mux_32:inst21"
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "mux_32:inst21|lpm_mux:LPM_MUX_component" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/mux_32.v Line: 68
@@ -2550,9 +2539,9 @@ Info (21057): Implemented 3279 device resources after synthesis - the final reso
     Info (21064): Implemented 198 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 319 warnings
-    Info: Peak virtual memory: 4909 megabytes
-    Info: Processing ended: Wed Nov 14 03:57:11 2018
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 308 warnings
+    Info: Peak virtual memory: 4911 megabytes
+    Info: Processing ended: Wed Nov 14 04:21:19 2018
     Info: Elapsed time: 00:00:24
     Info: Total CPU time (on all processors): 00:00:34
 
