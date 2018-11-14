@@ -471,6 +471,10 @@ set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity D
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name MIF_FILE m2_test4_bne_T_Code.mif
+set_global_assignment -name MIF_FILE m2_test4_bne_NT_Code.mif
+set_global_assignment -name MIF_FILE m2_test3_beq_T_Code.mif
+set_global_assignment -name MIF_FILE m2_test3_beq_NT_Code.mif
 set_global_assignment -name MIF_FILE m2_test2_Data.mif
 set_global_assignment -name MIF_FILE m2_test2_Code.mif
 set_global_assignment -name MIF_FILE m2_test1_Data.mif
@@ -511,4 +515,5 @@ set_global_assignment -name VERILOG_FILE data_forwarding.v
 set_global_assignment -name VERILOG_FILE jumpReg_forward.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulation.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VERILOG_FILE branch_unit.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

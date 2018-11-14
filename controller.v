@@ -75,6 +75,16 @@ module controller(
 				mem_load = 0;
 				reg_write = 0;
 			end
+			//Here we basically just want a nop
+			if (opcode == 4 || opcode == 5) begin //BEQ or BNE
+				ALUop = 0;
+				jump_register = 0;
+				reg_write = 0;
+				use_imm = 0;
+				mem_load = 0;
+				mem_store = 0;
+			end
+
 		end
 	end
 	

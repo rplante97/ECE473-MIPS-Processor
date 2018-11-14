@@ -1,5 +1,5 @@
 Timing Analyzer report for MIPS_PipelinedCPU
-Tue Nov 13 23:01:17 2018
+Wed Nov 14 03:58:30 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -97,14 +97,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 2.06        ;
+; Average used               ; 2.13        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  35.9%      ;
-;     Processor 3            ;  35.4%      ;
-;     Processor 4            ;  35.0%      ;
+;     Processor 2            ;  38.1%      ;
+;     Processor 3            ;  37.6%      ;
+;     Processor 4            ;  37.2%      ;
 +----------------------------+-------------+
 
 
@@ -126,8 +126,8 @@ refer to the applicable agreement for further details.
 +-----------+-----------------+-------------------------------------------------------------------------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name                                                                    ; Note ;
 +-----------+-----------------+-------------------------------------------------------------------------------+------+
-; 54.05 MHz ; 54.05 MHz       ; KEY[0]                                                                        ;      ;
-; 56.69 MHz ; 56.69 MHz       ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 39.09 MHz ; 39.09 MHz       ; KEY[0]                                                                        ;      ;
+; 56.78 MHz ; 56.78 MHz       ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
 +-----------+-----------------+-------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -143,9 +143,9 @@ HTML report is unavailable in plain text report export.
 +-------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                         ; Slack   ; End Point TNS ;
 +-------------------------------------------------------------------------------+---------+---------------+
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -16.783 ; -941.405      ;
-; KEY[0]                                                                        ; -14.901 ; -2833.243     ;
-; instruction_pipeline:inst13|ins_out[0]                                        ; -8.762  ; -17.521       ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -17.937 ; -968.430      ;
+; KEY[0]                                                                        ; -14.704 ; -3592.008     ;
+; instruction_pipeline:inst13|ins_out[0]                                        ; -8.697  ; -25.603       ;
 +-------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -154,9 +154,9 @@ HTML report is unavailable in plain text report export.
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                        ; -6.173 ; -12.338       ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.261  ; 0.000         ;
-; instruction_pipeline:inst13|ins_out[0]                                        ; 4.557  ; 0.000         ;
+; KEY[0]                                                                        ; -5.881 ; -11.589       ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.279  ; 0.000         ;
+; instruction_pipeline:inst13|ins_out[0]                                        ; 3.337  ; 0.000         ;
 +-------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -177,8 +177,8 @@ No paths to report.
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                        ; -2.636 ; -1388.367     ;
-; instruction_pipeline:inst13|ins_out[0]                                        ; 0.434  ; 0.000         ;
+; KEY[0]                                                                        ; -2.636 ; -1319.271     ;
+; instruction_pipeline:inst13|ins_out[0]                                        ; 0.239  ; 0.000         ;
 ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.497  ; 0.000         ;
 ; CLOCK_50                                                                      ; 9.949  ; 0.000         ;
 ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.495 ; 0.000         ;
@@ -197,8 +197,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------+-----------------+-------------------------------------------------------------------------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name                                                                    ; Note ;
 +-----------+-----------------+-------------------------------------------------------------------------------+------+
-; 53.72 MHz ; 53.72 MHz       ; KEY[0]                                                                        ;      ;
-; 56.81 MHz ; 56.81 MHz       ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 37.97 MHz ; 37.97 MHz       ; KEY[0]                                                                        ;      ;
+; 56.82 MHz ; 56.82 MHz       ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
 +-----------+-----------------+-------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -208,9 +208,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                         ; Slack   ; End Point TNS ;
 +-------------------------------------------------------------------------------+---------+---------------+
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -16.401 ; -918.797      ;
-; KEY[0]                                                                        ; -14.355 ; -2757.787     ;
-; instruction_pipeline:inst13|ins_out[0]                                        ; -8.575  ; -17.120       ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -17.493 ; -942.421      ;
+; KEY[0]                                                                        ; -14.087 ; -3485.287     ;
+; instruction_pipeline:inst13|ins_out[0]                                        ; -8.582  ; -25.322       ;
 +-------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -219,9 +219,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                        ; -5.897 ; -11.787       ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.247  ; 0.000         ;
-; instruction_pipeline:inst13|ins_out[0]                                        ; 4.339  ; 0.000         ;
+; KEY[0]                                                                        ; -5.750 ; -11.273       ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.258  ; 0.000         ;
+; instruction_pipeline:inst13|ins_out[0]                                        ; 3.204  ; 0.000         ;
 +-------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -242,8 +242,8 @@ No paths to report.
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                        ; -2.636 ; -1350.478     ;
-; instruction_pipeline:inst13|ins_out[0]                                        ; 0.341  ; 0.000         ;
+; KEY[0]                                                                        ; -2.636 ; -1278.171     ;
+; instruction_pipeline:inst13|ins_out[0]                                        ; 0.244  ; 0.000         ;
 ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.497  ; 0.000         ;
 ; CLOCK_50                                                                      ; 9.980  ; 0.000         ;
 ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.452 ; 0.000         ;
@@ -262,9 +262,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -9.465 ; -526.831      ;
-; KEY[0]                                                                        ; -8.989 ; -1216.237     ;
-; instruction_pipeline:inst13|ins_out[0]                                        ; -4.429 ; -8.844        ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -9.574 ; -546.317      ;
+; KEY[0]                                                                        ; -8.553 ; -1681.050     ;
+; instruction_pipeline:inst13|ins_out[0]                                        ; -4.239 ; -12.148       ;
 +-------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -273,9 +273,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                        ; -3.328 ; -6.647        ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.135  ; 0.000         ;
-; instruction_pipeline:inst13|ins_out[0]                                        ; 3.255  ; 0.000         ;
+; KEY[0]                                                                        ; -2.952 ; -5.806        ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.141  ; 0.000         ;
+; instruction_pipeline:inst13|ins_out[0]                                        ; 2.141  ; 0.000         ;
 +-------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -296,11 +296,11 @@ No paths to report.
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                        ; -2.174 ; -970.854      ;
-; instruction_pipeline:inst13|ins_out[0]                                        ; 0.446  ; 0.000         ;
+; KEY[0]                                                                        ; -2.174 ; -896.682      ;
+; instruction_pipeline:inst13|ins_out[0]                                        ; 0.298  ; 0.000         ;
 ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.497  ; 0.000         ;
 ; CLOCK_50                                                                      ; 9.643  ; 0.000         ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.784 ; 0.000         ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.785 ; 0.000         ;
 +-------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -316,9 +316,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -8.710 ; -488.263      ;
-; KEY[0]                                                                        ; -7.693 ; -1040.904     ;
-; instruction_pipeline:inst13|ins_out[0]                                        ; -4.254 ; -8.489        ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -8.914 ; -507.540      ;
+; KEY[0]                                                                        ; -7.346 ; -1447.240     ;
+; instruction_pipeline:inst13|ins_out[0]                                        ; -4.073 ; -11.727       ;
 +-------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -327,9 +327,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                        ; -3.207 ; -6.408        ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.123  ; 0.000         ;
-; instruction_pipeline:inst13|ins_out[0]                                        ; 3.157  ; 0.000         ;
+; KEY[0]                                                                        ; -2.906 ; -5.707        ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.117  ; 0.000         ;
+; instruction_pipeline:inst13|ins_out[0]                                        ; 2.149  ; 0.000         ;
 +-------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -350,8 +350,8 @@ No paths to report.
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                        ; -2.174 ; -945.264      ;
-; instruction_pipeline:inst13|ins_out[0]                                        ; 0.435  ; 0.000         ;
+; KEY[0]                                                                        ; -2.174 ; -865.809      ;
+; instruction_pipeline:inst13|ins_out[0]                                        ; 0.336  ; 0.000         ;
 ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.497  ; 0.000         ;
 ; CLOCK_50                                                                      ; 9.632  ; 0.000         ;
 ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.786 ; 0.000         ;
@@ -370,18 +370,18 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------------------------------------------------------+-----------+---------+----------+---------+---------------------+
 ; Clock                                                                          ; Setup     ; Hold    ; Recovery ; Removal ; Minimum Pulse Width ;
 +--------------------------------------------------------------------------------+-----------+---------+----------+---------+---------------------+
-; Worst-case Slack                                                               ; -16.783   ; -6.173  ; N/A      ; N/A     ; -2.636              ;
+; Worst-case Slack                                                               ; -17.937   ; -5.881  ; N/A      ; N/A     ; -2.636              ;
 ;  CLOCK_50                                                                      ; N/A       ; N/A     ; N/A      ; N/A     ; 9.632               ;
-;  KEY[0]                                                                        ; -14.901   ; -6.173  ; N/A      ; N/A     ; -2.636              ;
-;  instruction_pipeline:inst13|ins_out[0]                                        ; -8.762    ; 3.157   ; N/A      ; N/A     ; 0.341               ;
+;  KEY[0]                                                                        ; -14.704   ; -5.881  ; N/A      ; N/A     ; -2.636              ;
+;  instruction_pipeline:inst13|ins_out[0]                                        ; -8.697    ; 2.141   ; N/A      ; N/A     ; 0.239               ;
 ;  inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A       ; N/A     ; N/A      ; N/A     ; 0.497               ;
-;  inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -16.783   ; 0.123   ; N/A      ; N/A     ; 18.452              ;
-; Design-wide TNS                                                                ; -3792.169 ; -12.338 ; 0.0      ; 0.0     ; -1388.367           ;
+;  inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -17.937   ; 0.117   ; N/A      ; N/A     ; 18.452              ;
+; Design-wide TNS                                                                ; -4586.041 ; -11.589 ; 0.0      ; 0.0     ; -1319.271           ;
 ;  CLOCK_50                                                                      ; N/A       ; N/A     ; N/A      ; N/A     ; 0.000               ;
-;  KEY[0]                                                                        ; -2833.243 ; -12.338 ; N/A      ; N/A     ; -1388.367           ;
-;  instruction_pipeline:inst13|ins_out[0]                                        ; -17.521   ; 0.000   ; N/A      ; N/A     ; 0.000               ;
+;  KEY[0]                                                                        ; -3592.008 ; -11.589 ; N/A      ; N/A     ; -1319.271           ;
+;  instruction_pipeline:inst13|ins_out[0]                                        ; -25.603   ; 0.000   ; N/A      ; N/A     ; 0.000               ;
 ;  inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A       ; N/A     ; N/A      ; N/A     ; 0.000               ;
-;  inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -941.405  ; 0.000   ; N/A      ; N/A     ; 0.000               ;
+;  inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -968.430  ; 0.000   ; N/A      ; N/A     ; 0.000               ;
 +--------------------------------------------------------------------------------+-----------+---------+----------+---------+---------------------+
 
 
@@ -510,11 +510,11 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                    ; To Clock                                                                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------+----------+----------+----------+
-; KEY[0]                                                                        ; instruction_pipeline:inst13|ins_out[0]                                        ; 0        ; 12       ; 0        ; 0        ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1413428  ; 0        ; 728      ; 5603742  ;
-; KEY[0]                                                                        ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 0        ; 1792     ; 248549   ;
-; instruction_pipeline:inst13|ins_out[0]                                        ; KEY[0]                                                                        ; 0        ; 0        ; 6        ; 4        ;
-; KEY[0]                                                                        ; KEY[0]                                                                        ; 0        ; 68       ; 4729     ; 637612   ;
+; KEY[0]                                                                        ; instruction_pipeline:inst13|ins_out[0]                                        ; 0        ; 12       ; 0        ; 6        ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1332088  ; 0        ; 727      ; 13944868 ;
+; KEY[0]                                                                        ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 0        ; 1799     ; 240663   ;
+; instruction_pipeline:inst13|ins_out[0]                                        ; KEY[0]                                                                        ; 0        ; 0        ; 45       ; 44       ;
+; KEY[0]                                                                        ; KEY[0]                                                                        ; 0        ; 68       ; 202548   ; 26718820 ;
 +-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -524,11 +524,11 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                    ; To Clock                                                                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------+----------+----------+----------+
-; KEY[0]                                                                        ; instruction_pipeline:inst13|ins_out[0]                                        ; 0        ; 12       ; 0        ; 0        ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1413428  ; 0        ; 728      ; 5603742  ;
-; KEY[0]                                                                        ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 0        ; 1792     ; 248549   ;
-; instruction_pipeline:inst13|ins_out[0]                                        ; KEY[0]                                                                        ; 0        ; 0        ; 6        ; 4        ;
-; KEY[0]                                                                        ; KEY[0]                                                                        ; 0        ; 68       ; 4729     ; 637612   ;
+; KEY[0]                                                                        ; instruction_pipeline:inst13|ins_out[0]                                        ; 0        ; 12       ; 0        ; 6        ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1332088  ; 0        ; 727      ; 13944868 ;
+; KEY[0]                                                                        ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 0        ; 1799     ; 240663   ;
+; instruction_pipeline:inst13|ins_out[0]                                        ; KEY[0]                                                                        ; 0        ; 0        ; 45       ; 44       ;
+; KEY[0]                                                                        ; KEY[0]                                                                        ; 0        ; 68       ; 202548   ; 26718820 ;
 +-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -555,7 +555,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Unconstrained Input Ports       ; 0     ; 0    ;
 ; Unconstrained Input Port Paths  ; 0     ; 0    ;
 ; Unconstrained Output Ports      ; 6     ; 6    ;
-; Unconstrained Output Port Paths ; 182   ; 182  ;
+; Unconstrained Output Port Paths ; 178   ; 178  ;
 +---------------------------------+-------+------+
 
 
@@ -606,7 +606,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Tue Nov 13 23:01:08 2018
+    Info: Processing started: Wed Nov 14 03:58:21 2018
 Info: Command: quartus_sta MIPS_PipelinedCPU -c MIPS_PipelinedCPU
 Info: qsta_default_script.tcl version: #2
 Warning (20013): Ignored 231 assignments for entity "DE0_CV" -- entity does not exist in design
@@ -866,25 +866,25 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -16.783
+Info (332146): Worst-case setup slack is -17.937
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -16.783            -941.405 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):   -14.901           -2833.243 KEY[0] 
-    Info (332119):    -8.762             -17.521 instruction_pipeline:inst13|ins_out[0] 
-Info (332146): Worst-case hold slack is -6.173
+    Info (332119):   -17.937            -968.430 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):   -14.704           -3592.008 KEY[0] 
+    Info (332119):    -8.697             -25.603 instruction_pipeline:inst13|ins_out[0] 
+Info (332146): Worst-case hold slack is -5.881
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.173             -12.338 KEY[0] 
-    Info (332119):     0.261               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     4.557               0.000 instruction_pipeline:inst13|ins_out[0] 
+    Info (332119):    -5.881             -11.589 KEY[0] 
+    Info (332119):     0.279               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     3.337               0.000 instruction_pipeline:inst13|ins_out[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.636
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.636           -1388.367 KEY[0] 
-    Info (332119):     0.434               0.000 instruction_pipeline:inst13|ins_out[0] 
+    Info (332119):    -2.636           -1319.271 KEY[0] 
+    Info (332119):     0.239               0.000 instruction_pipeline:inst13|ins_out[0] 
     Info (332119):     0.497               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.949               0.000 CLOCK_50 
     Info (332119):    18.495               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
@@ -900,25 +900,25 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -16.401
+Info (332146): Worst-case setup slack is -17.493
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -16.401            -918.797 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):   -14.355           -2757.787 KEY[0] 
-    Info (332119):    -8.575             -17.120 instruction_pipeline:inst13|ins_out[0] 
-Info (332146): Worst-case hold slack is -5.897
+    Info (332119):   -17.493            -942.421 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):   -14.087           -3485.287 KEY[0] 
+    Info (332119):    -8.582             -25.322 instruction_pipeline:inst13|ins_out[0] 
+Info (332146): Worst-case hold slack is -5.750
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.897             -11.787 KEY[0] 
-    Info (332119):     0.247               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     4.339               0.000 instruction_pipeline:inst13|ins_out[0] 
+    Info (332119):    -5.750             -11.273 KEY[0] 
+    Info (332119):     0.258               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     3.204               0.000 instruction_pipeline:inst13|ins_out[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.636
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.636           -1350.478 KEY[0] 
-    Info (332119):     0.341               0.000 instruction_pipeline:inst13|ins_out[0] 
+    Info (332119):    -2.636           -1278.171 KEY[0] 
+    Info (332119):     0.244               0.000 instruction_pipeline:inst13|ins_out[0] 
     Info (332119):     0.497               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.980               0.000 CLOCK_50 
     Info (332119):    18.452               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
@@ -934,28 +934,28 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -9.465
+Info (332146): Worst-case setup slack is -9.574
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -9.465            -526.831 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -8.989           -1216.237 KEY[0] 
-    Info (332119):    -4.429              -8.844 instruction_pipeline:inst13|ins_out[0] 
-Info (332146): Worst-case hold slack is -3.328
+    Info (332119):    -9.574            -546.317 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -8.553           -1681.050 KEY[0] 
+    Info (332119):    -4.239             -12.148 instruction_pipeline:inst13|ins_out[0] 
+Info (332146): Worst-case hold slack is -2.952
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.328              -6.647 KEY[0] 
-    Info (332119):     0.135               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     3.255               0.000 instruction_pipeline:inst13|ins_out[0] 
+    Info (332119):    -2.952              -5.806 KEY[0] 
+    Info (332119):     0.141               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     2.141               0.000 instruction_pipeline:inst13|ins_out[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174            -970.854 KEY[0] 
-    Info (332119):     0.446               0.000 instruction_pipeline:inst13|ins_out[0] 
+    Info (332119):    -2.174            -896.682 KEY[0] 
+    Info (332119):     0.298               0.000 instruction_pipeline:inst13|ins_out[0] 
     Info (332119):     0.497               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.643               0.000 CLOCK_50 
-    Info (332119):    18.784               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.785               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 13 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Fast 1100mV 0C Model
@@ -966,25 +966,25 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -8.710
+Info (332146): Worst-case setup slack is -8.914
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.710            -488.263 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -7.693           -1040.904 KEY[0] 
-    Info (332119):    -4.254              -8.489 instruction_pipeline:inst13|ins_out[0] 
-Info (332146): Worst-case hold slack is -3.207
+    Info (332119):    -8.914            -507.540 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -7.346           -1447.240 KEY[0] 
+    Info (332119):    -4.073             -11.727 instruction_pipeline:inst13|ins_out[0] 
+Info (332146): Worst-case hold slack is -2.906
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.207              -6.408 KEY[0] 
-    Info (332119):     0.123               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     3.157               0.000 instruction_pipeline:inst13|ins_out[0] 
+    Info (332119):    -2.906              -5.707 KEY[0] 
+    Info (332119):     0.117               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     2.149               0.000 instruction_pipeline:inst13|ins_out[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174            -945.264 KEY[0] 
-    Info (332119):     0.435               0.000 instruction_pipeline:inst13|ins_out[0] 
+    Info (332119):    -2.174            -865.809 KEY[0] 
+    Info (332119):     0.336               0.000 instruction_pipeline:inst13|ins_out[0] 
     Info (332119):     0.497               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.632               0.000 CLOCK_50 
     Info (332119):    18.786               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
@@ -993,8 +993,8 @@ Info (332114): Report Metastability: Found 13 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 239 warnings
-    Info: Peak virtual memory: 5194 megabytes
-    Info: Processing ended: Tue Nov 13 23:01:17 2018
+    Info: Peak virtual memory: 5190 megabytes
+    Info: Processing ended: Wed Nov 14 03:58:30 2018
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:16
 

@@ -1,0 +1,16 @@
+module branch_unit (
+
+	//Base information needed
+	input [31:0] instruction,
+	input [31:0] val1,
+	input [31:0] val2,
+
+	//Forwarding relevant things
+	//If rs or rt was written to by instructions in the execution or mem stage we need to grab those values
+	
+	//Output is just a flag for branching and whatever the value should be if flag is set
+
+
+);
+
+endmodule 
