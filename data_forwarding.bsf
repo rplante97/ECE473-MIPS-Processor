@@ -115,6 +115,13 @@ refer to the applicable agreement for further details.
 		(line (pt 0 224)(pt 16 224)(line_width 3))
 	)
 	(port
+		(pt 0 240)
+		(input)
+		(text "mem_store" (rect 0 0 47 12)(font "Arial" ))
+		(text "mem_store" (rect 21 235 68 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 1))
+	)
+	(port
 		(pt 264 32)
 		(output)
 		(text "data_out1[31..0]" (rect 0 0 61 12)(font "Arial" ))

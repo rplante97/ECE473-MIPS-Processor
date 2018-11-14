@@ -28,7 +28,7 @@ module data_forwarding(
 	input [4:0] current_write_addr,
 	input mem_load,
 	input [31:0] din2,
-	
+	input mem_store,
 	
 	
 	
@@ -75,6 +75,13 @@ if (opcode != 0) begin
 			dout2 = aluResult;
 			data_out1 = data_in1;
 			data_out2 =  data_in2;
+		end
+		
+		//need to recalculate offset on storeword, if register is modified
+		else if (rs == dest_register) begin //if register we are storing in (rs) + offset was modified, we need to send new value to alu
+			data_out1 = aluResult;
+			data_out2 =  data_in2;
+			dout2 = din2;
 		end
 		
 		else begin

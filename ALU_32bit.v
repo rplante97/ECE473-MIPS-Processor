@@ -57,9 +57,9 @@ always begin
 		64+15: //LUI
 			ALU_result = (data2 << 16);
 		64+35: //LW
-			ALU_result = (data1) + data2/4; //We divide by 4 since we are operating in terms of words
+			ALU_result = (data1 + data2)/4; //We divide by 4 since we are operating in terms of words
 		64+43: //SW
-			ALU_result = (data1) + data2/4; //same as lw
+			ALU_result = (data1 + data2)/4; //same as lw
 		default:
 			ALU_result = data1;
 		
