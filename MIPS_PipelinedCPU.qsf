@@ -471,6 +471,10 @@ set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity D
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name MIF_FILE m3_test2_jal_jr_Code.mif
+set_global_assignment -name MIF_FILE m3_test1_jump_Code.mif
+set_global_assignment -name MIF_FILE m3_test3_sum_Data.mif
+set_global_assignment -name MIF_FILE m3_test3_sum_Code.mif
 set_global_assignment -name MIF_FILE m2_test4_bne_T_Code.mif
 set_global_assignment -name MIF_FILE m2_test4_bne_NT_Code.mif
 set_global_assignment -name MIF_FILE m2_test3_beq_T_Code.mif

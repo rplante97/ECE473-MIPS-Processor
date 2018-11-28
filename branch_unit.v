@@ -33,6 +33,9 @@ module branch_unit (
 	wire[4:0] rt;
 	assign rt = instruction[20:16];
 	
+	wire[25:0] target;
+	assign target = instruction[25:0];
+	
 	integer value_rs;
 	integer value_rt;
 	
@@ -102,6 +105,13 @@ module branch_unit (
 			branch = 1;
 			pc_value = pc + sign_ext_imm + 1; //We add 1 here due to the current placement of our mux
 		end
+	end
+	
+	//JUMP
+	if (opcode == 2) begin
+		//Here we just want to jump to the register stored in target
+		branch = 1;
+		pc_value = ((pc & 32'hf0000000) | (target << 2))/4; //This is just how the target address is calculated for jump instruction
 	end
 	
 	//If we are not on a branch instruction

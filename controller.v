@@ -76,7 +76,7 @@ module controller(
 				reg_write = 0;
 			end
 			//Here we basically just want a nop
-			if (opcode == 4 || opcode == 5) begin //BEQ or BNE
+			if (opcode == 4 || opcode == 5 || opcode == 2) begin //BEQ or BNE or J
 				ALUop = 0;
 				jump_register = 0;
 				reg_write = 0;
