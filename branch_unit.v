@@ -20,7 +20,9 @@ module branch_unit (
 	
 	//Output is just a flag for branching and whatever the value should be if flag is set
 	output reg [31:0] pc_value,
-	output reg branch
+	output reg branch,
+	output reg [31:0] value_ra,
+	output reg [4:0] thirty_one
 
 );
 
@@ -112,6 +114,19 @@ module branch_unit (
 		//Here we just want to jump to the register stored in target
 		branch = 1;
 		pc_value = ((pc & 32'hf0000000) | (target << 2))/4; //This is just how the target address is calculated for jump instruction
+	end
+	
+	//JAL
+	if (opcode == 3) begin
+		//Jump code here is same as regular jump instruction
+		branch = 1;
+		pc_value = ((pc & 32'hf0000000) | (target << 2))/4;
+		
+		//Need to deal with writing data to return register now
+		//Return register address is a hard coded value (31)
+		//Return register data is just our current program counter +2
+		value_ra = pc + 2;
+		thirty_one = 31;
 	end
 	
 	//If we are not on a branch instruction

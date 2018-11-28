@@ -60,8 +60,10 @@ always begin
 			ALU_result = (data1 + data2)/4; //We divide by 4 since we are operating in terms of words
 		64+43: //SW
 			ALU_result = (data1 + data2)/4; //same as lw
-		default:
+		100: //JAL (temp code for JAL register write operation) forward data1 to output
 			ALU_result = data1;
+		default:
+			ALU_result = data1; //Ensures 
 		
 	endcase 
 		

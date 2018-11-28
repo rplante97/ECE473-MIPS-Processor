@@ -84,6 +84,14 @@ module controller(
 				mem_load = 0;
 				mem_store = 0;
 			end
+			if(opcode == 3) begin //JAL (we went to allow regwrite here)
+				ALUop = 100;
+				jump_register = 0;
+				reg_write = 1;
+				use_imm = 0;
+				mem_load = 0;
+				mem_store = 0;
+			end
 
 		end
 	end
