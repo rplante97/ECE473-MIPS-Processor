@@ -14,9 +14,9 @@ write: control line to enable "next" to write to "result", at program terminatio
 */
 
 
-module program_counter(next, result, reset, clk, write);
+module program_counter(next, result, reset, clk, stall);
 input [31:0] next;
-input reset, clk, write;
+input reset, clk, stall;
 
 output reg [31:0] result;
 
@@ -27,16 +27,12 @@ end
 
 always @(posedge clk)
 begin
-
-	if (reset == 1) begin
-		result <= 32'h00400000-1;
+	if(stall) begin
+		result <= result;
 	end
-	
-	else begin
-		if (write == 1) begin
-			result <= next;
-		end
+	else begin 
+		result <= next;
 	end
 end
 
-endmodule
+endmodule 
