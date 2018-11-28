@@ -24,9 +24,9 @@ always begin
 		data = memRegVal;
 	end
 	//This resolves a timing issue for I-Type instructions - may not be neccassary, but I am unable to get any other solution working
-	else if (wbRegAddr == currentRegAddr) begin //if instruction previous to above modified register, use that value
-		data = wbRegVal;
-	end
+	//else if (wbRegAddr == currentRegAddr) begin //if instruction previous to above modified register, use that value
+	//	data = wbRegVal;
+	//end
 	else begin //if none of the pipelined instructions modified the value use the current one
 	
 		data = currentRegVal;

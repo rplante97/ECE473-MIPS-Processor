@@ -2168,28 +2168,28 @@ refer to the applicable agreement for further details.
 		(pt 248 32)
 		(output)
 		(text "pc_value[31..0]" (rect 0 0 76 12)(font "Arial" ))
-		(text "pc_value[31..0]" (rect 163 27 227 39)(font "Arial" ))
+		(text "pc_value[31..0]" (rect 163 27 239 39)(font "Arial" ))
 		(line (pt 248 32)(pt 232 32)(line_width 3))
 	)
 	(port
 		(pt 248 48)
 		(output)
 		(text "branch" (rect 0 0 33 12)(font "Arial" ))
-		(text "branch" (rect 200 43 227 55)(font "Arial" ))
+		(text "branch" (rect 200 43 233 55)(font "Arial" ))
 		(line (pt 248 48)(pt 232 48))
 	)
 	(port
 		(pt 248 64)
 		(output)
 		(text "value_ra[31..0]" (rect 0 0 74 12)(font "Arial" ))
-		(text "value_ra[31..0]" (rect 165 59 227 71)(font "Arial" ))
+		(text "value_ra[31..0]" (rect 165 59 239 71)(font "Arial" ))
 		(line (pt 248 64)(pt 232 64)(line_width 3))
 	)
 	(port
 		(pt 248 80)
 		(output)
 		(text "thirty_one[4..0]" (rect 0 0 75 12)(font "Arial" ))
-		(text "thirty_one[4..0]" (rect 164 75 227 87)(font "Arial" ))
+		(text "thirty_one[4..0]" (rect 164 75 239 87)(font "Arial" ))
 		(line (pt 248 80)(pt 232 80)(line_width 3))
 	)
 	(drawing
@@ -2477,18 +2477,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "gp_0[4..0]" (rect 194 400 241 417)(font "Intel Clear" ))
-	(pt 184 416)
-	(pt 224 416)
-	(bus)
-)
-(connector
-	(text "gp_0[31..5]" (rect 200 457 217 510)(font "Intel Clear" )(vertical))
-	(pt 216 512)
-	(pt 216 472)
-	(bus)
-)
-(connector
 	(text "btn_clk" (rect 874 8 909 25)(font "Intel Clear" ))
 	(pt 864 24)
 	(pt 920 24)
@@ -2566,23 +2554,8 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 80 312)
-	(pt 56 312)
-	(bus)
-)
-(connector
 	(pt 144 360)
 	(pt 136 360)
-	(bus)
-)
-(connector
-	(pt 136 360)
-	(pt 80 360)
-	(bus)
-)
-(connector
-	(pt 80 312)
-	(pt 80 360)
 	(bus)
 )
 (connector
@@ -2771,11 +2744,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 4424 -136)
 	(pt 4408 -136)
-	(bus)
-)
-(connector
-	(pt 1968 576)
-	(pt 7512 576)
 	(bus)
 )
 (connector
@@ -2976,11 +2944,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 80 312)
-	(pt 136 312)
-	(bus)
-)
-(connector
 	(text "alu_res_data_pipe[31..0]" (rect 914 -536 1032 -519)(font "Intel Clear" ))
 	(pt 904 -520)
 	(pt 952 -520)
@@ -3100,16 +3063,6 @@ refer to the applicable agreement for further details.
 	(pt 7144 -112)
 )
 (connector
-	(pt 7216 -184)
-	(pt 7512 -184)
-	(bus)
-)
-(connector
-	(pt 7512 -184)
-	(pt 7512 576)
-	(bus)
-)
-(connector
 	(pt 2808 -160)
 	(pt 2616 -160)
 )
@@ -3170,12 +3123,6 @@ refer to the applicable agreement for further details.
 	(text "mem_load" (rect 106 248 157 265)(font "Intel Clear" ))
 	(pt 144 264)
 	(pt 96 264)
-	(bus)
-)
-(connector
-	(text "write_addr_data_pipe[4..0]" (rect 80 400 207 417)(font "Intel Clear" ))
-	(pt 136 416)
-	(pt 80 416)
 	(bus)
 )
 (connector
@@ -3277,48 +3224,6 @@ refer to the applicable agreement for further details.
 	(pt 3496 16)
 )
 (connector
-	(text "alu_res_alu_pipe[31..0]" (rect 344 200 456 217)(font "Intel Clear" ))
-	(pt 400 216)
-	(pt 344 216)
-	(bus)
-)
-(connector
-	(text "forwarding_din1[31..0]" (rect 352 232 458 249)(font "Intel Clear" ))
-	(pt 400 248)
-	(pt 352 248)
-	(bus)
-)
-(connector
-	(text "forwarding_din1[31..0]" (rect 352 248 458 265)(font "Intel Clear" ))
-	(pt 400 264)
-	(pt 352 264)
-	(bus)
-)
-(connector
-	(text "alu_din1[31..0]" (rect 352 264 422 281)(font "Intel Clear" ))
-	(pt 400 280)
-	(pt 352 280)
-	(bus)
-)
-(connector
-	(text "alu_din1[31..0]" (rect 352 280 422 297)(font "Intel Clear" ))
-	(pt 400 296)
-	(pt 352 296)
-	(bus)
-)
-(connector
-	(text "alures[31..0]" (rect 352 296 411 313)(font "Intel Clear" ))
-	(pt 400 312)
-	(pt 352 312)
-	(bus)
-)
-(connector
-	(text "alu_res_alu_pipe[31..0]" (rect 362 392 474 409)(font "Intel Clear" ))
-	(pt 400 408)
-	(pt 352 408)
-	(bus)
-)
-(connector
 	(text "sign[10..6]" (rect 3856 -144 3904 -127)(font "Intel Clear" ))
 	(pt 3880 -128)
 	(pt 3856 -128)
@@ -3347,31 +3252,6 @@ refer to the applicable agreement for further details.
 	(text "aluOP[6..0]" (rect 3856 -128 3910 -111)(font "Intel Clear" ))
 	(pt 3880 -112)
 	(pt 3856 -112)
-	(bus)
-)
-(connector
-	(pt 3040 -144)
-	(pt 3208 -144)
-	(bus)
-)
-(connector
-	(pt 3264 -56)
-	(pt 3208 -56)
-	(bus)
-)
-(connector
-	(pt 3552 32)
-	(pt 3208 32)
-	(bus)
-)
-(connector
-	(pt 3208 -144)
-	(pt 3208 -56)
-	(bus)
-)
-(connector
-	(pt 3208 -56)
-	(pt 3208 32)
 	(bus)
 )
 (connector
@@ -3504,12 +3384,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "regfile_dout1[31..0]" (rect 2000 -472 2093 -455)(font "Intel Clear" ))
-	(pt 2048 -456)
-	(pt 2000 -456)
-	(bus)
-)
-(connector
 	(text "pc_out[31..0]" (rect 2000 -440 2061 -423)(font "Intel Clear" ))
 	(pt 2048 -424)
 	(pt 2000 -424)
@@ -3592,12 +3466,6 @@ refer to the applicable agreement for further details.
 	(pt 752 32)
 )
 (connector
-	(text "alures[31..0]" (rect 352 376 411 393)(font "Intel Clear" ))
-	(pt 400 392)
-	(pt 352 392)
-	(bus)
-)
-(connector
 	(text "btn_clk" (rect 2162 16 2197 33)(font "Intel Clear" ))
 	(pt 2152 32)
 	(pt 2184 32)
@@ -3637,35 +3505,13 @@ refer to the applicable agreement for further details.
 	(pt 2144 0)
 )
 (connector
-	(pt 1968 576)
-	(pt 1968 -32)
-	(bus)
-)
-(connector
 	(pt 1976 552)
 	(pt 1976 -16)
 	(bus)
 )
 (connector
-	(text "regfile_dout1[31..0]" (rect 2496 -80 2589 -63)(font "Intel Clear" ))
-	(pt 2480 -64)
-	(pt 2520 -64)
-	(bus)
-)
-(connector
 	(pt 2680 -128)
 	(pt 2680 -48)
-	(bus)
-)
-(connector
-	(text "regfile_dout2[31..0]" (rect 2786 -64 2879 -47)(font "Intel Clear" ))
-	(pt 2680 -48)
-	(pt 2480 -48)
-	(bus)
-)
-(connector
-	(pt 1968 -32)
-	(pt 2184 -32)
 	(bus)
 )
 (connector
@@ -3689,12 +3535,6 @@ refer to the applicable agreement for further details.
 	(text "din1_decode[31..0]" (rect 2496 -384 2585 -367)(font "Intel Clear" ))
 	(pt 2496 -368)
 	(pt 2552 -368)
-	(bus)
-)
-(connector
-	(text "din1_decode[31..0]" (rect 2776 -160 2865 -143)(font "Intel Clear" ))
-	(pt 2808 -144)
-	(pt 2776 -144)
 	(bus)
 )
 (connector
@@ -3796,12 +3636,6 @@ refer to the applicable agreement for further details.
 	(pt 2600 -608)
 )
 (connector
-	(text "regfile_dout2[31..0]" (rect 2000 -456 2093 -439)(font "Intel Clear" ))
-	(pt 2048 -440)
-	(pt 2000 -440)
-	(bus)
-)
-(connector
 	(text "branch" (rect 2408 -333 2425 -302)(font "Intel Clear" )(vertical))
 	(pt 2424 -336)
 	(pt 2424 -304)
@@ -3811,14 +3645,175 @@ refer to the applicable agreement for further details.
 	(pt 2544 296)
 	(pt 2544 344)
 )
+(connector
+	(pt 3264 -56)
+	(pt 3208 -56)
+	(bus)
+)
+(connector
+	(pt 3552 32)
+	(pt 3208 32)
+	(bus)
+)
+(connector
+	(pt 3208 -144)
+	(pt 3208 -56)
+	(bus)
+)
+(connector
+	(pt 3208 -56)
+	(pt 3208 32)
+	(bus)
+)
+(connector
+	(text "forwarding_mux_din2[31..0]" (rect 3050 -160 3182 -143)(font "Intel Clear" ))
+	(pt 3040 -144)
+	(pt 3208 -144)
+	(bus)
+)
+(connector
+	(text "regfile_dout2[31..0]" (rect 2786 -64 2879 -47)(font "Intel Clear" ))
+	(pt 2680 -48)
+	(pt 2480 -48)
+	(bus)
+)
+(connector
+	(pt 1968 576)
+	(pt 7512 576)
+	(bus)
+)
+(connector
+	(text "rez[31..0]" (rect 7226 -200 7269 -183)(font "Intel Clear" ))
+	(pt 7216 -184)
+	(pt 7512 -184)
+	(bus)
+)
+(connector
+	(pt 7512 -184)
+	(pt 7512 576)
+	(bus)
+)
+(connector
+	(pt 1968 576)
+	(pt 1968 -32)
+	(bus)
+)
+(connector
+	(pt 1968 -32)
+	(pt 2184 -32)
+	(bus)
+)
+(connector
+	(text "regfile_dout1[31..0]" (rect 2000 -472 2093 -455)(font "Intel Clear" ))
+	(pt 2048 -456)
+	(pt 2000 -456)
+	(bus)
+)
+(connector
+	(text "regfile_dout2[31..0]" (rect 2000 -456 2093 -439)(font "Intel Clear" ))
+	(pt 2048 -440)
+	(pt 2000 -440)
+	(bus)
+)
+(connector
+	(text "alures[31..0]" (rect 346 392 405 409)(font "Intel Clear" ))
+	(pt 400 408)
+	(pt 336 408)
+	(bus)
+)
+(connector
+	(text "alu_din1[31..0]" (rect 338 360 408 377)(font "Intel Clear" ))
+	(pt 400 376)
+	(pt 328 376)
+	(bus)
+)
+(connector
+	(text "alu_din2[31..0]" (rect 338 376 408 393)(font "Intel Clear" ))
+	(pt 400 392)
+	(pt 328 392)
+	(bus)
+)
+(connector
+	(pt 352 344)
+	(pt 352 336)
+	(bus)
+)
+(connector
+	(text "regfile_dout2[31..0]" (rect 352 328 445 345)(font "Intel Clear" ))
+	(pt 400 344)
+	(pt 352 344)
+	(bus)
+)
+(connector
+	(text "din1_decode[31..0]" (rect 336 312 425 329)(font "Intel Clear" ))
+	(pt 400 328)
+	(pt 336 328)
+	(bus)
+)
+(connector
+	(text "gp_0[6..0]" (rect 194 400 241 417)(font "Intel Clear" ))
+	(pt 184 416)
+	(pt 224 416)
+	(bus)
+)
+(connector
+	(text "gp_0[31..7]" (rect 200 457 217 510)(font "Intel Clear" )(vertical))
+	(pt 216 512)
+	(pt 216 472)
+	(bus)
+)
+(connector
+	(text "aluOp[6..0]" (rect 80 400 133 417)(font "Intel Clear" ))
+	(pt 136 416)
+	(pt 80 416)
+	(bus)
+)
+(connector
+	(pt 96 312)
+	(pt 96 360)
+	(bus)
+)
+(connector
+	(pt 56 312)
+	(pt 96 312)
+	(bus)
+)
+(connector
+	(pt 96 312)
+	(pt 136 312)
+	(bus)
+)
+(connector
+	(pt 80 360)
+	(pt 96 360)
+	(bus)
+)
+(connector
+	(pt 96 360)
+	(pt 136 360)
+	(bus)
+)
+(connector
+	(text "regfile_dout1[31..0]" (rect 2496 -80 2589 -63)(font "Intel Clear" ))
+	(pt 2480 -64)
+	(pt 2520 -64)
+	(bus)
+)
+(connector
+	(text "din1_decode[31..0]" (rect 2776 -160 2865 -143)(font "Intel Clear" ))
+	(pt 2808 -144)
+	(pt 2776 -144)
+	(bus)
+)
 (junction (pt 360 104))
-(junction (pt 80 312))
 (junction (pt 136 360))
 (junction (pt 1128 -56))
 (junction (pt 3816 -160))
 (junction (pt 3816 -144))
 (junction (pt 3208 -56))
 (junction (pt 3520 96))
+(junction (pt 96 312))
+(junction (pt 96 360))
 (text "INSTRUCTION FETCH" (rect 1048 -816 1266 -791)(font "Intel Clear" (color 0 0 0)(font_size 14)))
 (text "INSTRUCTION DECODE" (rect 2168 -824 2405 -799)(font "Intel Clear" (color 0 0 0)(font_size 14)))
 (text "ID/EX PIPELINE" (rect 2896 -824 3051 -799)(font "Intel Clear" (color 0 0 0)(font_size 14)))

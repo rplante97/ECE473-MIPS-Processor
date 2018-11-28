@@ -44,6 +44,8 @@ module controller(
 			use_imm = 0;
 			ALUop = funct_code;
 			jump_register = 0;
+			mem_load = 0;
+			mem_store = 0;
 		end
 		if ((opcode == 0) && (funct_code == 0) && (rd == 0)) begin //nop
 			ALUop = 0;

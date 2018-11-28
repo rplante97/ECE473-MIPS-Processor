@@ -2,48 +2,48 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'instruction_pipeline:inst13|ins_out[0]'
-Slack : -26.013
-TNS   : -50.191
-
-Type  : Slow 1100mV 85C Model Setup 'instruction_pipeline:inst13|ins_out[26]'
-Slack : -25.410
-TNS   : -320.193
-
 Type  : Slow 1100mV 85C Model Setup 'KEY[0]'
-Slack : -20.591
-TNS   : -4298.205
+Slack : -22.636
+TNS   : -4082.758
 
 Type  : Slow 1100mV 85C Model Setup 'inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -17.839
-TNS   : -954.309
+Slack : -22.594
+TNS   : -709.235
+
+Type  : Slow 1100mV 85C Model Setup 'instruction_pipeline:inst13|ins_out[26]'
+Slack : -10.327
+TNS   : -326.287
+
+Type  : Slow 1100mV 85C Model Setup 'instruction_pipeline:inst13|ins_out[0]'
+Slack : -9.746
+TNS   : -28.534
 
 Type  : Slow 1100mV 85C Model Hold 'KEY[0]'
-Slack : -7.428
-TNS   : -261.129
+Slack : -7.382
+TNS   : -432.323
 
 Type  : Slow 1100mV 85C Model Hold 'inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.271
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'instruction_pipeline:inst13|ins_out[26]'
-Slack : 1.756
-TNS   : 0.000
+Slack : -1.479
+TNS   : -40.620
 
 Type  : Slow 1100mV 85C Model Hold 'instruction_pipeline:inst13|ins_out[0]'
-Slack : 2.514
+Slack : -0.275
+TNS   : -0.316
+
+Type  : Slow 1100mV 85C Model Hold 'instruction_pipeline:inst13|ins_out[26]'
+Slack : 0.426
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
 Slack : -2.636
-TNS   : -1330.042
+TNS   : -1329.991
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'instruction_pipeline:inst13|ins_out[26]'
-Slack : 0.072
+Slack : 0.205
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'instruction_pipeline:inst13|ins_out[0]'
-Slack : 0.289
+Slack : 0.280
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
@@ -58,48 +58,48 @@ Type  : Slow 1100mV 85C Model Minimum Pulse Width 'inst|inst4|vgaclk_inst|altera
 Slack : 18.495
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Setup 'instruction_pipeline:inst13|ins_out[0]'
-Slack : -24.982
-TNS   : -48.570
-
-Type  : Slow 1100mV 0C Model Setup 'instruction_pipeline:inst13|ins_out[26]'
-Slack : -24.499
-TNS   : -318.243
+Type  : Slow 1100mV 0C Model Setup 'inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -22.260
+TNS   : -699.438
 
 Type  : Slow 1100mV 0C Model Setup 'KEY[0]'
-Slack : -20.123
-TNS   : -4154.111
+Slack : -22.209
+TNS   : -3978.139
 
-Type  : Slow 1100mV 0C Model Setup 'inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -17.385
-TNS   : -928.546
+Type  : Slow 1100mV 0C Model Setup 'instruction_pipeline:inst13|ins_out[26]'
+Slack : -9.992
+TNS   : -325.829
+
+Type  : Slow 1100mV 0C Model Setup 'instruction_pipeline:inst13|ins_out[0]'
+Slack : -9.455
+TNS   : -27.568
 
 Type  : Slow 1100mV 0C Model Hold 'KEY[0]'
-Slack : -7.199
-TNS   : -251.922
+Slack : -7.217
+TNS   : -425.027
 
 Type  : Slow 1100mV 0C Model Hold 'inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.259
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'instruction_pipeline:inst13|ins_out[26]'
-Slack : 1.595
-TNS   : 0.000
+Slack : -1.493
+TNS   : -40.340
 
 Type  : Slow 1100mV 0C Model Hold 'instruction_pipeline:inst13|ins_out[0]'
-Slack : 2.225
+Slack : -0.335
+TNS   : -0.408
+
+Type  : Slow 1100mV 0C Model Hold 'instruction_pipeline:inst13|ins_out[26]'
+Slack : 0.317
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
 Slack : -2.636
-TNS   : -1285.113
+TNS   : -1287.151
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'instruction_pipeline:inst13|ins_out[26]'
-Slack : 0.043
+Slack : 0.144
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'instruction_pipeline:inst13|ins_out[0]'
-Slack : 0.306
+Slack : 0.232
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
@@ -111,51 +111,51 @@ Slack : 9.980
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 18.452
+Slack : 18.446
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Setup 'instruction_pipeline:inst13|ins_out[0]'
-Slack : -15.350
-TNS   : -27.956
-
-Type  : Fast 1100mV 85C Model Setup 'instruction_pipeline:inst13|ins_out[26]'
-Slack : -14.900
-TNS   : -150.062
-
 Type  : Fast 1100mV 85C Model Setup 'KEY[0]'
-Slack : -11.396
-TNS   : -2101.682
+Slack : -12.470
+TNS   : -1940.176
 
 Type  : Fast 1100mV 85C Model Setup 'inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -9.672
-TNS   : -532.953
+Slack : -12.424
+TNS   : -388.350
+
+Type  : Fast 1100mV 85C Model Setup 'instruction_pipeline:inst13|ins_out[26]'
+Slack : -5.147
+TNS   : -148.865
+
+Type  : Fast 1100mV 85C Model Setup 'instruction_pipeline:inst13|ins_out[0]'
+Slack : -4.850
+TNS   : -14.150
 
 Type  : Fast 1100mV 85C Model Hold 'KEY[0]'
-Slack : -4.032
-TNS   : -140.483
+Slack : -4.091
+TNS   : -235.513
 
 Type  : Fast 1100mV 85C Model Hold 'inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.136
+Slack : -0.740
+TNS   : -19.682
+
+Type  : Fast 1100mV 85C Model Hold 'instruction_pipeline:inst13|ins_out[0]'
+Slack : 0.144
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'instruction_pipeline:inst13|ins_out[26]'
-Slack : 1.218
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'instruction_pipeline:inst13|ins_out[0]'
-Slack : 1.728
+Slack : 0.486
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
 Slack : -2.174
-TNS   : -896.097
+TNS   : -897.886
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'instruction_pipeline:inst13|ins_out[26]'
-Slack : 0.205
+Slack : 0.229
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'instruction_pipeline:inst13|ins_out[0]'
-Slack : 0.343
+Slack : 0.324
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
@@ -170,48 +170,48 @@ Type  : Fast 1100mV 85C Model Minimum Pulse Width 'inst|inst4|vgaclk_inst|altera
 Slack : 18.785
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Setup 'instruction_pipeline:inst13|ins_out[0]'
-Slack : -13.633
-TNS   : -25.422
-
-Type  : Fast 1100mV 0C Model Setup 'instruction_pipeline:inst13|ins_out[26]'
-Slack : -13.261
-TNS   : -143.929
+Type  : Fast 1100mV 0C Model Setup 'inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -11.347
+TNS   : -355.984
 
 Type  : Fast 1100mV 0C Model Setup 'KEY[0]'
-Slack : -9.895
-TNS   : -1804.897
+Slack : -10.893
+TNS   : -1676.574
 
-Type  : Fast 1100mV 0C Model Setup 'inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -8.927
-TNS   : -493.817
+Type  : Fast 1100mV 0C Model Setup 'instruction_pipeline:inst13|ins_out[26]'
+Slack : -4.805
+TNS   : -142.247
+
+Type  : Fast 1100mV 0C Model Setup 'instruction_pipeline:inst13|ins_out[0]'
+Slack : -4.537
+TNS   : -13.223
 
 Type  : Fast 1100mV 0C Model Hold 'KEY[0]'
-Slack : -3.904
-TNS   : -141.372
+Slack : -3.971
+TNS   : -235.611
 
 Type  : Fast 1100mV 0C Model Hold 'inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.123
+Slack : -0.751
+TNS   : -20.343
+
+Type  : Fast 1100mV 0C Model Hold 'instruction_pipeline:inst13|ins_out[0]'
+Slack : 0.108
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'instruction_pipeline:inst13|ins_out[26]'
-Slack : 1.088
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'instruction_pipeline:inst13|ins_out[0]'
-Slack : 1.449
+Slack : 0.398
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
 Slack : -2.174
-TNS   : -867.374
+TNS   : -868.494
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'instruction_pipeline:inst13|ins_out[26]'
-Slack : 0.241
+Slack : 0.255
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'instruction_pipeline:inst13|ins_out[0]'
-Slack : 0.367
+Slack : 0.329
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
