@@ -23,6 +23,7 @@ module branch_unit (
 	output reg branch,
 	output reg [31:0] value_ra,
 	output reg [4:0] thirty_one
+	//output reg jump_jal
 
 );
 
@@ -43,6 +44,7 @@ module branch_unit (
 	
 	initial begin
 		branch = 0;
+		//jump_jal = 0;
 	end
 	
 	always begin 
@@ -75,12 +77,80 @@ module branch_unit (
 		value_rt = val2;
 	end
 	
-	
+	case(opcode)
+		2: //JUMP
+			//Here we just want to jump to the register stored in target
+			begin
+			branch = 1;
+			pc_value = ((pc & 32'hf0000000) | (target << 2))/4; //This is just how the target address is calculated for jump instruction	
+			end
+		3: //JAL
+			//Jump code here is same as regular jump instruction
+			begin
+			branch = 1;
+			pc_value = ((pc & 32'hf0000000) | (target << 2))/4;
+		
+			//Need to deal with writing data to return register now
+			//Return register address is a hard coded value (31)
+			//Return register data is just our current program counter +2
+			value_ra = pc + 2;
+			thirty_one = 31;	
+			end
+		4: //BEQ	
+			//If they are equal
+			if (value_rt == value_rs) begin
+				branch = 1;
+				pc_value = pc + sign_ext_imm + 1; //We add 1 here due to the current placement of our mux
+			end
+			//If not equal
+			else begin
+				branch = 0;
+				pc_value = 0;
+			end
+		5: //BNE
+			//If equal do nothing
+			if(value_rt == value_rs) begin
+				branch = 0;
+				pc_value = 0;
+			end
+			//if not equal branch
+			else begin
+				branch = 1;
+				pc_value = pc + sign_ext_imm + 1; //We add 1 here due to the current placement of our mux
+			end
+		default:
+			begin
+			branch = 0;
+			pc_value = 0;
+			thirty_one = 31;
+			end
+	endcase 
+	/*
 	//Forwarding taken care of, value_rs and value_rt should now hold correct comparison values
 	
 	//Currently this logic does not account for SW instructions modifying the register values
+	
+	//JUMP
+	if (opcode == 2) begin
+		//Here we just want to jump to the register stored in target
+		branch = 1;
+		pc_value = ((pc & 32'hf0000000) | (target << 2))/4; //This is just how the target address is calculated for jump instruction
+	end
+	
+	//JAL
+	else if (opcode == 3) begin
+		//Jump code here is same as regular jump instruction
+		branch = 1;
+		pc_value = ((pc & 32'hf0000000) | (target << 2))/4;
+		
+		//Need to deal with writing data to return register now
+		//Return register address is a hard coded value (31)
+		//Return register data is just our current program counter +2
+		value_ra = pc + 2;
+		thirty_one = 31;
+	end
 	//BEQ
-	if(opcode == 4) begin
+	else if(opcode == 4) begin
 		
 		//If they are equal
 		if (value_rt == value_rs) begin
@@ -108,35 +178,15 @@ module branch_unit (
 			pc_value = pc + sign_ext_imm + 1; //We add 1 here due to the current placement of our mux
 		end
 	end
-	
-	//JUMP
-	if (opcode == 2) begin
-		//Here we just want to jump to the register stored in target
-		branch = 1;
-		pc_value = ((pc & 32'hf0000000) | (target << 2))/4; //This is just how the target address is calculated for jump instruction
-	end
-	
-	//JAL
-	else if (opcode == 3) begin
-		//Jump code here is same as regular jump instruction
-		branch = 1;
-		pc_value = ((pc & 32'hf0000000) | (target << 2))/4;
-		
-		//Need to deal with writing data to return register now
-		//Return register address is a hard coded value (31)
-		//Return register data is just our current program counter +2
-		value_ra = pc + 2;
-		thirty_one = 31;
-	end
-	
+
 	//If we are not on a branch instruction
 	else begin 
 		branch = 0;
 		pc_value = 0;
+		//jump_jal = 0;
+		//thirty_one = 31;
 	end
-	
-	
-	
+	*/
 	end
 
 endmodule 
