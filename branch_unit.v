@@ -117,7 +117,7 @@ module branch_unit (
 	end
 	
 	//JAL
-	if (opcode == 3) begin
+	else if (opcode == 3) begin
 		//Jump code here is same as regular jump instruction
 		branch = 1;
 		pc_value = ((pc & 32'hf0000000) | (target << 2))/4;

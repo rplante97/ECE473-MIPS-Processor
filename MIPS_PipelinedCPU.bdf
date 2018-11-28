@@ -1193,7 +1193,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 2080 -712 2296 -568)
+	(rect 2080 -720 2296 -576)
 	(text "controller" (rect 5 0 49 12)(font "Arial" ))
 	(text "inst17" (rect 8 128 37 140)(font "Arial" ))
 	(port
@@ -2121,28 +2121,28 @@ refer to the applicable agreement for further details.
 		(pt 248 32)
 		(output)
 		(text "pc_value[31..0]" (rect 0 0 76 12)(font "Arial" ))
-		(text "pc_value[31..0]" (rect 163 27 227 39)(font "Arial" ))
+		(text "pc_value[31..0]" (rect 163 27 239 39)(font "Arial" ))
 		(line (pt 248 32)(pt 232 32)(line_width 3))
 	)
 	(port
 		(pt 248 48)
 		(output)
 		(text "branch" (rect 0 0 33 12)(font "Arial" ))
-		(text "branch" (rect 200 43 227 55)(font "Arial" ))
+		(text "branch" (rect 200 43 233 55)(font "Arial" ))
 		(line (pt 248 48)(pt 232 48))
 	)
 	(port
 		(pt 248 64)
 		(output)
 		(text "value_ra[31..0]" (rect 0 0 74 12)(font "Arial" ))
-		(text "value_ra[31..0]" (rect 165 59 227 71)(font "Arial" ))
+		(text "value_ra[31..0]" (rect 165 59 239 71)(font "Arial" ))
 		(line (pt 248 64)(pt 232 64)(line_width 3))
 	)
 	(port
 		(pt 248 80)
 		(output)
 		(text "thirty_one[4..0]" (rect 0 0 75 12)(font "Arial" ))
-		(text "thirty_one[4..0]" (rect 164 75 227 87)(font "Arial" ))
+		(text "thirty_one[4..0]" (rect 164 75 239 87)(font "Arial" ))
 		(line (pt 248 80)(pt 232 80)(line_width 3))
 	)
 	(drawing
@@ -2936,30 +2936,6 @@ refer to the applicable agreement for further details.
 	(pt 2672 -208)
 )
 (connector
-	(text "ins[31..0]" (rect 2042 -696 2084 -679)(font "Intel Clear" ))
-	(pt 2032 -680)
-	(pt 2080 -680)
-	(bus)
-)
-(connector
-	(pt 2672 -680)
-	(pt 2296 -680)
-)
-(connector
-	(pt 2672 -208)
-	(pt 2672 -680)
-)
-(connector
-	(pt 2296 -664)
-	(pt 2800 -664)
-	(bus)
-)
-(connector
-	(pt 2800 -664)
-	(pt 2800 -552)
-	(bus)
-)
-(connector
 	(pt 2800 -552)
 	(pt 2912 -552)
 	(bus)
@@ -2979,24 +2955,8 @@ refer to the applicable agreement for further details.
 	(pt 2656 -176)
 )
 (connector
-	(pt 2296 -632)
-	(pt 2656 -632)
-)
-(connector
-	(pt 2656 -176)
-	(pt 2656 -632)
-)
-(connector
 	(pt 2808 -192)
 	(pt 2640 -192)
-)
-(connector
-	(pt 2296 -648)
-	(pt 2640 -648)
-)
-(connector
-	(pt 2640 -192)
-	(pt 2640 -648)
 )
 (connector
 	(text "write_addr_ex[4..0]" (rect 3602 224 3692 241)(font "Intel Clear" ))
@@ -3150,15 +3110,7 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2296 -616)
-	(pt 2616 -616)
-)
-(connector
 	(pt 2808 -160)
-	(pt 2616 -160)
-)
-(connector
-	(pt 2616 -616)
 	(pt 2616 -160)
 )
 (connector
@@ -3273,14 +3225,6 @@ refer to the applicable agreement for further details.
 )
 (connector
 	(pt 2744 -144)
-	(pt 2600 -144)
-)
-(connector
-	(pt 2296 -600)
-	(pt 2600 -600)
-)
-(connector
-	(pt 2600 -600)
 	(pt 2600 -144)
 )
 (connector
@@ -3810,6 +3754,62 @@ refer to the applicable agreement for further details.
 	(pt 2616 264)
 	(pt 2688 264)
 	(bus)
+)
+(connector
+	(text "ins[31..0]" (rect 2042 -704 2084 -687)(font "Intel Clear" ))
+	(pt 2032 -688)
+	(pt 2080 -688)
+	(bus)
+)
+(connector
+	(pt 2672 -688)
+	(pt 2296 -688)
+)
+(connector
+	(pt 2672 -208)
+	(pt 2672 -688)
+)
+(connector
+	(pt 2800 -672)
+	(pt 2296 -672)
+	(bus)
+)
+(connector
+	(pt 2800 -552)
+	(pt 2800 -672)
+	(bus)
+)
+(connector
+	(pt 2656 -640)
+	(pt 2296 -640)
+)
+(connector
+	(pt 2656 -176)
+	(pt 2656 -640)
+)
+(connector
+	(pt 2640 -656)
+	(pt 2296 -656)
+)
+(connector
+	(pt 2640 -192)
+	(pt 2640 -656)
+)
+(connector
+	(pt 2616 -624)
+	(pt 2296 -624)
+)
+(connector
+	(pt 2616 -160)
+	(pt 2616 -624)
+)
+(connector
+	(pt 2600 -608)
+	(pt 2296 -608)
+)
+(connector
+	(pt 2600 -144)
+	(pt 2600 -608)
 )
 (junction (pt 360 104))
 (junction (pt 80 312))
