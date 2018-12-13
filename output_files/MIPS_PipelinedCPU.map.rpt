@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_PipelinedCPU
-Wed Nov 28 09:39:09 2018
+Wed Dec 12 21:56:36 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -23,33 +23,34 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
  15. Inverted Register Statistics
  16. Multiplexer Restructuring Statistics (Restructuring Performed)
  17. Source assignments for VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated
- 18. Source assignments for ins_mem:inst3|altsyncram:altsyncram_component|altsyncram_lkm2:auto_generated
+ 18. Source assignments for ins_mem:inst3|altsyncram:altsyncram_component|altsyncram_itm2:auto_generated
  19. Source assignments for regfile32x32:inst4|altsyncram:regfile[0][31]__1|altsyncram_46j1:auto_generated
  20. Source assignments for regfile32x32:inst4|altsyncram:regfile[0][31]__2|altsyncram_46j1:auto_generated
  21. Source assignments for regfile32x32:inst4|altsyncram:regfile[0][31]__3|altsyncram_46j1:auto_generated
- 22. Source assignments for data_mem:inst2|altsyncram:altsyncram_component|altsyncram_kkm2:auto_generated
+ 22. Source assignments for data_mem:inst2|altsyncram:altsyncram_component|altsyncram_gtm2:auto_generated
  23. Parameter Settings for User Entity Instance: VGA_BLOCK:inst|vga_control:inst2
  24. Parameter Settings for User Entity Instance: VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i
  25. Parameter Settings for User Entity Instance: VGA_BLOCK:inst|char_engine:inst
  26. Parameter Settings for User Entity Instance: VGA_BLOCK:inst|color_encoder:inst1
  27. Parameter Settings for User Entity Instance: VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component
- 28. Parameter Settings for User Entity Instance: ins_mem:inst3|altsyncram:altsyncram_component
- 29. Parameter Settings for User Entity Instance: regfile32x32:inst4|altsyncram:regfile[0][31]__1
- 30. Parameter Settings for User Entity Instance: regfile32x32:inst4|altsyncram:regfile[0][31]__2
- 31. Parameter Settings for User Entity Instance: regfile32x32:inst4|altsyncram:regfile[0][31]__3
- 32. Parameter Settings for User Entity Instance: mux_32:inst34|lpm_mux:LPM_MUX_component
- 33. Parameter Settings for User Entity Instance: RegDst_mux:inst200|lpm_mux:LPM_MUX_component
- 34. Parameter Settings for User Entity Instance: mux_32:inst8|lpm_mux:LPM_MUX_component
- 35. Parameter Settings for User Entity Instance: data_mem:inst2|altsyncram:altsyncram_component
- 36. Parameter Settings for User Entity Instance: RegDst_mux:inst35|lpm_mux:LPM_MUX_component
- 37. Parameter Settings for User Entity Instance: mux_32:inst16|lpm_mux:LPM_MUX_component
- 38. Parameter Settings for User Entity Instance: mux_32:inst21|lpm_mux:LPM_MUX_component
- 39. Parameter Settings for User Entity Instance: jump_mux:inst19|lpm_mux:LPM_MUX_component
- 40. altsyncram Parameter Settings by Entity Instance
- 41. Post-Synthesis Netlist Statistics for Top Partition
- 42. Elapsed Time Per Partition
- 43. Analysis & Synthesis Messages
- 44. Analysis & Synthesis Suppressed Messages
+ 28. Parameter Settings for User Entity Instance: mux_2to1:inst11|lpm_mux:LPM_MUX_component
+ 29. Parameter Settings for User Entity Instance: ins_mem:inst3|altsyncram:altsyncram_component
+ 30. Parameter Settings for User Entity Instance: regfile32x32:inst4|altsyncram:regfile[0][31]__1
+ 31. Parameter Settings for User Entity Instance: regfile32x32:inst4|altsyncram:regfile[0][31]__2
+ 32. Parameter Settings for User Entity Instance: regfile32x32:inst4|altsyncram:regfile[0][31]__3
+ 33. Parameter Settings for User Entity Instance: mux_32:inst34|lpm_mux:LPM_MUX_component
+ 34. Parameter Settings for User Entity Instance: RegDst_mux:inst200|lpm_mux:LPM_MUX_component
+ 35. Parameter Settings for User Entity Instance: mux_32:inst8|lpm_mux:LPM_MUX_component
+ 36. Parameter Settings for User Entity Instance: data_mem:inst2|altsyncram:altsyncram_component
+ 37. Parameter Settings for User Entity Instance: RegDst_mux:inst35|lpm_mux:LPM_MUX_component
+ 38. Parameter Settings for User Entity Instance: mux_32:inst16|lpm_mux:LPM_MUX_component
+ 39. Parameter Settings for User Entity Instance: mux_32:inst21|lpm_mux:LPM_MUX_component
+ 40. Parameter Settings for User Entity Instance: jump_mux:inst19|lpm_mux:LPM_MUX_component
+ 41. altsyncram Parameter Settings by Entity Instance
+ 42. Post-Synthesis Netlist Statistics for Top Partition
+ 43. Elapsed Time Per Partition
+ 44. Analysis & Synthesis Messages
+ 45. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -75,14 +76,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Nov 28 09:39:09 2018       ;
+; Analysis & Synthesis Status     ; Successful - Wed Dec 12 21:56:36 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; MIPS_PipelinedCPU                           ;
 ; Top-level Entity Name           ; MIPS_PipelinedCPU                           ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 965                                         ;
-; Total pins                      ; 16                                          ;
+; Total registers                 ; 1000                                        ;
+; Total pins                      ; 17                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 314,368                                     ;
 ; Total DSP Blocks                ; 1                                           ;
@@ -206,8 +207,8 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                      ; Library ;
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
-; m3_test3_sum_Data.mif            ; yes             ; User Memory Initialization File    ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/m3_test3_sum_Data.mif          ;         ;
-; m3_test3_sum_Code.mif            ; yes             ; User Memory Initialization File    ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/m3_test3_sum_Code.mif          ;         ;
+; CLK_DIV.VHD                      ; yes             ; User VHDL File                     ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/CLK_DIV.VHD                    ;         ;
+; Test09-Fibonacci-Code.mif        ; yes             ; User Memory Initialization File    ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/Test09-Fibonacci-Code.mif      ;         ;
 ; ALU_32bit.v                      ; yes             ; User Verilog HDL File              ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v                    ;         ;
 ; VGA_Components/vram.v            ; yes             ; User Wizard-Generated File         ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vram.v          ;         ;
 ; VGA_Components/vgaclk_0002.v     ; yes             ; User Verilog HDL File              ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/VGA_Components/vgaclk_0002.v   ;         ;
@@ -234,6 +235,7 @@ refer to the applicable agreement for further details.
 ; data_forwarding.v                ; yes             ; User Verilog HDL File              ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/data_forwarding.v              ;         ;
 ; jumpReg_forward.v                ; yes             ; User Verilog HDL File              ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/jumpReg_forward.v              ;         ;
 ; branch_unit.v                    ; yes             ; User Verilog HDL File              ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/branch_unit.v                  ;         ;
+; mux_2to1.v                       ; yes             ; User Wizard-Generated File         ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/mux_2to1.v                     ;         ;
 ; altera_pll.v                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altera_pll.v               ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf             ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/stratix_ram_block.inc      ;         ;
@@ -249,15 +251,16 @@ refer to the applicable agreement for further details.
 ; db/decode_s2a.tdf                ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/decode_s2a.tdf              ;         ;
 ; db/mux_chb.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/mux_chb.tdf                 ;         ;
 ; db/mux_jhb.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/mux_jhb.tdf                 ;         ;
-; db/altsyncram_lkm2.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_lkm2.tdf         ;         ;
-; db/altsyncram_46j1.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_46j1.tdf         ;         ;
 ; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.tdf                ;         ;
 ; muxlut.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/muxlut.inc                 ;         ;
 ; bypassff.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/bypassff.inc               ;         ;
 ; altshift.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altshift.inc               ;         ;
+; db/mux_pjc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/mux_pjc.tdf                 ;         ;
+; db/altsyncram_itm2.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_itm2.tdf         ;         ;
+; db/altsyncram_46j1.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_46j1.tdf         ;         ;
 ; db/mux_dlc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/mux_dlc.tdf                 ;         ;
 ; db/mux_tjc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/mux_tjc.tdf                 ;         ;
-; db/altsyncram_kkm2.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_kkm2.tdf         ;         ;
+; db/altsyncram_gtm2.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_gtm2.tdf         ;         ;
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
 
 
@@ -266,18 +269,18 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                      ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 1860                                                                                       ;
+; Estimate of Logic utilization (ALMs needed) ; 1847                                                                                       ;
 ;                                             ;                                                                                            ;
-; Combinational ALUT usage for logic          ; 2683                                                                                       ;
-;     -- 7 input functions                    ; 36                                                                                         ;
-;     -- 6 input functions                    ; 943                                                                                        ;
-;     -- 5 input functions                    ; 361                                                                                        ;
-;     -- 4 input functions                    ; 409                                                                                        ;
-;     -- <=3 input functions                  ; 934                                                                                        ;
+; Combinational ALUT usage for logic          ; 2703                                                                                       ;
+;     -- 7 input functions                    ; 40                                                                                         ;
+;     -- 6 input functions                    ; 892                                                                                        ;
+;     -- 5 input functions                    ; 422                                                                                        ;
+;     -- 4 input functions                    ; 418                                                                                        ;
+;     -- <=3 input functions                  ; 931                                                                                        ;
 ;                                             ;                                                                                            ;
-; Dedicated logic registers                   ; 965                                                                                        ;
+; Dedicated logic registers                   ; 1000                                                                                       ;
 ;                                             ;                                                                                            ;
-; I/O pins                                    ; 16                                                                                         ;
+; I/O pins                                    ; 17                                                                                         ;
 ; Total MLAB memory bits                      ; 0                                                                                          ;
 ; Total block memory bits                     ; 314368                                                                                     ;
 ;                                             ;                                                                                            ;
@@ -288,8 +291,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                                                                                            ;
 ; Maximum fan-out node                        ; VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
 ; Maximum fan-out                             ; 658                                                                                        ;
-; Total fan-out                               ; 18378                                                                                      ;
-; Average fan-out                             ; 4.74                                                                                       ;
+; Total fan-out                               ; 18510                                                                                      ;
+; Average fan-out                             ; 4.70                                                                                       ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------+
 
 
@@ -298,7 +301,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                  ; Entity Name          ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
-; |MIPS_PipelinedCPU                           ; 2683 (1)            ; 965 (0)                   ; 314368            ; 1          ; 16   ; 0            ; |MIPS_PipelinedCPU                                                                                                                   ; MIPS_PipelinedCPU    ; work         ;
+; |MIPS_PipelinedCPU                           ; 2703 (1)            ; 1000 (0)                  ; 314368            ; 1          ; 17   ; 0            ; |MIPS_PipelinedCPU                                                                                                                   ; MIPS_PipelinedCPU    ; work         ;
 ;    |ALU_32bit:inst7|                         ; 502 (502)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|ALU_32bit:inst7                                                                                                   ; ALU_32bit            ; work         ;
 ;    |ALU_pipeline:inst23|                     ; 1 (1)               ; 73 (73)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|ALU_pipeline:inst23                                                                                               ; ALU_pipeline         ; work         ;
 ;    |RegDst_mux:inst200|                      ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|RegDst_mux:inst200                                                                                                ; RegDst_mux           ; work         ;
@@ -307,8 +310,8 @@ refer to the applicable agreement for further details.
 ;    |RegDst_mux:inst35|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|RegDst_mux:inst35                                                                                                 ; RegDst_mux           ; work         ;
 ;       |lpm_mux:LPM_MUX_component|            ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|RegDst_mux:inst35|lpm_mux:LPM_MUX_component                                                                       ; lpm_mux              ; work         ;
 ;          |mux_tjc:auto_generated|            ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|RegDst_mux:inst35|lpm_mux:LPM_MUX_component|mux_tjc:auto_generated                                                ; mux_tjc              ; work         ;
-;    |VGA_BLOCK:inst|                          ; 1536 (0)            ; 683 (0)                   ; 307200            ; 1          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst                                                                                                    ; VGA_BLOCK            ; work         ;
-;       |char_engine:inst|                     ; 1275 (1275)         ; 592 (592)                 ; 0                 ; 1          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst                                                                                   ; char_engine          ; work         ;
+;    |VGA_BLOCK:inst|                          ; 1533 (0)            ; 683 (0)                   ; 307200            ; 1          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst                                                                                                    ; VGA_BLOCK            ; work         ;
+;       |char_engine:inst|                     ; 1272 (1272)         ; 592 (592)                 ; 0                 ; 1          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst                                                                                   ; char_engine          ; work         ;
 ;       |vga_control:inst2|                    ; 173 (173)           ; 85 (85)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|vga_control:inst2                                                                                  ; vga_control          ; work         ;
 ;       |vgaclk:inst4|                         ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|vgaclk:inst4                                                                                       ; vgaclk               ; work         ;
 ;          |vgaclk_0002:vgaclk_inst|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst                                                               ; vgaclk_0002          ; work         ;
@@ -320,25 +323,29 @@ refer to the applicable agreement for further details.
 ;                |decode_s2a:rden_decode_a|    ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|decode_s2a:rden_decode_a ; decode_s2a           ; work         ;
 ;                |mux_chb:mux4|                ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|mux_chb:mux4             ; mux_chb              ; work         ;
 ;    |branch_unit:inst12|                      ; 249 (249)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|branch_unit:inst12                                                                                                ; branch_unit          ; work         ;
+;    |clk_div:inst25|                          ; 30 (30)             ; 35 (35)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|clk_div:inst25                                                                                                    ; clk_div              ; work         ;
 ;    |controller:inst17|                       ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|controller:inst17                                                                                                 ; controller           ; work         ;
 ;    |data_forwarding:inst14|                  ; 151 (151)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|data_forwarding:inst14                                                                                            ; data_forwarding      ; work         ;
 ;    |data_mem:inst2|                          ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|data_mem:inst2                                                                                                    ; data_mem             ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|data_mem:inst2|altsyncram:altsyncram_component                                                                    ; altsyncram           ; work         ;
-;          |altsyncram_kkm2:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|data_mem:inst2|altsyncram:altsyncram_component|altsyncram_kkm2:auto_generated                                     ; altsyncram_kkm2      ; work         ;
+;          |altsyncram_gtm2:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|data_mem:inst2|altsyncram:altsyncram_component|altsyncram_gtm2:auto_generated                                     ; altsyncram_gtm2      ; work         ;
 ;    |ins_mem:inst3|                           ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|ins_mem:inst3                                                                                                     ; ins_mem              ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|ins_mem:inst3|altsyncram:altsyncram_component                                                                     ; altsyncram           ; work         ;
-;          |altsyncram_lkm2:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|ins_mem:inst3|altsyncram:altsyncram_component|altsyncram_lkm2:auto_generated                                      ; altsyncram_lkm2      ; work         ;
+;          |altsyncram_itm2:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|ins_mem:inst3|altsyncram:altsyncram_component|altsyncram_itm2:auto_generated                                      ; altsyncram_itm2      ; work         ;
 ;    |instruction_pipeline:inst13|             ; 22 (22)             ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|instruction_pipeline:inst13                                                                                       ; instruction_pipeline ; work         ;
 ;    |jumpReg_forward:inst32|                  ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|jumpReg_forward:inst32                                                                                            ; jumpReg_forward      ; work         ;
+;    |mux_2to1:inst11|                         ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|mux_2to1:inst11                                                                                                   ; mux_2to1             ; work         ;
+;       |lpm_mux:LPM_MUX_component|            ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|mux_2to1:inst11|lpm_mux:LPM_MUX_component                                                                         ; lpm_mux              ; work         ;
+;          |mux_pjc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|mux_2to1:inst11|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated                                                  ; mux_pjc              ; work         ;
 ;    |mux_32:inst16|                           ; 32 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|mux_32:inst16                                                                                                     ; mux_32               ; work         ;
 ;       |lpm_mux:LPM_MUX_component|            ; 32 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|mux_32:inst16|lpm_mux:LPM_MUX_component                                                                           ; lpm_mux              ; work         ;
 ;          |mux_dlc:auto_generated|            ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|mux_32:inst16|lpm_mux:LPM_MUX_component|mux_dlc:auto_generated                                                    ; mux_dlc              ; work         ;
 ;    |mux_32:inst21|                           ; 57 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|mux_32:inst21                                                                                                     ; mux_32               ; work         ;
 ;       |lpm_mux:LPM_MUX_component|            ; 57 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|mux_32:inst21|lpm_mux:LPM_MUX_component                                                                           ; lpm_mux              ; work         ;
 ;          |mux_dlc:auto_generated|            ; 57 (57)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|mux_32:inst21|lpm_mux:LPM_MUX_component|mux_dlc:auto_generated                                                    ; mux_dlc              ; work         ;
-;    |mux_32:inst34|                           ; 43 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|mux_32:inst34                                                                                                     ; mux_32               ; work         ;
-;       |lpm_mux:LPM_MUX_component|            ; 43 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|mux_32:inst34|lpm_mux:LPM_MUX_component                                                                           ; lpm_mux              ; work         ;
-;          |mux_dlc:auto_generated|            ; 43 (43)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|mux_32:inst34|lpm_mux:LPM_MUX_component|mux_dlc:auto_generated                                                    ; mux_dlc              ; work         ;
+;    |mux_32:inst34|                           ; 35 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|mux_32:inst34                                                                                                     ; mux_32               ; work         ;
+;       |lpm_mux:LPM_MUX_component|            ; 35 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|mux_32:inst34|lpm_mux:LPM_MUX_component                                                                           ; lpm_mux              ; work         ;
+;          |mux_dlc:auto_generated|            ; 35 (35)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|mux_32:inst34|lpm_mux:LPM_MUX_component|mux_dlc:auto_generated                                                    ; mux_dlc              ; work         ;
 ;    |pc_plus4:inst5|                          ; 31 (31)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|pc_plus4:inst5                                                                                                    ; pc_plus4             ; work         ;
 ;    |program_counter:inst1|                   ; 12 (12)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|program_counter:inst1                                                                                             ; program_counter      ; work         ;
 ;    |regfile32x32:inst4|                      ; 0 (0)               ; 0 (0)                     ; 3072              ; 0          ; 0    ; 0            ; |MIPS_PipelinedCPU|regfile32x32:inst4                                                                                                ; regfile32x32         ; work         ;
@@ -353,18 +360,18 @@ refer to the applicable agreement for further details.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                           ;
-+-----------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-----------------------+
-; Name                                                                                                ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                   ;
-+-----------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-----------------------+
-; VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|ALTSYNCRAM ; AUTO ; True Dual Port   ; 307200       ; 1            ; 38400        ; 8            ; 307200 ; None                  ;
-; data_mem:inst2|altsyncram:altsyncram_component|altsyncram_kkm2:auto_generated|ALTSYNCRAM            ; AUTO ; True Dual Port   ; 64           ; 32           ; 64           ; 32           ; 2048   ; m3_test3_sum_Data.mif ;
-; ins_mem:inst3|altsyncram:altsyncram_component|altsyncram_lkm2:auto_generated|ALTSYNCRAM             ; AUTO ; True Dual Port   ; 64           ; 32           ; 64           ; 32           ; 2048   ; m3_test3_sum_Code.mif ;
-; regfile32x32:inst4|altsyncram:regfile[0][31]__1|altsyncram_46j1:auto_generated|ALTSYNCRAM           ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024   ; None                  ;
-; regfile32x32:inst4|altsyncram:regfile[0][31]__2|altsyncram_46j1:auto_generated|ALTSYNCRAM           ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024   ; None                  ;
-; regfile32x32:inst4|altsyncram:regfile[0][31]__3|altsyncram_46j1:auto_generated|ALTSYNCRAM           ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024   ; None                  ;
-+-----------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-----------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                               ;
++-----------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+---------------------------+
+; Name                                                                                                ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                       ;
++-----------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+---------------------------+
+; VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|ALTSYNCRAM ; AUTO ; True Dual Port   ; 307200       ; 1            ; 38400        ; 8            ; 307200 ; None                      ;
+; data_mem:inst2|altsyncram:altsyncram_component|altsyncram_gtm2:auto_generated|ALTSYNCRAM            ; AUTO ; True Dual Port   ; 64           ; 32           ; 64           ; 32           ; 2048   ; None                      ;
+; ins_mem:inst3|altsyncram:altsyncram_component|altsyncram_itm2:auto_generated|ALTSYNCRAM             ; AUTO ; True Dual Port   ; 64           ; 32           ; 64           ; 32           ; 2048   ; Test09-Fibonacci-Code.mif ;
+; regfile32x32:inst4|altsyncram:regfile[0][31]__1|altsyncram_46j1:auto_generated|ALTSYNCRAM           ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024   ; None                      ;
+; regfile32x32:inst4|altsyncram:regfile[0][31]__2|altsyncram_46j1:auto_generated|ALTSYNCRAM           ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024   ; None                      ;
+; regfile32x32:inst4|altsyncram:regfile[0][31]__3|altsyncram_46j1:auto_generated|ALTSYNCRAM           ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024   ; None                      ;
++-----------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+---------------------------+
 
 
 +-----------------------------------------------+
@@ -385,6 +392,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                       ; IP Include File ;
 +--------+--------------+---------+--------------+--------------+---------------------------------------+-----------------+
 ; Altera ; LPM_MUX      ; 18.0    ; N/A          ; N/A          ; |MIPS_PipelinedCPU|mux_32:inst8       ; mux_32.v        ;
+; Altera ; LPM_MUX      ; 18.0    ; N/A          ; N/A          ; |MIPS_PipelinedCPU|mux_2to1:inst11    ; mux_2to1.v      ;
 ; Altera ; LPM_MUX      ; 18.0    ; N/A          ; N/A          ; |MIPS_PipelinedCPU|mux_32:inst16      ; mux_32.v        ;
 ; Altera ; LPM_MUX      ; 18.0    ; N/A          ; N/A          ; |MIPS_PipelinedCPU|jump_mux:inst19    ; jump_mux.v      ;
 ; Altera ; LPM_MUX      ; 18.0    ; N/A          ; N/A          ; |MIPS_PipelinedCPU|mux_32:inst21      ; mux_32.v        ;
@@ -628,9 +636,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; VGA_BLOCK:inst|char_engine:inst|hex_buffer[9][7]                                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_BLOCK:inst|char_engine:inst|hex_buffer[8][7]                                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_BLOCK:inst|char_engine:inst|num_chars[6..31]                                 ; Merged with VGA_BLOCK:inst|char_engine:inst|num_chars[5]      ;
+; VGA_BLOCK:inst|char_engine:inst|hex_buffer[3][7]                                 ; Merged with VGA_BLOCK:inst|char_engine:inst|hex_buffer[4][7]  ;
 ; VGA_BLOCK:inst|char_engine:inst|hex_buffer[2][7]                                 ; Merged with VGA_BLOCK:inst|char_engine:inst|hex_buffer[4][7]  ;
 ; VGA_BLOCK:inst|char_engine:inst|hex_buffer[1][7]                                 ; Merged with VGA_BLOCK:inst|char_engine:inst|hex_buffer[4][7]  ;
-; VGA_BLOCK:inst|char_engine:inst|hex_buffer[3][7]                                 ; Merged with VGA_BLOCK:inst|char_engine:inst|hex_buffer[4][7]  ;
 ; VGA_BLOCK:inst|char_engine:inst|column[16..31]                                   ; Lost fanout                                                   ;
 ; VGA_BLOCK:inst|char_engine:inst|row[18..31]                                      ; Lost fanout                                                   ;
 ; VGA_BLOCK:inst|char_engine:inst|column[6..9,11..15]                              ; Merged with VGA_BLOCK:inst|char_engine:inst|column[10]        ;
@@ -721,8 +729,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; VGA_BLOCK:inst|char_engine:inst|hex_buffer[5][7]                                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_BLOCK:inst|char_engine:inst|hex_buffer[4][7]                                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_BLOCK:inst|char_engine:inst|hex_buffer[0][7]                                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_BLOCK:inst|char_engine:inst|hex_buffer[17][0]                                ; Merged with VGA_BLOCK:inst|char_engine:inst|hex_buffer[18][0] ;
 ; VGA_BLOCK:inst|char_engine:inst|hex_buffer[16][0]                                ; Merged with VGA_BLOCK:inst|char_engine:inst|hex_buffer[18][0] ;
+; VGA_BLOCK:inst|char_engine:inst|hex_buffer[17][0]                                ; Merged with VGA_BLOCK:inst|char_engine:inst|hex_buffer[18][0] ;
 ; VGA_BLOCK:inst|char_engine:inst|hex_buffer[14][5]                                ; Merged with VGA_BLOCK:inst|char_engine:inst|hex_buffer[15][0] ;
 ; VGA_BLOCK:inst|char_engine:inst|hex_buffer[14][0]                                ; Merged with VGA_BLOCK:inst|char_engine:inst|hex_buffer[15][5] ;
 ; VGA_BLOCK:inst|char_engine:inst|debug_count[0..31]                               ; Lost fanout                                                   ;
@@ -780,8 +788,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 965   ;
-; Number of registers using Synchronous Clear  ; 221   ;
+; Total registers                              ; 1000  ;
+; Number of registers using Synchronous Clear  ; 228   ;
 ; Number of registers using Synchronous Load   ; 67    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -806,31 +814,31 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; VGA_BLOCK:inst|char_engine:inst|data_index[26] ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[21] ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[11] ; 3       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[8]  ; 3       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[6]  ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[25] ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[24] ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[15] ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[14] ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[30] ; 4       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[20] ; 4       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[7]  ; 3       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[6]  ; 3       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[10] ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[9]  ; 3       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[8]  ; 3       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[10] ; 3       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[7]  ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[29] ; 4       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[28] ; 4       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[19] ; 4       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[18] ; 4       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[23] ; 4       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[27] ; 4       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[22] ; 4       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[27] ; 4       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[23] ; 4       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[13] ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[12] ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[17] ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[16] ; 3       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[2]  ; 5       ;
-; VGA_BLOCK:inst|char_engine:inst|data_index[0]  ; 5       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[3]  ; 7       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[2]  ; 3       ;
+; VGA_BLOCK:inst|char_engine:inst|data_index[0]  ; 4       ;
 ; VGA_BLOCK:inst|char_engine:inst|data_index[1]  ; 6       ;
 ; VGA_BLOCK:inst|char_engine:inst|y[9]           ; 3       ;
 ; VGA_BLOCK:inst|char_engine:inst|y[7]           ; 3       ;
@@ -890,46 +898,46 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|x[12]                                                ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |MIPS_PipelinedCPU|ALU_pipeline:inst23|data2_out[3]                                                     ;
-; 16:1               ; 4 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|mem_out[1]                                           ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|mem_out[3]                                           ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|x[15]                                                ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |MIPS_PipelinedCPU|ALU_pipeline:inst23|data2_out[0]                                                     ;
+; 16:1               ; 4 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|mem_out[2]                                           ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|mem_out[4]                                           ;
 ; 68:1               ; 2 bits    ; 90 LEs        ; 12 LEs               ; 78 LEs                 ; Yes        ; |MIPS_PipelinedCPU|program_counter:inst1|result[31]                                                     ;
-; 68:1               ; 8 bits    ; 360 LEs       ; 16 LEs               ; 344 LEs                ; Yes        ; |MIPS_PipelinedCPU|program_counter:inst1|result[29]                                                     ;
-; 14:1               ; 12 bits   ; 108 LEs       ; 0 LEs                ; 108 LEs                ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|row[13]                                              ;
+; 68:1               ; 8 bits    ; 360 LEs       ; 16 LEs               ; 344 LEs                ; Yes        ; |MIPS_PipelinedCPU|program_counter:inst1|result[23]                                                     ;
+; 14:1               ; 12 bits   ; 108 LEs       ; 0 LEs                ; 108 LEs                ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|row[17]                                              ;
 ; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_digit[2]                                         ;
-; 22:1               ; 3 bits    ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_buffer[2][6]                                     ;
-; 23:1               ; 2 bits    ; 30 LEs        ; 28 LEs               ; 2 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_buffer[8][2]                                     ;
+; 22:1               ; 3 bits    ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_buffer[4][6]                                     ;
+; 23:1               ; 2 bits    ; 30 LEs        ; 28 LEs               ; 2 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_buffer[8][1]                                     ;
 ; 24:1               ; 2 bits    ; 32 LEs        ; 30 LEs               ; 2 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_buffer[6][0]                                     ;
-; 24:1               ; 2 bits    ; 32 LEs        ; 30 LEs               ; 2 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_buffer[7][1]                                     ;
-; 24:1               ; 2 bits    ; 32 LEs        ; 30 LEs               ; 2 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_buffer[2][5]                                     ;
-; 26:1               ; 16 bits   ; 272 LEs       ; 256 LEs              ; 16 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|data[30]                                             ;
-; 33:1               ; 4 bits    ; 88 LEs        ; 84 LEs               ; 4 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|data[2]                                              ;
-; 36:1               ; 9 bits    ; 216 LEs       ; 198 LEs              ; 18 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|data[11]                                             ;
+; 24:1               ; 2 bits    ; 32 LEs        ; 30 LEs               ; 2 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_buffer[7][3]                                     ;
+; 24:1               ; 2 bits    ; 32 LEs        ; 30 LEs               ; 2 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|hex_buffer[4][5]                                     ;
+; 26:1               ; 16 bits   ; 272 LEs       ; 256 LEs              ; 16 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|data[21]                                             ;
+; 33:1               ; 4 bits    ; 88 LEs        ; 84 LEs               ; 4 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|data[3]                                              ;
+; 36:1               ; 9 bits    ; 216 LEs       ; 198 LEs              ; 18 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|data[8]                                              ;
 ; 36:1               ; 2 bits    ; 48 LEs        ; 44 LEs               ; 4 LEs                  ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|data[5]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|y[28]                                                ;
-; 68:1               ; 22 bits   ; 990 LEs       ; 154 LEs              ; 836 LEs                ; Yes        ; |MIPS_PipelinedCPU|program_counter:inst1|result[9]                                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|char_engine:inst|y[26]                                                ;
+; 68:1               ; 22 bits   ; 990 LEs       ; 154 LEs              ; 836 LEs                ; Yes        ; |MIPS_PipelinedCPU|program_counter:inst1|result[8]                                                      ;
 ; 3:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|vga_control:inst2|hcount                                              ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|VGA_BLOCK:inst|vga_control:inst2|hcount                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|data_forwarding:inst14|data_out2[7]                                                  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|data_forwarding:inst14|data_out2[14]                                                 ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|ShiftRight0                                                          ;
-; 4:1                ; 49 bits   ; 98 LEs        ; 98 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|ShiftLeft0                                                           ;
+; 4:1                ; 49 bits   ; 98 LEs        ; 98 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|ShiftRight1                                                          ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|ShiftRight0                                                          ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|ShiftRight1                                                          ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|ShiftLeft0                                                           ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|ShiftLeft0                                                           ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|ShiftLeft0                                                           ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|branch_unit:inst12|value_rs[22]                                                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|branch_unit:inst12|value_rt[15]                                                      ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|mux_32:inst34|lpm_mux:LPM_MUX_component|mux_dlc:auto_generated|l1_w10_n0_mux_dataout ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|data_forwarding:inst14|data_out1[7]                                                  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|branch_unit:inst12|value_rs[13]                                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|branch_unit:inst12|value_rt[6]                                                       ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|mux_32:inst34|lpm_mux:LPM_MUX_component|mux_dlc:auto_generated|l1_w16_n0_mux_dataout ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|data_forwarding:inst14|data_out1[17]                                                 ;
 ; 5:1                ; 6 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |MIPS_PipelinedCPU|controller:inst17|ALUop[5]                                                           ;
-; 74:1               ; 11 bits   ; 539 LEs       ; 132 LEs              ; 407 LEs                ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector5                                                            ;
-; 72:1               ; 4 bits    ; 192 LEs       ; 40 LEs               ; 152 LEs                ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector21                                                           ;
-; 73:1               ; 5 bits    ; 240 LEs       ; 55 LEs               ; 185 LEs                ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector25                                                           ;
+; 74:1               ; 11 bits   ; 539 LEs       ; 132 LEs              ; 407 LEs                ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector12                                                           ;
+; 72:1               ; 4 bits    ; 192 LEs       ; 40 LEs               ; 152 LEs                ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector22                                                           ;
+; 73:1               ; 5 bits    ; 240 LEs       ; 55 LEs               ; 185 LEs                ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector23                                                           ;
 ; 73:1               ; 3 bits    ; 144 LEs       ; 33 LEs               ; 111 LEs                ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector19                                                           ;
-; 77:1               ; 2 bits    ; 102 LEs       ; 28 LEs               ; 74 LEs                 ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector2                                                            ;
-; 76:1               ; 3 bits    ; 150 LEs       ; 39 LEs               ; 111 LEs                ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector29                                                           ;
+; 77:1               ; 2 bits    ; 102 LEs       ; 28 LEs               ; 74 LEs                 ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector3                                                            ;
+; 76:1               ; 3 bits    ; 150 LEs       ; 39 LEs               ; 111 LEs                ; No         ; |MIPS_PipelinedCPU|ALU_32bit:inst7|Selector30                                                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------+
 
 
@@ -943,7 +951,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +-----------------------------------------------------------------------------------------------------+
-; Source assignments for ins_mem:inst3|altsyncram:altsyncram_component|altsyncram_lkm2:auto_generated ;
+; Source assignments for ins_mem:inst3|altsyncram:altsyncram_component|altsyncram_itm2:auto_generated ;
 +---------------------------------+--------------------+------+---------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                    ;
 +---------------------------------+--------------------+------+---------------------------------------+
@@ -979,7 +987,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +------------------------------------------------------------------------------------------------------+
-; Source assignments for data_mem:inst2|altsyncram:altsyncram_component|altsyncram_kkm2:auto_generated ;
+; Source assignments for data_mem:inst2|altsyncram:altsyncram_component|altsyncram_gtm2:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                     ;
 +---------------------------------+--------------------+------+----------------------------------------+
@@ -1357,64 +1365,83 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_2to1:inst11|lpm_mux:LPM_MUX_component ;
++------------------------+-----------+---------------------------------------------------+
+; Parameter Name         ; Value     ; Type                                              ;
++------------------------+-----------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1         ; Signed Integer                                    ;
+; LPM_SIZE               ; 2         ; Signed Integer                                    ;
+; LPM_WIDTHS             ; 1         ; Signed Integer                                    ;
+; LPM_PIPELINE           ; 0         ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_pjc   ; Untyped                                           ;
+; DEVICE_FAMILY          ; Cyclone V ; Untyped                                           ;
++------------------------+-----------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: ins_mem:inst3|altsyncram:altsyncram_component ;
-+------------------------------------+-----------------------+-------------------------------+
-; Parameter Name                     ; Value                 ; Type                          ;
-+------------------------------------+-----------------------+-------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                     ; Untyped                       ;
-; AUTO_CARRY_CHAINS                  ; ON                    ; AUTO_CARRY                    ;
-; IGNORE_CARRY_BUFFERS               ; OFF                   ; IGNORE_CARRY                  ;
-; AUTO_CASCADE_CHAINS                ; ON                    ; AUTO_CASCADE                  ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                   ; IGNORE_CASCADE                ;
-; WIDTH_BYTEENA                      ; 1                     ; Untyped                       ;
-; OPERATION_MODE                     ; BIDIR_DUAL_PORT       ; Untyped                       ;
-; WIDTH_A                            ; 32                    ; Signed Integer                ;
-; WIDTHAD_A                          ; 6                     ; Signed Integer                ;
-; NUMWORDS_A                         ; 64                    ; Signed Integer                ;
-; OUTDATA_REG_A                      ; UNREGISTERED          ; Untyped                       ;
-; ADDRESS_ACLR_A                     ; NONE                  ; Untyped                       ;
-; OUTDATA_ACLR_A                     ; NONE                  ; Untyped                       ;
-; WRCONTROL_ACLR_A                   ; NONE                  ; Untyped                       ;
-; INDATA_ACLR_A                      ; NONE                  ; Untyped                       ;
-; BYTEENA_ACLR_A                     ; NONE                  ; Untyped                       ;
-; WIDTH_B                            ; 32                    ; Signed Integer                ;
-; WIDTHAD_B                          ; 6                     ; Signed Integer                ;
-; NUMWORDS_B                         ; 64                    ; Signed Integer                ;
-; INDATA_REG_B                       ; CLOCK1                ; Untyped                       ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                ; Untyped                       ;
-; RDCONTROL_REG_B                    ; CLOCK1                ; Untyped                       ;
-; ADDRESS_REG_B                      ; CLOCK1                ; Untyped                       ;
-; OUTDATA_REG_B                      ; UNREGISTERED          ; Untyped                       ;
-; BYTEENA_REG_B                      ; CLOCK1                ; Untyped                       ;
-; INDATA_ACLR_B                      ; NONE                  ; Untyped                       ;
-; WRCONTROL_ACLR_B                   ; NONE                  ; Untyped                       ;
-; ADDRESS_ACLR_B                     ; NONE                  ; Untyped                       ;
-; OUTDATA_ACLR_B                     ; NONE                  ; Untyped                       ;
-; RDCONTROL_ACLR_B                   ; NONE                  ; Untyped                       ;
-; BYTEENA_ACLR_B                     ; NONE                  ; Untyped                       ;
-; WIDTH_BYTEENA_A                    ; 1                     ; Signed Integer                ;
-; WIDTH_BYTEENA_B                    ; 1                     ; Signed Integer                ;
-; RAM_BLOCK_TYPE                     ; AUTO                  ; Untyped                       ;
-; BYTE_SIZE                          ; 8                     ; Untyped                       ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE             ; Untyped                       ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ  ; Untyped                       ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ  ; Untyped                       ;
-; INIT_FILE                          ; m3_test3_sum_Code.mif ; Untyped                       ;
-; INIT_FILE_LAYOUT                   ; PORT_A                ; Untyped                       ;
-; MAXIMUM_DEPTH                      ; 0                     ; Untyped                       ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                ; Untyped                       ;
-; CLOCK_ENABLE_INPUT_B               ; BYPASS                ; Untyped                       ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                ; Untyped                       ;
-; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                ; Untyped                       ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN       ; Untyped                       ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN       ; Untyped                       ;
-; ENABLE_ECC                         ; FALSE                 ; Untyped                       ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                 ; Untyped                       ;
-; WIDTH_ECCSTATUS                    ; 3                     ; Untyped                       ;
-; DEVICE_FAMILY                      ; Cyclone V             ; Untyped                       ;
-; CBXI_PARAMETER                     ; altsyncram_lkm2       ; Untyped                       ;
-+------------------------------------+-----------------------+-------------------------------+
++------------------------------------+---------------------------+---------------------------+
+; Parameter Name                     ; Value                     ; Type                      ;
++------------------------------------+---------------------------+---------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                         ; Untyped                   ;
+; AUTO_CARRY_CHAINS                  ; ON                        ; AUTO_CARRY                ;
+; IGNORE_CARRY_BUFFERS               ; OFF                       ; IGNORE_CARRY              ;
+; AUTO_CASCADE_CHAINS                ; ON                        ; AUTO_CASCADE              ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                       ; IGNORE_CASCADE            ;
+; WIDTH_BYTEENA                      ; 1                         ; Untyped                   ;
+; OPERATION_MODE                     ; BIDIR_DUAL_PORT           ; Untyped                   ;
+; WIDTH_A                            ; 32                        ; Signed Integer            ;
+; WIDTHAD_A                          ; 6                         ; Signed Integer            ;
+; NUMWORDS_A                         ; 64                        ; Signed Integer            ;
+; OUTDATA_REG_A                      ; UNREGISTERED              ; Untyped                   ;
+; ADDRESS_ACLR_A                     ; NONE                      ; Untyped                   ;
+; OUTDATA_ACLR_A                     ; NONE                      ; Untyped                   ;
+; WRCONTROL_ACLR_A                   ; NONE                      ; Untyped                   ;
+; INDATA_ACLR_A                      ; NONE                      ; Untyped                   ;
+; BYTEENA_ACLR_A                     ; NONE                      ; Untyped                   ;
+; WIDTH_B                            ; 32                        ; Signed Integer            ;
+; WIDTHAD_B                          ; 6                         ; Signed Integer            ;
+; NUMWORDS_B                         ; 64                        ; Signed Integer            ;
+; INDATA_REG_B                       ; CLOCK1                    ; Untyped                   ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                    ; Untyped                   ;
+; RDCONTROL_REG_B                    ; CLOCK1                    ; Untyped                   ;
+; ADDRESS_REG_B                      ; CLOCK1                    ; Untyped                   ;
+; OUTDATA_REG_B                      ; UNREGISTERED              ; Untyped                   ;
+; BYTEENA_REG_B                      ; CLOCK1                    ; Untyped                   ;
+; INDATA_ACLR_B                      ; NONE                      ; Untyped                   ;
+; WRCONTROL_ACLR_B                   ; NONE                      ; Untyped                   ;
+; ADDRESS_ACLR_B                     ; NONE                      ; Untyped                   ;
+; OUTDATA_ACLR_B                     ; NONE                      ; Untyped                   ;
+; RDCONTROL_ACLR_B                   ; NONE                      ; Untyped                   ;
+; BYTEENA_ACLR_B                     ; NONE                      ; Untyped                   ;
+; WIDTH_BYTEENA_A                    ; 1                         ; Signed Integer            ;
+; WIDTH_BYTEENA_B                    ; 1                         ; Signed Integer            ;
+; RAM_BLOCK_TYPE                     ; AUTO                      ; Untyped                   ;
+; BYTE_SIZE                          ; 8                         ; Untyped                   ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                 ; Untyped                   ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ      ; Untyped                   ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ      ; Untyped                   ;
+; INIT_FILE                          ; Test09-Fibonacci-Code.mif ; Untyped                   ;
+; INIT_FILE_LAYOUT                   ; PORT_A                    ; Untyped                   ;
+; MAXIMUM_DEPTH                      ; 0                         ; Untyped                   ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                    ; Untyped                   ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS                    ; Untyped                   ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                    ; Untyped                   ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                    ; Untyped                   ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN           ; Untyped                   ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN           ; Untyped                   ;
+; ENABLE_ECC                         ; FALSE                     ; Untyped                   ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                     ; Untyped                   ;
+; WIDTH_ECCSTATUS                    ; 3                         ; Untyped                   ;
+; DEVICE_FAMILY                      ; Cyclone V                 ; Untyped                   ;
+; CBXI_PARAMETER                     ; altsyncram_itm2           ; Untyped                   ;
++------------------------------------+---------------------------+---------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1660,62 +1687,62 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +---------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: data_mem:inst2|altsyncram:altsyncram_component ;
-+------------------------------------+-----------------------+--------------------------------+
-; Parameter Name                     ; Value                 ; Type                           ;
-+------------------------------------+-----------------------+--------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                     ; Untyped                        ;
-; AUTO_CARRY_CHAINS                  ; ON                    ; AUTO_CARRY                     ;
-; IGNORE_CARRY_BUFFERS               ; OFF                   ; IGNORE_CARRY                   ;
-; AUTO_CASCADE_CHAINS                ; ON                    ; AUTO_CASCADE                   ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                   ; IGNORE_CASCADE                 ;
-; WIDTH_BYTEENA                      ; 1                     ; Untyped                        ;
-; OPERATION_MODE                     ; BIDIR_DUAL_PORT       ; Untyped                        ;
-; WIDTH_A                            ; 32                    ; Signed Integer                 ;
-; WIDTHAD_A                          ; 6                     ; Signed Integer                 ;
-; NUMWORDS_A                         ; 64                    ; Signed Integer                 ;
-; OUTDATA_REG_A                      ; UNREGISTERED          ; Untyped                        ;
-; ADDRESS_ACLR_A                     ; NONE                  ; Untyped                        ;
-; OUTDATA_ACLR_A                     ; NONE                  ; Untyped                        ;
-; WRCONTROL_ACLR_A                   ; NONE                  ; Untyped                        ;
-; INDATA_ACLR_A                      ; NONE                  ; Untyped                        ;
-; BYTEENA_ACLR_A                     ; NONE                  ; Untyped                        ;
-; WIDTH_B                            ; 32                    ; Signed Integer                 ;
-; WIDTHAD_B                          ; 6                     ; Signed Integer                 ;
-; NUMWORDS_B                         ; 64                    ; Signed Integer                 ;
-; INDATA_REG_B                       ; CLOCK1                ; Untyped                        ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                ; Untyped                        ;
-; RDCONTROL_REG_B                    ; CLOCK1                ; Untyped                        ;
-; ADDRESS_REG_B                      ; CLOCK1                ; Untyped                        ;
-; OUTDATA_REG_B                      ; UNREGISTERED          ; Untyped                        ;
-; BYTEENA_REG_B                      ; CLOCK1                ; Untyped                        ;
-; INDATA_ACLR_B                      ; NONE                  ; Untyped                        ;
-; WRCONTROL_ACLR_B                   ; NONE                  ; Untyped                        ;
-; ADDRESS_ACLR_B                     ; NONE                  ; Untyped                        ;
-; OUTDATA_ACLR_B                     ; NONE                  ; Untyped                        ;
-; RDCONTROL_ACLR_B                   ; NONE                  ; Untyped                        ;
-; BYTEENA_ACLR_B                     ; NONE                  ; Untyped                        ;
-; WIDTH_BYTEENA_A                    ; 1                     ; Signed Integer                 ;
-; WIDTH_BYTEENA_B                    ; 1                     ; Signed Integer                 ;
-; RAM_BLOCK_TYPE                     ; AUTO                  ; Untyped                        ;
-; BYTE_SIZE                          ; 8                     ; Untyped                        ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE             ; Untyped                        ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ  ; Untyped                        ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ  ; Untyped                        ;
-; INIT_FILE                          ; m3_test3_sum_Data.mif ; Untyped                        ;
-; INIT_FILE_LAYOUT                   ; PORT_A                ; Untyped                        ;
-; MAXIMUM_DEPTH                      ; 0                     ; Untyped                        ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                ; Untyped                        ;
-; CLOCK_ENABLE_INPUT_B               ; BYPASS                ; Untyped                        ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                ; Untyped                        ;
-; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                ; Untyped                        ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN       ; Untyped                        ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN       ; Untyped                        ;
-; ENABLE_ECC                         ; FALSE                 ; Untyped                        ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                 ; Untyped                        ;
-; WIDTH_ECCSTATUS                    ; 3                     ; Untyped                        ;
-; DEVICE_FAMILY                      ; Cyclone V             ; Untyped                        ;
-; CBXI_PARAMETER                     ; altsyncram_kkm2       ; Untyped                        ;
-+------------------------------------+-----------------------+--------------------------------+
++------------------------------------+---------------------------+----------------------------+
+; Parameter Name                     ; Value                     ; Type                       ;
++------------------------------------+---------------------------+----------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                         ; Untyped                    ;
+; AUTO_CARRY_CHAINS                  ; ON                        ; AUTO_CARRY                 ;
+; IGNORE_CARRY_BUFFERS               ; OFF                       ; IGNORE_CARRY               ;
+; AUTO_CASCADE_CHAINS                ; ON                        ; AUTO_CASCADE               ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                       ; IGNORE_CASCADE             ;
+; WIDTH_BYTEENA                      ; 1                         ; Untyped                    ;
+; OPERATION_MODE                     ; BIDIR_DUAL_PORT           ; Untyped                    ;
+; WIDTH_A                            ; 32                        ; Signed Integer             ;
+; WIDTHAD_A                          ; 6                         ; Signed Integer             ;
+; NUMWORDS_A                         ; 64                        ; Signed Integer             ;
+; OUTDATA_REG_A                      ; UNREGISTERED              ; Untyped                    ;
+; ADDRESS_ACLR_A                     ; NONE                      ; Untyped                    ;
+; OUTDATA_ACLR_A                     ; NONE                      ; Untyped                    ;
+; WRCONTROL_ACLR_A                   ; NONE                      ; Untyped                    ;
+; INDATA_ACLR_A                      ; NONE                      ; Untyped                    ;
+; BYTEENA_ACLR_A                     ; NONE                      ; Untyped                    ;
+; WIDTH_B                            ; 32                        ; Signed Integer             ;
+; WIDTHAD_B                          ; 6                         ; Signed Integer             ;
+; NUMWORDS_B                         ; 64                        ; Signed Integer             ;
+; INDATA_REG_B                       ; CLOCK1                    ; Untyped                    ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                    ; Untyped                    ;
+; RDCONTROL_REG_B                    ; CLOCK1                    ; Untyped                    ;
+; ADDRESS_REG_B                      ; CLOCK1                    ; Untyped                    ;
+; OUTDATA_REG_B                      ; UNREGISTERED              ; Untyped                    ;
+; BYTEENA_REG_B                      ; CLOCK1                    ; Untyped                    ;
+; INDATA_ACLR_B                      ; NONE                      ; Untyped                    ;
+; WRCONTROL_ACLR_B                   ; NONE                      ; Untyped                    ;
+; ADDRESS_ACLR_B                     ; NONE                      ; Untyped                    ;
+; OUTDATA_ACLR_B                     ; NONE                      ; Untyped                    ;
+; RDCONTROL_ACLR_B                   ; NONE                      ; Untyped                    ;
+; BYTEENA_ACLR_B                     ; NONE                      ; Untyped                    ;
+; WIDTH_BYTEENA_A                    ; 1                         ; Signed Integer             ;
+; WIDTH_BYTEENA_B                    ; 1                         ; Signed Integer             ;
+; RAM_BLOCK_TYPE                     ; AUTO                      ; Untyped                    ;
+; BYTE_SIZE                          ; 8                         ; Untyped                    ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                 ; Untyped                    ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ      ; Untyped                    ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ      ; Untyped                    ;
+; INIT_FILE                          ; Test09-Fibonacci-Data.mif ; Untyped                    ;
+; INIT_FILE_LAYOUT                   ; PORT_A                    ; Untyped                    ;
+; MAXIMUM_DEPTH                      ; 0                         ; Untyped                    ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                    ; Untyped                    ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS                    ; Untyped                    ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                    ; Untyped                    ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                    ; Untyped                    ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN           ; Untyped                    ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN           ; Untyped                    ;
+; ENABLE_ECC                         ; FALSE                     ; Untyped                    ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                     ; Untyped                    ;
+; WIDTH_ECCSTATUS                    ; 3                         ; Untyped                    ;
+; DEVICE_FAMILY                      ; Cyclone V                 ; Untyped                    ;
+; CBXI_PARAMETER                     ; altsyncram_gtm2           ; Untyped                    ;
++------------------------------------+---------------------------+----------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1875,42 +1902,42 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 965                         ;
+; arriav_ff             ; 1000                        ;
 ;     ENA               ; 524                         ;
 ;     ENA SCLR          ; 108                         ;
 ;     ENA SLD           ; 41                          ;
-;     SCLR              ; 113                         ;
+;     SCLR              ; 120                         ;
 ;     SLD               ; 26                          ;
-;     plain             ; 153                         ;
-; arriav_lcell_comb     ; 2683                        ;
-;     arith             ; 446                         ;
+;     plain             ; 181                         ;
+; arriav_lcell_comb     ; 2703                        ;
+;     arith             ; 453                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 310                         ;
+;         1 data inputs ; 317                         ;
 ;         2 data inputs ; 18                          ;
 ;         3 data inputs ; 30                          ;
 ;         4 data inputs ; 78                          ;
 ;         5 data inputs ; 9                           ;
-;     extend            ; 36                          ;
-;         7 data inputs ; 36                          ;
-;     normal            ; 2140                        ;
+;     extend            ; 40                          ;
+;         7 data inputs ; 40                          ;
+;     normal            ; 2149                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 46                          ;
-;         2 data inputs ; 112                         ;
-;         3 data inputs ; 355                         ;
-;         4 data inputs ; 331                         ;
-;         5 data inputs ; 352                         ;
-;         6 data inputs ; 943                         ;
+;         2 data inputs ; 104                         ;
+;         3 data inputs ; 353                         ;
+;         4 data inputs ; 340                         ;
+;         5 data inputs ; 413                         ;
+;         6 data inputs ; 892                         ;
 ;     shared            ; 61                          ;
 ;         0 data inputs ; 1                           ;
 ;         2 data inputs ; 44                          ;
 ;         3 data inputs ; 16                          ;
 ; arriav_mac            ; 1                           ;
-; boundary_port         ; 16                          ;
+; boundary_port         ; 17                          ;
 ; generic_pll           ; 1                           ;
 ; stratixv_ram_block    ; 198                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 16.00                       ;
-; Average LUT depth     ; 7.91                        ;
+; Average LUT depth     ; 7.83                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1929,10 +1956,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Nov 28 09:38:45 2018
+    Info: Processing started: Wed Dec 12 21:56:08 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_PipelinedCPU -c MIPS_PipelinedCPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file clk_div.vhd
+    Info (12022): Found design unit 1: clk_div-a File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/CLK_DIV.VHD Line: 21
+    Info (12023): Found entity 1: clk_div File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/CLK_DIV.VHD Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file alu_32bit.v
     Info (12023): Found entity 1: ALU_32bit File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/ALU_32bit.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file vga_components/vram.v
@@ -1999,6 +2029,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file jumpreg
     Info (12023): Found entity 1: jumpReg_forward File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/jumpReg_forward.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file branch_unit.v
     Info (12023): Found entity 1: branch_unit File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/branch_unit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_2to1.v
+    Info (12023): Found entity 1: mux_2to1 File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/mux_2to1.v Line: 39
 Info (12127): Elaborating entity "MIPS_PipelinedCPU" for the top level hierarchy
 Info (12128): Elaborating entity "VGA_BLOCK" for hierarchy "VGA_BLOCK:inst"
 Info (12128): Elaborating entity "vga_control" for hierarchy "VGA_BLOCK:inst|vga_control:inst2"
@@ -2155,6 +2187,18 @@ Info (12128): Elaborating entity "mux_chb" for hierarchy "VGA_BLOCK:inst|vram:in
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_jhb.tdf
     Info (12023): Found entity 1: mux_jhb File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/mux_jhb.tdf Line: 22
 Info (12128): Elaborating entity "mux_jhb" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|mux_jhb:mux5" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_1tn2.tdf Line: 55
+Info (12128): Elaborating entity "mux_2to1" for hierarchy "mux_2to1:inst11"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "mux_2to1:inst11|lpm_mux:LPM_MUX_component" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/mux_2to1.v Line: 69
+Info (12130): Elaborated megafunction instantiation "mux_2to1:inst11|lpm_mux:LPM_MUX_component" File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/mux_2to1.v Line: 69
+Info (12133): Instantiated megafunction "mux_2to1:inst11|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/mux_2to1.v Line: 69
+    Info (12134): Parameter "lpm_size" = "2"
+    Info (12134): Parameter "lpm_type" = "LPM_MUX"
+    Info (12134): Parameter "lpm_width" = "1"
+    Info (12134): Parameter "lpm_widths" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_pjc.tdf
+    Info (12023): Found entity 1: mux_pjc File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/mux_pjc.tdf Line: 22
+Info (12128): Elaborating entity "mux_pjc" for hierarchy "mux_2to1:inst11|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:inst25"
 Info (12128): Elaborating entity "program_counter" for hierarchy "program_counter:inst1"
 Info (12128): Elaborating entity "jumpReg_forward" for hierarchy "jumpReg_forward:inst32"
 Warning (10036): Verilog HDL or VHDL warning at jumpReg_forward.v(19): object "opcode" assigned a value but never read File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/jumpReg_forward.v Line: 19
@@ -2169,7 +2213,7 @@ Info (12133): Instantiated megafunction "ins_mem:inst3|altsyncram:altsyncram_com
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
     Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "m3_test3_sum_Code.mif"
+    Info (12134): Parameter "init_file" = "Test09-Fibonacci-Code.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone V"
     Info (12134): Parameter "lpm_type" = "altsyncram"
     Info (12134): Parameter "numwords_a" = "64"
@@ -2189,9 +2233,9 @@ Info (12133): Instantiated megafunction "ins_mem:inst3|altsyncram:altsyncram_com
     Info (12134): Parameter "width_byteena_a" = "1"
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_lkm2.tdf
-    Info (12023): Found entity 1: altsyncram_lkm2 File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_lkm2.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_lkm2" for hierarchy "ins_mem:inst3|altsyncram:altsyncram_component|altsyncram_lkm2:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_itm2.tdf
+    Info (12023): Found entity 1: altsyncram_itm2 File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_itm2.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_itm2" for hierarchy "ins_mem:inst3|altsyncram:altsyncram_component|altsyncram_itm2:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "regfile32x32" for hierarchy "regfile32x32:inst4"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "regfile32x32:inst4|altsyncram:regfile[0][31]__1"
 Info (12130): Elaborated megafunction instantiation "regfile32x32:inst4|altsyncram:regfile[0][31]__1"
@@ -2410,7 +2454,7 @@ Info (12133): Instantiated megafunction "data_mem:inst2|altsyncram:altsyncram_co
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
     Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "m3_test3_sum_Data.mif"
+    Info (12134): Parameter "init_file" = "Test09-Fibonacci-Data.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone V"
     Info (12134): Parameter "lpm_type" = "altsyncram"
     Info (12134): Parameter "numwords_a" = "64"
@@ -2430,12 +2474,14 @@ Info (12133): Instantiated megafunction "data_mem:inst2|altsyncram:altsyncram_co
     Info (12134): Parameter "width_byteena_a" = "1"
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_kkm2.tdf
-    Info (12023): Found entity 1: altsyncram_kkm2 File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_kkm2.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_kkm2" for hierarchy "data_mem:inst2|altsyncram:altsyncram_component|altsyncram_kkm2:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_gtm2.tdf
+    Info (12023): Found entity 1: altsyncram_gtm2 File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/altsyncram_gtm2.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_gtm2" for hierarchy "data_mem:inst2|altsyncram:altsyncram_component|altsyncram_gtm2:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "sign_extend" for hierarchy "sign_extend:inst6"
 Info (12128): Elaborating entity "jump_mux" for hierarchy "jump_mux:inst19"
 Info (12128): Elaborating entity "pc_plus4" for hierarchy "pc_plus4:inst5"
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer mux_2to1:inst11|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated|l1_w0_n0_mux_dataout~0 File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/db/mux_pjc.tdf Line: 29
 Warning (14026): LATCH primitive "controller:inst17|ALUop[1]" is permanently enabled File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 64
 Warning (14026): LATCH primitive "controller:inst17|ALUop[2]" is permanently enabled File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 64
 Warning (14026): LATCH primitive "controller:inst17|ALUop[3]" is permanently enabled File: C:/Users/Ryan/Documents/Code/ECE473-MIPS-Processor/controller.v Line: 64
@@ -2698,18 +2744,18 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 3 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altera_pll.v Line: 748
     Info: Must be connected
-Info (21057): Implemented 3395 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
+Info (21057): Implemented 3423 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 3179 logic cells
+    Info (21061): Implemented 3206 logic cells
     Info (21064): Implemented 198 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 311 warnings
-    Info: Peak virtual memory: 4910 megabytes
-    Info: Processing ended: Wed Nov 28 09:39:09 2018
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:33
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 313 warnings
+    Info: Peak virtual memory: 4962 megabytes
+    Info: Processing ended: Wed Dec 12 21:56:36 2018
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:37
 
 
 +------------------------------------------+
