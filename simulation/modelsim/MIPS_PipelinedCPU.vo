@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition"
 
-// DATE "12/13/2018 20:38:19"
+// DATE "12/14/2018 00:10:08"
 
 // 
 // Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -34043,9 +34043,9 @@ cyclonev_ram_block \inst3|altsyncram_component|auto_generated|ram_block1a3 (
 // synopsys translate_off
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a3 .data_interleave_offset_in_bits = 1;
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a3 .data_interleave_width_in_bits = 1;
-defparam \inst3|altsyncram_component|auto_generated|ram_block1a3 .init_file = "Test01-ZeroArray-Code.mif";
+defparam \inst3|altsyncram_component|auto_generated|ram_block1a3 .init_file = "Test02-Multiply-Code.mif";
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a3 .init_file_layout = "port_a";
-defparam \inst3|altsyncram_component|auto_generated|ram_block1a3 .logical_ram_name = "ins_mem:inst3|altsyncram:altsyncram_component|altsyncram_avm2:auto_generated|ALTSYNCRAM";
+defparam \inst3|altsyncram_component|auto_generated|ram_block1a3 .logical_ram_name = "ins_mem:inst3|altsyncram:altsyncram_component|altsyncram_csm2:auto_generated|ALTSYNCRAM";
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a3 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a3 .operation_mode = "bidir_dual_port";
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a3 .port_a_address_clear = "none";
@@ -34076,7 +34076,7 @@ defparam \inst3|altsyncram_component|auto_generated|ram_block1a3 .port_b_read_du
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a3 .port_b_read_enable_clock = "clock1";
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a3 .port_b_write_enable_clock = "clock1";
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a3 .ram_block_type = "M20K";
-defparam \inst3|altsyncram_component|auto_generated|ram_block1a3 .mem_init0 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000201000000014F000050002000B4000020000240002400000001000010000300";
+defparam \inst3|altsyncram_component|auto_generated|ram_block1a3 .mem_init0 = "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000F00040000000013E0000000041000B0000240002000060000400000000030000000007000000000040000000B2000B200012000300";
 // synopsys translate_on
 
 // Location: FF_X39_Y25_N8
@@ -34132,9 +34132,9 @@ cyclonev_ram_block \inst3|altsyncram_component|auto_generated|ram_block1a0 (
 // synopsys translate_off
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
-defparam \inst3|altsyncram_component|auto_generated|ram_block1a0 .init_file = "Test01-ZeroArray-Code.mif";
+defparam \inst3|altsyncram_component|auto_generated|ram_block1a0 .init_file = "Test02-Multiply-Code.mif";
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a0 .init_file_layout = "port_a";
-defparam \inst3|altsyncram_component|auto_generated|ram_block1a0 .logical_ram_name = "ins_mem:inst3|altsyncram:altsyncram_component|altsyncram_avm2:auto_generated|ALTSYNCRAM";
+defparam \inst3|altsyncram_component|auto_generated|ram_block1a0 .logical_ram_name = "ins_mem:inst3|altsyncram:altsyncram_component|altsyncram_csm2:auto_generated|ALTSYNCRAM";
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a0 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a0 .operation_mode = "bidir_dual_port";
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_clear = "none";
@@ -34165,7 +34165,7 @@ defparam \inst3|altsyncram_component|auto_generated|ram_block1a0 .port_b_read_du
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a0 .port_b_read_enable_clock = "clock1";
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a0 .port_b_write_enable_clock = "clock1";
 defparam \inst3|altsyncram_component|auto_generated|ram_block1a0 .ram_block_type = "M20K";
-defparam \inst3|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040040000058FF915A12900019000021A1019810108100081185008CC000C1201";
+defparam \inst3|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040FFF8B0020000049FFC810088B000990010182002A22012108B001000004800381000D00018300400C10002101200411000C8000C1201";
 // synopsys translate_on
 
 // Location: FF_X41_Y25_N47
@@ -39961,9 +39961,9 @@ cyclonev_ram_block \inst2|altsyncram_component|auto_generated|ram_block1a0 (
 // synopsys translate_off
 defparam \inst2|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
 defparam \inst2|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
-defparam \inst2|altsyncram_component|auto_generated|ram_block1a0 .init_file = "Test01-ZeroArray-Data.mif";
+defparam \inst2|altsyncram_component|auto_generated|ram_block1a0 .init_file = "Test02-Multiply-Data.mif";
 defparam \inst2|altsyncram_component|auto_generated|ram_block1a0 .init_file_layout = "port_a";
-defparam \inst2|altsyncram_component|auto_generated|ram_block1a0 .logical_ram_name = "data_mem:inst2|altsyncram:altsyncram_component|altsyncram_9vm2:auto_generated|ALTSYNCRAM";
+defparam \inst2|altsyncram_component|auto_generated|ram_block1a0 .logical_ram_name = "data_mem:inst2|altsyncram:altsyncram_component|altsyncram_bsm2:auto_generated|ALTSYNCRAM";
 defparam \inst2|altsyncram_component|auto_generated|ram_block1a0 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst2|altsyncram_component|auto_generated|ram_block1a0 .operation_mode = "bidir_dual_port";
 defparam \inst2|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_clear = "none";
@@ -39994,7 +39994,7 @@ defparam \inst2|altsyncram_component|auto_generated|ram_block1a0 .port_b_read_du
 defparam \inst2|altsyncram_component|auto_generated|ram_block1a0 .port_b_read_enable_clock = "clock1";
 defparam \inst2|altsyncram_component|auto_generated|ram_block1a0 .port_b_write_enable_clock = "clock1";
 defparam \inst2|altsyncram_component|auto_generated|ram_block1a0 .ram_block_type = "M20K";
-defparam \inst2|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000F0000E0000D0000C0000B0000A000090000800007000060000500004000030000200001";
+defparam \inst2|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000500004";
 // synopsys translate_on
 
 // Location: LABCELL_X44_Y27_N57
@@ -52696,9 +52696,9 @@ cyclonev_ram_block \inst2|altsyncram_component|auto_generated|ram_block1a15 (
 // synopsys translate_off
 defparam \inst2|altsyncram_component|auto_generated|ram_block1a15 .data_interleave_offset_in_bits = 1;
 defparam \inst2|altsyncram_component|auto_generated|ram_block1a15 .data_interleave_width_in_bits = 1;
-defparam \inst2|altsyncram_component|auto_generated|ram_block1a15 .init_file = "Test01-ZeroArray-Data.mif";
+defparam \inst2|altsyncram_component|auto_generated|ram_block1a15 .init_file = "Test02-Multiply-Data.mif";
 defparam \inst2|altsyncram_component|auto_generated|ram_block1a15 .init_file_layout = "port_a";
-defparam \inst2|altsyncram_component|auto_generated|ram_block1a15 .logical_ram_name = "data_mem:inst2|altsyncram:altsyncram_component|altsyncram_9vm2:auto_generated|ALTSYNCRAM";
+defparam \inst2|altsyncram_component|auto_generated|ram_block1a15 .logical_ram_name = "data_mem:inst2|altsyncram:altsyncram_component|altsyncram_bsm2:auto_generated|ALTSYNCRAM";
 defparam \inst2|altsyncram_component|auto_generated|ram_block1a15 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst2|altsyncram_component|auto_generated|ram_block1a15 .operation_mode = "bidir_dual_port";
 defparam \inst2|altsyncram_component|auto_generated|ram_block1a15 .port_a_address_clear = "none";
