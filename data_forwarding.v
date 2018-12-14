@@ -48,25 +48,25 @@ assign opcode = full_ins[31:26];
 
 always begin
 if (opcode == 0) begin
+	//Bug: Code enclosed in parentheses should be able to run and then afterwards we have a default case
+	//Default case:
+	data_out1 = data_in1;
+	data_out2 =  data_in2;
+	dout2 = din2;
+	//----------------
 	if (rs == dest_register) begin //if we are about to write a new value to one of the next operations calculation registers
 		//Foward the alu result to rs (data_out1)
 		data_out1 = aluResult;
-		data_out2 =  data_in2;
+		//data_out2 =  data_in2;
 		
 	end
-	else if (rt == dest_register) begin
+	if (rt == dest_register) begin
 		//Foward the alu result to rt (data_out2)
-		data_out1 = data_in1;
+		//data_out1 = data_in1;
 		data_out2 = aluResult;
 		
 	end
-	else begin //Here we don't need to make any changes, just forward the outputs
-		
-		data_out1 = data_in1;
-		data_out2 =  data_in2;
-		
-	end;
-	dout2 = din2;
+	//-----------------
 end
 	
 if (opcode != 0) begin
